@@ -390,12 +390,9 @@ class D2E2S_Trainer(BaseTrainer):
                     evaluator.store_predictions()
                 if self.args.store_examples:
                     evaluator.store_examples()
-        elif label_to_log == "test":
-            # For test, store predictions/examples and log results ONLY when final_eval is enabled
-            # (i.e., when user requested final evaluation on test set)
-            if not getattr(self.args, 'final_eval', False):
-                return
-            # For test, store the predictions/examples and log results (do not change best)
+        elif label_to_log == "test" or label_to_log == "test_final":
+            # For test (both during training and final eval), always store predictions/examples and log results
+            # (final_eval flag only controls whether eval happens each epoch or just at end)
             columns = [
                 "mic_precision",
                 "mic_recall",
