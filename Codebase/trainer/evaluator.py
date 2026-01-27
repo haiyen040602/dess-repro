@@ -5,6 +5,7 @@ from typing import List, Tuple, Dict
 import torch
 import json
 from trainer import util
+import re
 from sklearn.metrics import precision_recall_fscore_support as prfs
 import jinja2
 import os
@@ -158,7 +159,7 @@ class Evaluator:
             self._gt_entities.append(sample_gt_entities)
             self._gt_sentiments.append(sample_gt_sentiments)
 
-    def compute_scores(self):
+    def compute_scores(self, print_examples: int = 0):
         print("Evaluation")
         #
         print("")
@@ -178,6 +179,55 @@ class Evaluator:
         print("")
         gt, pred = self._convert_by_setting(self._gt_sentiments, self._pred_sentiments, include_entity_types=True)
         senti_nec_eval = self._score(gt, pred, print_results=True)
+
+        # Optionally print examples (text + TP/FP/FN) to console
+        if print_examples and print_examples > 0:
+            n = print_examples
+            print('\n' + '-' * 40)
+            print(f'Printing {n} example(s) per category (entities / sentiments)')
+            print('-' * 40)
+
+            # build examples in-memory (reuse _convert_example)
+            entity_examples = []
+            senti_examples = []
+            senti_examples_nec = []
+
+            for i, doc in enumerate(self._dataset.sentences):
+                entity_examples.append(self._convert_example(doc, self._gt_entities[i], self._pred_entities[i],
+                                                             include_entity_types=True, to_html=self._entity_to_html))
+
+                senti_examples.append(self._convert_example(doc, self._gt_sentiments[i], self._pred_sentiments[i],
+                                                            include_entity_types=False, to_html=self._senti_to_html))
+
+                senti_examples_nec.append(self._convert_example(doc, self._gt_sentiments[i], self._pred_sentiments[i],
+                                                                include_entity_types=True, to_html=self._senti_to_html))
+
+            def strip_html(s: str) -> str:
+                return re.sub('<[^<]+?>', '', s)
+
+            def print_examples_list(examples, title: str):
+                print(f"\n*** {title} ***")
+                for ex in examples[:n]:
+                    print('\nTEXT:')
+                    print(strip_html(ex['text']))
+                    print('\nTP:')
+                    for tp in ex['tp']:
+                        # tp = (html_text, type_verbose, score)
+                        print(f"  - {strip_html(tp[0])} \t| type: {tp[1]} \t| score: {tp[2]:.4f}")
+                    print('FN:')
+                    for fn in ex['fn']:
+                        print(f"  - {strip_html(fn[0])} \t| type: {fn[1]}")
+                    print('FP:')
+                    for fp in ex['fp']:
+                        print(f"  - {strip_html(fp[0])} \t| type: {fp[1]} \t| score: {fp[2]:.4f}")
+
+            # print examples for entities and sentiments (span-only and with types)
+            print_examples_list(entity_examples, 'Entity Extraction Examples')
+            print_examples_list(senti_examples, 'Sentiment Extraction Examples (span-only)')
+            print_examples_list(senti_examples_nec, 'Sentiment Extraction Examples (with entity types)')
+
+            print('\n' + '-' * 40)
+
         return ner_eval, senti_eval, senti_nec_eval
         # return ner_eval, senti_eval
 
@@ -365,6 +415,10 @@ class Evaluator:
         label, epoch = self._dataset_label, self._epoch
         with open(self._predictions_path % (label, epoch), 'w') as predictions_file:
             json.dump(predictions, predictions_file)
+        try:
+            print(f"Saved predictions: {self._predictions_path % (label, epoch)}")
+        except Exception:
+            pass
 
     def store_examples(self):
 
@@ -395,32 +449,56 @@ class Evaluator:
         self._store_examples(entity_examples[:self._example_count],
                              file_path=self._examples_path % ('entities', label, epoch),
                              template='entity_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('entities', label, epoch)}")
+        except Exception:
+            pass
 
         self._store_examples(sorted(entity_examples[:self._example_count],
                                     key=lambda k: k['length']),
                              file_path=self._examples_path % ('entities_sorted', label, epoch),
                              template='entity_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('entities_sorted', label, epoch)}")
+        except Exception:
+            pass
 
         # sentiments
         # without entity types
         self._store_examples(senti_examples[:self._example_count],
                              file_path=self._examples_path % ('rel', label, epoch),
                              template='sentiment_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('rel', label, epoch)}")
+        except Exception:
+            pass
 
         self._store_examples(sorted(senti_examples[:self._example_count],
                                     key=lambda k: k['length']),
                              file_path=self._examples_path % ('senti_sorted', label, epoch),
                              template='sentiment_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('senti_sorted', label, epoch)}")
+        except Exception:
+            pass
 
         # with entity types
         self._store_examples(senti_examples_nec[:self._example_count],
                              file_path=self._examples_path % ('senti_nec', label, epoch),
                              template='sentiment_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('senti_nec', label, epoch)}")
+        except Exception:
+            pass
 
         self._store_examples(sorted(senti_examples_nec[:self._example_count],
                                     key=lambda k: k['length']),
                              file_path=self._examples_path % ('senti_nec_sorted', label, epoch),
                              template='sentiment_examples.html')
+        try:
+            print(f"Saved examples: {self._examples_path % ('senti_nec_sorted', label, epoch)}")
+        except Exception:
+            pass
 
     def _store_examples(self, examples: List[Dict], file_path: str, template: str):
         template_path = os.path.join(SCRIPT_PATH, 'templates', template)

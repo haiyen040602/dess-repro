@@ -284,7 +284,14 @@ class D2E2S_Trainer(BaseTrainer):
         if label_to_log is None:
             label_to_log = dataset.label
 
-        # create evaluator
+        # Normalize logging label to one of the initialized labels (train/dev/test)
+        if label_to_log in self._log_paths:
+            log_label = label_to_log
+        else:
+            base = label_to_log.split('_')[0] if isinstance(label_to_log, str) else dataset.label
+            log_label = base if base in self._log_paths else dataset.label
+
+        # create evaluator (store predictions/examples under the dataset's base label)
         evaluator = Evaluator(
             dataset,
             input_reader,
@@ -294,7 +301,7 @@ class D2E2S_Trainer(BaseTrainer):
             self._examples_path,
             self.args.example_count,
             epoch,
-            label_to_log,
+            dataset.label,
         )
         # create data loader
         dataset.switch_mode(Dataset.EVAL_MODE)
@@ -332,9 +339,9 @@ class D2E2S_Trainer(BaseTrainer):
                 # evaluate batch, entity:tensor(16, 188, 3), senti_clf:tensor(16, 2, 4), rels:tensor(16, 2, 2)
                 evaluator.eval_batch(entity_clf, senti_clf, rels, batch)
             global_iteration = epoch * updates_epoch + iteration
-            ner_eval, senti_eval, senti_nec_eval = evaluator.compute_scores()
+            ner_eval, senti_eval, senti_nec_eval = evaluator.compute_scores(print_examples=5)
             # print(self.result_path)
-            self._log_filter_file(ner_eval, senti_eval, evaluator, epoch, label_to_log)
+            self._log_filter_file(ner_eval, senti_eval, evaluator, epoch, log_label)
         self._log_eval(
             *ner_eval,
             *senti_eval,
@@ -342,15 +349,15 @@ class D2E2S_Trainer(BaseTrainer):
             epoch,
             iteration,
             global_iteration,
-            label_to_log
+            log_label
         )
         return ner_eval, senti_eval, senti_nec_eval
 
     def _log_filter_file(self, ner_eval, senti_eval, evaluator, epoch, label_to_log="test"):
         f1 = float(senti_eval[2])
-        
-        # Only track best model for dev set
+        # Track and store results for dev and test sets
         if label_to_log == "dev":
+            # Only update best when dev improves
             if self.max_pair_f1 < f1:
                 columns = [
                     "mic_precision",
@@ -360,29 +367,13 @@ class D2E2S_Trainer(BaseTrainer):
                     "mac_recall",
                     "mac_f1_score",
                 ]
-                ner_dic = {
-                    "mic_precision": 0.0,
-                    "mic_recall": 0.0,
-                    "mic_f1_score": 0.0,
-                    "mac_precision": 0.0,
-                    "mac_recall": 0.0,
-                    "mac_f1_score": 0.0,
-                }
-                senti_dic = {
-                    "mic_precision": 0.0,
-                    "mic_recall": 0.0,
-                    "mic_f1_score": 0.0,
-                    "mac_precision": 0.0,
-                    "mac_recall": 0.0,
-                    "mac_f1_score": 0.0,
-                }
-                # for inx, val in enumerate(ner_eval):
-                #     ner_dic[columns[inx]] = val
+                ner_dic = {k: 0.0 for k in columns}
+                senti_dic = {k: 0.0 for k in columns}
                 for inx, val in enumerate(senti_eval):
                     senti_dic[columns[inx]] = val
                 self.max_pair_f1 = f1
                 with open(self.result_path, mode="a", encoding="utf-8") as f:
-                    w_str = "No. {} ：....\n".format(epoch)
+                    w_str = "No. {} ： (dev) ....\n".format(epoch)
                     f.write(w_str)
                     f.write("ner_entity: \n")
                     f.write(str(ner_dic))
@@ -391,16 +382,45 @@ class D2E2S_Trainer(BaseTrainer):
                     f.write("\n")
                 try:
                     fileNames = os.listdir(self._log_path_predict)
-                    # print(fileNames)
                     for i in fileNames:
                         os.remove(os.path.join(self._log_path_predict, i))
                 except BaseException:
                     print(BaseException)
                 if self.args.store_predictions:
                     evaluator.store_predictions()
-
                 if self.args.store_examples:
                     evaluator.store_examples()
+        elif label_to_log == "test":
+            # For test, store predictions/examples and log results ONLY when final_eval is enabled
+            # (i.e., when user requested final evaluation on test set)
+            if not getattr(self.args, 'final_eval', False):
+                return
+            # For test, store the predictions/examples and log results (do not change best)
+            columns = [
+                "mic_precision",
+                "mic_recall",
+                "mic_f1_score",
+                "mac_precision",
+                "mac_recall",
+                "mac_f1_score",
+            ]
+            ner_dic = {k: 0.0 for k in columns}
+            senti_dic = {k: 0.0 for k in columns}
+            for inx, val in enumerate(senti_eval):
+                senti_dic[columns[inx]] = val
+            with open(self.result_path, mode="a", encoding="utf-8") as f:
+                w_str = "No. {} ： (test) ....\n".format(epoch)
+                f.write(w_str)
+                f.write("ner_entity: \n")
+                f.write(str(ner_dic))
+                f.write("\n rec: \n")
+                f.write(str(senti_dic))
+                f.write("\n")
+            # do not remove existing prediction files; just store new ones
+            if self.args.store_predictions:
+                evaluator.store_predictions()
+            if self.args.store_examples:
+                evaluator.store_examples()
 
     def _get_optimizer_params(self, model):
         param_optimizer = list(model.named_parameters())
