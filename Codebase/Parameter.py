@@ -7,21 +7,25 @@ def train_argparser():
     dataset_files = {
         "14lap": {
             "train": "./data/14lap/train_dep_triple_polarity_result.json",
+            "dev": "./data/14lap/dev_dep_triple_polarity_result.json",
             "test": "./data/14lap/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
         "14res": {
             "train": "./data/14res/train_dep_triple_polarity_result.json",
+            "dev": "./data/14res/dev_dep_triple_polarity_result.json",
             "test": "./data/14res/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
         "15res": {
             "train": "./data/15res/train_dep_triple_polarity_result.json",
+            "dev": "./data/15res/dev_dep_triple_polarity_result.json",
             "test": "./data/15res/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
         "16res": {
             "train": "./data/16res/train_dep_triple_polarity_result.json",
+            "dev": "./data/16res/dev_dep_triple_polarity_result.json",
             "test": "./data/16res/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
@@ -226,7 +230,7 @@ def train_argparser():
     parser.add_argument(
         "--save_path",
         type=str,
-        default="data/save/",
+        default="savemodels/",
         help="Path to directory where model checkpoints are stored",
     )
     parser.add_argument(

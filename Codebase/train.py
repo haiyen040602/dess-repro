@@ -43,11 +43,12 @@ class D2E2S_Trainer(BaseTrainer):
             self._log_path_result, "result{}.txt".format(self.args.max_span_size)
         )
 
-    def _preprocess(self, args, input_reader_cls, types_path, train_path, test_path):
+    def _preprocess(self, args, input_reader_cls, types_path, train_path, dev_path, test_path):
 
-        train_label, test_label = "train", "test"
+        train_label, dev_label, test_label = "train", "dev", "test"
         # create log csv files
         self._init_train_logging(train_label)
+        self._init_eval_logging(dev_label)
         self._init_eval_logging(test_label)
 
         # loading data
@@ -58,7 +59,7 @@ class D2E2S_Trainer(BaseTrainer):
             args.neg_triple_count,
             args.max_span_size,
         )
-        input_reader.read({train_label: train_path, test_label: test_path})
+        input_reader.read({train_label: train_path, dev_label: dev_path, test_label: test_path})
         train_dataset = input_reader.get_dataset(train_label)
 
         # preprocess
@@ -70,18 +71,19 @@ class D2E2S_Trainer(BaseTrainer):
         return input_reader, updates_total, updates_epoch
 
     def _train(
-        self, train_path: str, test_path: str, types_path: str, input_reader_cls
+        self, train_path: str, dev_path: str, test_path: str, types_path: str, input_reader_cls
     ):
         args = self.args
 
         # set seed
         set_seed(args.seed)
 
-        train_label, test_label = "train", "test"
+        train_label, dev_label, test_label = "train", "dev", "test"
         input_reader, updates_total, updates_epoch = self._preprocess(
-            args, input_reader_cls, types_path, train_path, test_path
+            args, input_reader_cls, types_path, train_path, dev_path, test_path
         )
         train_dataset = input_reader.get_dataset(train_label)
+        dev_dataset = input_reader.get_dataset(dev_label)
         test_dataset = input_reader.get_dataset(test_label)
 
         # load model
@@ -124,7 +126,7 @@ class D2E2S_Trainer(BaseTrainer):
         )
         # eval validation set
         if args.init_eval:
-            self._eval(model, test_dataset, input_reader, 0, updates_epoch)
+            self._eval(model, dev_dataset, input_reader, 0, updates_epoch)
 
         # train
         for epoch in range(args.epochs):
@@ -133,10 +135,47 @@ class D2E2S_Trainer(BaseTrainer):
                 model, compute_loss, optimizer, train_dataset, updates_epoch, epoch
             )
 
-            # eval validation sets
+            # eval on dev set and save best model
+            dev_ner_eval, dev_senti_eval, dev_senti_nec_eval = self._eval(
+                model, dev_dataset, input_reader, epoch + 1, updates_epoch, label_to_log="dev"
+            )
+            dev_f1 = float(dev_senti_eval[2])
+            
+            # Save best model based on dev F1 score
+            self._save_best(
+                model, 
+                self._tokenizer, 
+                optimizer, 
+                dev_f1, 
+                epoch + 1,
+                label="dev",
+                extra=None
+            )
+
+            # eval on test set after each epoch
             if not args.final_eval or (epoch == args.epochs - 1):
-                # print(epoch)
-                self._eval(model, test_dataset, input_reader, epoch + 1, updates_epoch)
+                self._eval(model, test_dataset, input_reader, epoch + 1, updates_epoch, label_to_log="test")
+        
+        # Load best model and evaluate on test set
+        print(f"\nLoading best model with dev set")
+        best_model_path = os.path.join(self._save_path, 'model_dev_best')
+        if os.path.exists(best_model_path):
+            model = D2E2SModel.from_pretrained(
+                best_model_path,
+                config=model.config,
+                cls_token=self._tokenizer.convert_tokens_to_ids("[CLS]"),
+                sentiment_types=input_reader.sentiment_type_count - 1,
+                entity_types=input_reader.entity_type_count,
+                args=args,
+            )
+            model.to(args.device)
+            print("\n" + "="*80)
+            print("FINAL TEST RESULTS (Best Model from Dev Set)")
+            print("="*80)
+            self._eval(model, test_dataset, input_reader, 0, updates_epoch, label_to_log="test_final")
+            print("="*80)
+        else:
+            print(f"Best model path not found: {best_model_path}")
 
     def train_epoch(
         self,
@@ -238,7 +277,12 @@ class D2E2S_Trainer(BaseTrainer):
         epoch: int = 0,
         updates_epoch: int = 0,
         iteration: int = 0,
+        label_to_log: str = None,
     ):
+
+        # Use dataset label if label_to_log not specified
+        if label_to_log is None:
+            label_to_log = dataset.label
 
         # create evaluator
         evaluator = Evaluator(
@@ -250,7 +294,7 @@ class D2E2S_Trainer(BaseTrainer):
             self._examples_path,
             self.args.example_count,
             epoch,
-            dataset.label,
+            label_to_log,
         )
         # create data loader
         dataset.switch_mode(Dataset.EVAL_MODE)
@@ -290,7 +334,7 @@ class D2E2S_Trainer(BaseTrainer):
             global_iteration = epoch * updates_epoch + iteration
             ner_eval, senti_eval, senti_nec_eval = evaluator.compute_scores()
             # print(self.result_path)
-            self._log_filter_file(ner_eval, senti_eval, evaluator, epoch)
+            self._log_filter_file(ner_eval, senti_eval, evaluator, epoch, label_to_log)
         self._log_eval(
             *ner_eval,
             *senti_eval,
@@ -298,61 +342,65 @@ class D2E2S_Trainer(BaseTrainer):
             epoch,
             iteration,
             global_iteration,
-            dataset.label
+            label_to_log
         )
+        return ner_eval, senti_eval, senti_nec_eval
 
-    def _log_filter_file(self, ner_eval, senti_eval, evaluator, epoch):
+    def _log_filter_file(self, ner_eval, senti_eval, evaluator, epoch, label_to_log="test"):
         f1 = float(senti_eval[2])
-        if self.max_pair_f1 < f1:
-            columns = [
-                "mic_precision",
-                "mic_recall",
-                "mic_f1_score",
-                "mac_precision",
-                "mac_recall",
-                "mac_f1_score",
-            ]
-            ner_dic = {
-                "mic_precision": 0.0,
-                "mic_recall": 0.0,
-                "mic_f1_score": 0.0,
-                "mac_precision": 0.0,
-                "mac_recall": 0.0,
-                "mac_f1_score": 0.0,
-            }
-            senti_dic = {
-                "mic_precision": 0.0,
-                "mic_recall": 0.0,
-                "mic_f1_score": 0.0,
-                "mac_precision": 0.0,
-                "mac_recall": 0.0,
-                "mac_f1_score": 0.0,
-            }
-            # for inx, val in enumerate(ner_eval):
-            #     ner_dic[columns[inx]] = val
-            for inx, val in enumerate(senti_eval):
-                senti_dic[columns[inx]] = val
-            self.max_pair_f1 = f1
-            with open(self.result_path, mode="a", encoding="utf-8") as f:
-                w_str = "No. {} ：....\n".format(epoch)
-                f.write(w_str)
-                f.write("ner_entity: \n")
-                f.write(str(ner_dic))
-                f.write("\n rec: \n")
-                f.write(str(senti_dic))
-                f.write("\n")
-            try:
-                fileNames = os.listdir(self._log_path_predict)
-                # print(fileNames)
-                for i in fileNames:
-                    os.remove(os.path.join(self._log_path_predict, i))
-            except BaseException:
-                print(BaseException)
-            if self.args.store_predictions:
-                evaluator.store_predictions()
+        
+        # Only track best model for dev set
+        if label_to_log == "dev":
+            if self.max_pair_f1 < f1:
+                columns = [
+                    "mic_precision",
+                    "mic_recall",
+                    "mic_f1_score",
+                    "mac_precision",
+                    "mac_recall",
+                    "mac_f1_score",
+                ]
+                ner_dic = {
+                    "mic_precision": 0.0,
+                    "mic_recall": 0.0,
+                    "mic_f1_score": 0.0,
+                    "mac_precision": 0.0,
+                    "mac_recall": 0.0,
+                    "mac_f1_score": 0.0,
+                }
+                senti_dic = {
+                    "mic_precision": 0.0,
+                    "mic_recall": 0.0,
+                    "mic_f1_score": 0.0,
+                    "mac_precision": 0.0,
+                    "mac_recall": 0.0,
+                    "mac_f1_score": 0.0,
+                }
+                # for inx, val in enumerate(ner_eval):
+                #     ner_dic[columns[inx]] = val
+                for inx, val in enumerate(senti_eval):
+                    senti_dic[columns[inx]] = val
+                self.max_pair_f1 = f1
+                with open(self.result_path, mode="a", encoding="utf-8") as f:
+                    w_str = "No. {} ：....\n".format(epoch)
+                    f.write(w_str)
+                    f.write("ner_entity: \n")
+                    f.write(str(ner_dic))
+                    f.write("\n rec: \n")
+                    f.write(str(senti_dic))
+                    f.write("\n")
+                try:
+                    fileNames = os.listdir(self._log_path_predict)
+                    # print(fileNames)
+                    for i in fileNames:
+                        os.remove(os.path.join(self._log_path_predict, i))
+                except BaseException:
+                    print(BaseException)
+                if self.args.store_predictions:
+                    evaluator.store_predictions()
 
-            if self.args.store_examples:
-                evaluator.store_examples()
+                if self.args.store_examples:
+                    evaluator.store_examples()
 
     def _get_optimizer_params(self, model):
         param_optimizer = list(model.named_parameters())
@@ -380,6 +428,7 @@ if __name__ == "__main__":
     trainer = D2E2S_Trainer(arg_parser)
     trainer._train(
         train_path=arg_parser.dataset_file["train"],
+        dev_path=arg_parser.dataset_file["dev"],
         test_path=arg_parser.dataset_file["test"],
         types_path=arg_parser.dataset_file["types_path"],
         input_reader_cls=JsonInputReader,
