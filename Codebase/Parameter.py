@@ -29,12 +29,18 @@ def train_argparser():
             "test": "./data/16res/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
+        "cameraCOQE": {
+            "train": "./data/cameraCOQE/train_dep_triple_polarity_result.json",
+            "dev": "./data/cameraCOQE/dev_dep_triple_polarity_result.json",
+            "test": "./data/cameraCOQE/test_dep_triple_polarity_result.json",
+            "types_path": "./data/types.json",
+        },
     }
 
     # model argument
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--dataset", default="14res", type=str, help="14res, 15res, 16res, 14lap"
+        "--dataset", default="14res", type=str, help="14res, 15res, 16res, 14lap, cameraCOQE"
     )
 
     parser.add_argument(

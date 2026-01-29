@@ -1,0 +1,3442 @@
+[
+  {
+    "sentence": "As for comparisions with other Canon Powershot cameras , the Powershot SD630 does n't have a view finder , but has a larger LCD monitor in its place .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "monitor",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Like the rest of the digital Elph line , there are only limited manual controls .",
+    "triplets": [
+      {
+        "aspect_term": "manual",
+        "opinion_term": "Like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "controls",
+        "opinion_term": "Like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "On paper , both Canons have a much bigger buffer for continuous shooting , faster AF , better white balance adjustments , lower ISO noise and sharper images .",
+    "triplets": [
+      {
+        "aspect_term": "AF",
+        "opinion_term": "faster",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "And of course the build quality is on a completely different level .",
+    "triplets": [
+      {
+        "aspect_term": "build",
+        "opinion_term": "different",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "different",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "However , focus accuracy was not as impressive .",
+    "triplets": [
+      {
+        "aspect_term": "focus",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "focus",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "focus",
+        "opinion_term": "impressive",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "accuracy",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "accuracy",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "accuracy",
+        "opinion_term": "impressive",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Weight and Size - Much lighter than the old rebel , but also much smaller .",
+    "triplets": [
+      {
+        "aspect_term": "Size",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Shutter Lag/Timing The G7 is noticeably faster ( 1.5 seconds ) at start-up than its predecessor , easily the fastest `` G '' to date .",
+    "triplets": [
+      {
+        "aspect_term": "start-up",
+        "opinion_term": "faster",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The SD800 can evaluate scenes quicker , focus faster , and adapt its settings faster than the SD700 can as per Canon .",
+    "triplets": [
+      {
+        "aspect_term": "focus",
+        "opinion_term": "faster",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "If you are on a limited budget consider also the Nikon Coolpix L5 ( 7.1 M , 5X zoom ) or the Kodak EasyShare Z710 ( 7.1 M , 10X zoom ) , both cost half the price of the G7 ( $ 250 at Best Buy ) , or the Canon Powershot A640 ( 10M , 4X zoom , $ 299 at Best Buy ) .",
+    "triplets": [
+      {
+        "aspect_term": "price",
+        "opinion_term": "half",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I should also mention here that the D50/D70/D70s did not have this capability either .",
+    "triplets": [
+      {
+        "aspect_term": "capability",
+        "opinion_term": "did",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "capability",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "capability",
+        "opinion_term": "have",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "capability",
+        "opinion_term": "this",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "capability",
+        "opinion_term": "capability",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The unit is slightly larger then the D50 and slightly smaller then the D70 .",
+    "triplets": [
+      {
+        "aspect_term": "unit",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "However , they are sometimes not as good as the images obtained by my F100 ( which costs about half as much ) when I 'm shooting ISO 100 slide film , and when the slides are scanned with a drum scanner .",
+    "triplets": [
+      {
+        "aspect_term": "costs",
+        "opinion_term": "half",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The iSAPS technology used in Canon 's digital cameras has also improved every year .",
+    "triplets": [
+      {
+        "aspect_term": "iSAPS",
+        "opinion_term": "improved",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "technology",
+        "opinion_term": "improved",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "* Compact size * The above-mentioned review , very in favor of this camera * Everybody I talked to , including a few camera-experts/friends , seemed to think that Canon made the best products .",
+    "triplets": [
+      {
+        "aspect_term": "products",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The top of the camera is quite different from the SD700 and holds the zoom ring with the shutter button in the center of the ring as well as the holes for the built-in microphone , monoaural speaker , and the power button ( which is flush with the casing ) .",
+    "triplets": [
+      {
+        "aspect_term": "top",
+        "opinion_term": "different",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "( dust particles while snapping photos in dusty areas or ORBS while snapping in ghostly or haunted areas , ha ha Those who r crying over poor night photos , try this setting 2 get the true night pic better than its competitors like Sony , Casio , Olympus , etc. .",
+    "triplets": [
+      {
+        "aspect_term": "true",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "night",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "pic",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Viewfinder The view finder shows 95 % of the image at a magnification of 0.94 X . It is clear and bright , and considerably better than the rather pokey D70 viewfinder .",
+    "triplets": [
+      {
+        "aspect_term": "viewfinder",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Battery Life The SD800 utilizes the same NB-5L battery as the SD700 which is a 3.7 V 1120mAh Lithium Ion rechargable battery pack .",
+    "triplets": [
+      {
+        "aspect_term": "NB-5L",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The less apparent difference is performance .",
+    "triplets": [
+      {
+        "aspect_term": "performance",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "performance",
+        "opinion_term": "apparent",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "performance",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "This camera allows better custom white balance and it has the Kelvin stepping that professionals used from a setting of 2800-100000 at a stepping of 100K .",
+    "triplets": [
+      {
+        "aspect_term": "custom",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "white",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "balance",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "( Note : I got all the prices from ebay 's buy-now prices which are more or less the same with the prices from online stores ) .",
+    "triplets": [
+      {
+        "aspect_term": "prices",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "prices",
+        "opinion_term": "or",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "prices",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "prices",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "prices",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The Bottom Line If you want the larger 2.5 '' LCD , then by all means buy this camera , otherwise , wait until the 40D to come out next year with a bigger optical sensor .",
+    "triplets": [
+      {
+        "aspect_term": "optical",
+        "opinion_term": "bigger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "bigger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Only the S3 has a potentially better movie record mode ( the S3 can record in stereo sound but file size is limited to 1 GB max .",
+    "triplets": [
+      {
+        "aspect_term": "movie",
+        "opinion_term": "potentially",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "movie",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "record",
+        "opinion_term": "potentially",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "record",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "mode",
+        "opinion_term": "potentially",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "mode",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "It seems to me that anything over a 5 megapixel camera is more than enough pixels for ordinary use .",
+    "triplets": [
+      {
+        "aspect_term": "pixels",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Someone coming from a D50/D70/D70s will be up and running as the layout of the D80 is very similar to the D50/D70/D70s cameras .",
+    "triplets": [
+      {
+        "aspect_term": "layout",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "SD700/S3 ISO 800 shots were more consistent from shot to shot versus SD800 ) .",
+    "triplets": [
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "consistent",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "800",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "800",
+        "opinion_term": "consistent",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "shots",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "shots",
+        "opinion_term": "consistent",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Main reason for the mixed feelings is the invasion of the low cost SLR which provide better performance at a similar price but of course in a bigger package .",
+    "triplets": [
+      {
+        "aspect_term": "performance",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "In lowlight at ISO 1600 noise is much better then its bigger brother the D200 .",
+    "triplets": [
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "1600",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "noise",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "I 'm not entirely sure about the faster part as that is n't easy to evaluate .",
+    "triplets": [
+      {
+        "aspect_term": "part",
+        "opinion_term": "faster",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "I 'm wrong : red-eye problem on G7 seem to be slightly worse than average .",
+    "triplets": [
+      {
+        "aspect_term": "red-eye",
+        "opinion_term": "slightly",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "red-eye",
+        "opinion_term": "worse",
+        "aspect_sentiment_label": "negative"
+      },
+      {
+        "aspect_term": "problem",
+        "opinion_term": "slightly",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "problem",
+        "opinion_term": "worse",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "The LCD is the best I 've seen to date on any camera .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "So if you 're trying to justify spending the money on a D200 by saying you 're going to get better image quality - in a pure sense - no .",
+    "triplets": [
+      {
+        "aspect_term": "image",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Let 's go back a few years , and compare the D200 and the F100 in terms of value for the money .",
+    "triplets": [
+      {
+        "aspect_term": "value",
+        "opinion_term": "compare",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "for",
+        "opinion_term": "compare",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "compare",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "money",
+        "opinion_term": "compare",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It seems to get less light to the sensors than my old 4MP A80 .",
+    "triplets": [
+      {
+        "aspect_term": "light",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "light",
+        "opinion_term": "light",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "to",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "to",
+        "opinion_term": "light",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "light",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensors",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensors",
+        "opinion_term": "light",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The 18-200 softens-up a little above 100 mm focal length compared to the very good sharpness below 100 mm but still remains usable .",
+    "triplets": [
+      {
+        "aspect_term": "sharpness",
+        "opinion_term": "below",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sharpness",
+        "opinion_term": "100",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sharpness",
+        "opinion_term": "mm",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I am getting the battery grip which should negate this problem , but the old rebel was definatly more comfortable to grip .",
+    "triplets": [
+      {
+        "aspect_term": "grip",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "comfortable",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The next thing that I noticed is that the viewfinder , swivel LCD screen , and wrist-strap eyelet are all somewhat angular in comparison to the main body of the camera , which takes away from the nicely streamlined appearance of previous generation A-model cameras .",
+    "triplets": [
+      {
+        "aspect_term": "appearance",
+        "opinion_term": "takes",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "appearance",
+        "opinion_term": "away",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "appearance",
+        "opinion_term": "from",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I find the zoom surprisingly easy to use , much more so than the D70 version .",
+    "triplets": [
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "much",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "As mentioned earlier , I had the SD400 for over 1 and a half years and the SD600 contains almost exactly the same functions and features as the SD400 except for the different screen size and higher megapixels at 2816 x 2112 .",
+    "triplets": [
+      {
+        "aspect_term": "screen",
+        "opinion_term": "different",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "different",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Selling points - In which I explain why I bought the 5D My main reason for me upgrading from 350D to 5D ( and skipping the 30D ) was the full-frame sensor .",
+    "triplets": [
+      {
+        "aspect_term": "full-frame",
+        "opinion_term": "upgrading",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "upgrading",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "This 2.5 inch screen on the 5D really has given this camera a very effective advantage over the 20D , which also sports the 1.8 inch screen .",
+    "triplets": [
+      {
+        "aspect_term": "screen",
+        "opinion_term": "advantage",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Also , the LCD does NOT allow you to preview the shot ( unlike the G2 which allows you to compose the shot ) - you only see the shot AFTER the shot is taken .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "unlike",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compared to NIKON D70 you are getting a much better deal as far as color processing .",
+    "triplets": [
+      {
+        "aspect_term": "color",
+        "opinion_term": "much",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "color",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "color",
+        "opinion_term": "deal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "processing",
+        "opinion_term": "much",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "processing",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "processing",
+        "opinion_term": "deal",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It feels like a quality camera and performs like one .",
+    "triplets": [
+      {
+        "aspect_term": "performs",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "However , the 5D costs less than HALF what the 1Ds MkII will set you back .",
+    "triplets": [
+      {
+        "aspect_term": "costs",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "As a comparison to see what a huge difference the sensor size makes on file size ... my D70 can get 291 Fine JPEGS at maximum size on a 1 GB card .",
+    "triplets": [
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "But with the bigger screen , you get no viewfinder - and that was something that I wanted , because in certain shooting situations , a viewfinder is the better choice to use over the LCD .",
+    "triplets": [
+      {
+        "aspect_term": "screen",
+        "opinion_term": "bigger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The larger size does make menu operation a little easier .",
+    "triplets": [
+      {
+        "aspect_term": "menu",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "operation",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It consists of Canon 's A530 , A540 , A620 , A630 , A640 , and A710 these cameras all have similar features , but vary in size of Megapixels and zoom features .",
+    "triplets": [
+      {
+        "aspect_term": "size",
+        "opinion_term": "vary",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "of",
+        "opinion_term": "vary",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Megapixels",
+        "opinion_term": "vary",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "With the D80 you can set the amount of time you want the camera to be in IR mode and this is a HUGE improvement .",
+    "triplets": [
+      {
+        "aspect_term": "IR",
+        "opinion_term": "HUGE",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "IR",
+        "opinion_term": "improvement",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "mode",
+        "opinion_term": "HUGE",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "mode",
+        "opinion_term": "improvement",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I did shop and compare but felt the Canon dependable name and the exchangeable lens that I already had were the the deciding factors .",
+    "triplets": [
+      {
+        "aspect_term": "name",
+        "opinion_term": "dependable",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Of course this camera does not nearly have the complexities like the 1Ds Mark II .",
+    "triplets": [
+      {
+        "aspect_term": "complexities",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "complexities",
+        "opinion_term": "nearly",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "There is extremely little shutter lag , on par with cameras more than twice it 's cost ( according to test data from Cnet and other places ) , which is perfect for night shots and action shots .",
+    "triplets": [
+      {
+        "aspect_term": "par",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Picture quality superior to anything I 've seen Full Review How should I start this ?",
+    "triplets": [
+      {
+        "aspect_term": "Picture",
+        "opinion_term": "superior",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "superior",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Despite the fact that other brands have better specs and performance than the Pentax , my pictures come out better because I feel more comfortable with it .",
+    "triplets": [
+      {
+        "aspect_term": "come",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "out",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Unlike some cameras , which use expensive proprietary batteries , you can buy AA batteries virtually anywhere .",
+    "triplets": [
+      {
+        "aspect_term": "batteries",
+        "opinion_term": "Unlike",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "If I still had the Canon Rebel XT , I would need to get the EF-S 10-22mm f3.5-4 .5 USM lens for the Rebel XT to match the focal length of the 17-40mm f4 .0 L lens on the Canon 5D .",
+    "triplets": [
+      {
+        "aspect_term": "focal",
+        "opinion_term": "match",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "length",
+        "opinion_term": "match",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I feel that the D80 gives me results closer to MY expectations of exposure .",
+    "triplets": [
+      {
+        "aspect_term": "results",
+        "opinion_term": "closer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The G7 is a great camera , do n't get me wrong , but I could not justify keeping both cameras , especially for the cost of the G7 and considering that the G7 did not produce better quality photos than the A630 ( equal in some cases , but not better ) .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "produce",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "photos",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "photos",
+        "opinion_term": "produce",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "photos",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "In addition I find that the meter is more accurate in odd lighting situations like night photography and side lighting .",
+    "triplets": [
+      {
+        "aspect_term": "meter",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "meter",
+        "opinion_term": "accurate",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Canon 's third generation Rebel XTi/EOS400D has a larger LCD ...",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Dynamic Range ( UPDATED ) The dynamic range of the D200 is nearly identical to all other digital SLRs , which means it has poor dynamic range relative to film .",
+    "triplets": [
+      {
+        "aspect_term": "dynamic",
+        "opinion_term": "identical",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "range",
+        "opinion_term": "identical",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Having been used to the older iXUS 40 , upgrading to a much larger screen felt unusual at first , but once using it after a while , I was shocked when I picked up the 40 again and almost squinted at the writing on the screen .",
+    "triplets": [
+      {
+        "aspect_term": "screen",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "They all suffer in the higher ISO ranges just like the Panasonic .",
+    "triplets": [
+      {
+        "aspect_term": "suffer",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "in",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "higher",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ranges",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "There is a definite learning curve to this , but my pictures are not nearly as yellowish and the quality is far superior than what I encountered with the Rebel XT in terms of white balance for tungsten lighting .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "superior",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I garantee you that you could not tell the difference between pictures taken with the Canon SD600 versus the Canon SD550 .",
+    "triplets": [
+      {
+        "aspect_term": "pictures",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "pictures",
+        "opinion_term": "tell",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "pictures",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "pictures",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It seems that Nikon just took the Matrix Metering off the F100 and did n't adjust for the significantly lower dynamic range of current digital sensors .",
+    "triplets": [
+      {
+        "aspect_term": "dynamic",
+        "opinion_term": "lower",
+        "aspect_sentiment_label": "negative"
+      },
+      {
+        "aspect_term": "range",
+        "opinion_term": "lower",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "The 300D and XT are still cheaply made , whatever you say .",
+    "triplets": [
+      {
+        "aspect_term": "made",
+        "opinion_term": "300D",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "and",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "XT",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "are",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "still",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "cheaply",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "made",
+        "opinion_term": "made",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Form Factor and Size : The Rebel XT is lighter and more compact than its predecessor .",
+    "triplets": [
+      {
+        "aspect_term": "predecessor",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "predecessor",
+        "opinion_term": "compact",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compared to my old Canon S1-IS , sharpness and purple fringing levels are similar .",
+    "triplets": [
+      {
+        "aspect_term": "purple",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "fringing",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "levels",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It feels just like my F100 .",
+    "triplets": [
+      {
+        "aspect_term": "feels",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I am not sure about the S3 but I believe the other cameras will take SDHC cards .",
+    "triplets": [
+      {
+        "aspect_term": "SDHC",
+        "opinion_term": "take",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "cards",
+        "opinion_term": "take",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Yes , there are thinner camera and ones with 3 inch screens , but nowhere near the performance of the Canons .",
+    "triplets": [
+      {
+        "aspect_term": "performance",
+        "opinion_term": "nowhere",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "performance",
+        "opinion_term": "near",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I looked at the Canon 20D , but it was not that much of an upgrade from the Rebel XT because it had pretty much the exact same settings as the Rebel XT .",
+    "triplets": [
+      {
+        "aspect_term": "settings",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Build quality of the body - not quite the EOS 20D , but very close .",
+    "triplets": [
+      {
+        "aspect_term": "Build",
+        "opinion_term": "close",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "close",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "of",
+        "opinion_term": "close",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "close",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "body",
+        "opinion_term": "close",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I played with the Canon SpeedLite 420 EX and encountered similar problems , albeit at different distances .",
+    "triplets": [
+      {
+        "aspect_term": "problems",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Note same sensor as the S3 , same resolution option ... I would guess that the SD630 and SD600 have the same options .",
+    "triplets": [
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I 'm not certain why Canon decided to go with a smaller size body on this one , perhaps the target market is domestic ( Japanese ) or women , but if you have larger fingers or hands you may not like it.I thought the original Rebels ' size was fine , but in any case I use the vertical battery grip much of the time anyway so it works for me .",
+    "triplets": [
+      {
+        "aspect_term": "size",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "body",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The 18-200 VR is almost as sharp in the center and has better corners .",
+    "triplets": [
+      {
+        "aspect_term": "corners",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "My Kodak was always low on battery power and I was concerned that with only the larger screen I would have problems .",
+    "triplets": [
+      {
+        "aspect_term": "screen",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "- The 10MP models produce much better detail but you will see this only on prints above 11x14 or when cropping heavily .",
+    "triplets": [
+      {
+        "aspect_term": "detail",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Image quality is excellent on both .",
+    "triplets": [
+      {
+        "aspect_term": "Image",
+        "opinion_term": "excellent",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "excellent",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "This is the first camera that I was able to get clear , focused pictures of concerts with high stage lighting , it 's a wonderful little camera and it 's video feature is one of the best I 've seen for this price .",
+    "triplets": [
+      {
+        "aspect_term": "video",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "feature",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The G7 weighs a significant 140 g less than the S3 .",
+    "triplets": [
+      {
+        "aspect_term": "weighs",
+        "opinion_term": "significant",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "weighs",
+        "opinion_term": "140",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "weighs",
+        "opinion_term": "g",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "weighs",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Mode dial for TV/AV etc : I prefer the 1 series layout .",
+    "triplets": [
+      {
+        "aspect_term": "layout",
+        "opinion_term": "prefer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The model offers additional features such as image stabilization and a 4x optical zoom ( 1x higher than the 600 and 630 ) .",
+    "triplets": [
+      {
+        "aspect_term": "4x",
+        "opinion_term": "higher",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "optical",
+        "opinion_term": "higher",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "higher",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "It is better than the powershot S50 flash .",
+    "triplets": [
+      {
+        "aspect_term": "flash",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Prints from these cameras look just about the same .",
+    "triplets": [
+      {
+        "aspect_term": "look",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The most obvious is the large , clear , high resolution LCD display ; the same display used in Canon 's $ 4000 pro equipment .",
+    "triplets": [
+      {
+        "aspect_term": "display",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compared to the D70 Anyone moving from the D70 to the D200 will be taken aback by the huge improvement in all areas .",
+    "triplets": [
+      {
+        "aspect_term": "all",
+        "opinion_term": "huge",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "all",
+        "opinion_term": "improvement",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "areas",
+        "opinion_term": "huge",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "areas",
+        "opinion_term": "improvement",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I 've taken a few pictures with the feature on and off , and ca n't seem to see a real difference , but those were under good conditions , so I 've yet to come to a solid conclusion as to whether this is more gimmick than function .",
+    "triplets": [
+      {
+        "aspect_term": "see",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Speaking of the LCD Monitor , it is substantially larger than the Rebel XT 's which has a measly 1.8 inch screen that really did not conveyed quality .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Monitor",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I have n't had any problems with the Nikon grip , even on this day of relentless rain , but it feels considerably more plasticy than the 5D 's vertical grip .",
+    "triplets": [
+      {
+        "aspect_term": "vertical",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "vertical",
+        "opinion_term": "plasticy",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "plasticy",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "This is because unlike Nikon with its standardized sensor size and a 1.5 lens conversion ratio ( that is , a 30 mm lens on a DX sensor will give an image roughly equivalent to a lens of 30 x 1.5 = 45 mm on a 35 mm camera ) , the Canon cameras have sensors of every different size from a 1.3 conversion ratio to 1.6 .",
+    "triplets": [
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "unlike",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "unlike",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Performance in the ranges from 100-400 ISO is almost identical with only slight degredation from 500-800 .",
+    "triplets": [
+      {
+        "aspect_term": "Performance",
+        "opinion_term": "identical",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The D70 does not have the benefit of an extension battery grip , but all the Canons do , so that pretty much solidified my choice in going with the Canon .",
+    "triplets": [
+      {
+        "aspect_term": "battery",
+        "opinion_term": "does",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "have",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "does",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "have",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Whereas on a Nikon , one can control almost everything without taking the hand off the grip -- with index finger on shutter release , middle finger on front control wheel , and thump on secondary control wheel , the Canon controls seem to be thrown at which ever random location .",
+    "triplets": [
+      {
+        "aspect_term": "control",
+        "opinion_term": "everything",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "without",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "taking",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "hand",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "off",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "control",
+        "opinion_term": "grip",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Canon says the change is because the G7 's 10 megapixel sensor is the same size as the 7 megapixel sensor in the G6 .",
+    "triplets": [
+      {
+        "aspect_term": "size",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "But as far as the design goes , I feel that Canon is a clear winner .",
+    "triplets": [
+      {
+        "aspect_term": "design",
+        "opinion_term": "winner",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compare the 20D , 5D 's Continuous speed is slow , also the syne speed .",
+    "triplets": [
+      {
+        "aspect_term": "Continuous",
+        "opinion_term": "slow",
+        "aspect_sentiment_label": "negative"
+      },
+      {
+        "aspect_term": "speed",
+        "opinion_term": "slow",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "I looked at the cold , hard facts and that was the Nikon D70 was at 6.3 Megapixels but with a much better , higher quality `` kit '' lens ( the Nikkor lens is $ 400 vs Canon 's $ 100 lens ) .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "higher",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Although I have no way of quantitatively measuring shutter lag , I can easily say that in my experience , this is the quickest firing digital camera I have used .",
+    "triplets": [
+      {
+        "aspect_term": "firing",
+        "opinion_term": "quickest",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "If not , then you can try checking out the Canon A-Series which I imagine would have a few more features , but slightly poorer picture quality .",
+    "triplets": [
+      {
+        "aspect_term": "features",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "SD800 records in mono only but can make longer VGA movies ) .",
+    "triplets": [
+      {
+        "aspect_term": "VGA",
+        "opinion_term": "longer",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "movies",
+        "opinion_term": "longer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The ability to save and re-call two Custom WB settings makes it easier for users to move back and forth between scenes with fundamentally different lighting ( for example indoors and outdoors ) .",
+    "triplets": [
+      {
+        "aspect_term": "scenes",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I have n't seen any photos from the A710 IS but the pro reviews usually rate the quality a little short of the A630 or A640 which have more resolution ( A640 has slightly higher resolution than the A630 ) .",
+    "triplets": [
+      {
+        "aspect_term": "photos",
+        "opinion_term": "little",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "photos",
+        "opinion_term": "short",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Canon 's software is better , especially the panoramic stitch program .",
+    "triplets": [
+      {
+        "aspect_term": "software",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The only way you can see what you 're taking is through the massive screen , and being massive , probably uses up lots more battery than usual .",
+    "triplets": [
+      {
+        "aspect_term": "battery",
+        "opinion_term": "uses",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "up",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "lots",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The flash synch for the D80 is 1/200th vs. the 1/500th of the D70 .",
+    "triplets": [
+      {
+        "aspect_term": "flash",
+        "opinion_term": "1/200th",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "synch",
+        "opinion_term": "1/200th",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The foot print is larger than either the D70 or D80 , although , not by much .",
+    "triplets": [
+      {
+        "aspect_term": "foot",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "print",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Both offer more or less the same image quality on a bright sunny day .",
+    "triplets": [
+      {
+        "aspect_term": "image",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compare to my Canon 5D , I would still say 5D has better image quality at high ISO .",
+    "triplets": [
+      {
+        "aspect_term": "image",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Still it is the best superzoom being made today , since the FZ30 is no longer made .",
+    "triplets": [
+      {
+        "aspect_term": "superzoom",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Size and Weight ( much smaller and lighter than the Nikon D70 or Canon 20D ) 3 ) .",
+    "triplets": [
+      {
+        "aspect_term": "Size",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The D200 is similarly good in this respect though the D80 seems even better , subjectively .",
+    "triplets": [
+      {
+        "aspect_term": "respect",
+        "opinion_term": "similarly",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "respect",
+        "opinion_term": "good",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Its settings also give me a wide range for color saturation , this versatility makes this camera suitable for both JPEG users and RAW editors .",
+    "triplets": [
+      {
+        "aspect_term": "range",
+        "opinion_term": "wide",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "for",
+        "opinion_term": "wide",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "color",
+        "opinion_term": "wide",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "saturation",
+        "opinion_term": "wide",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Nikon was offering a $ 200 rebate on the D70 making it compatible with the $ 999 price tag on the Rebel XT .",
+    "triplets": [
+      {
+        "aspect_term": "price",
+        "opinion_term": "compatible",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Makes it easier to focus manually and get more precise pictures and focus .",
+    "triplets": [
+      {
+        "aspect_term": "focus",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Before I got the SD450 I had the S200 so even though the SD450 did n't get great battery life , it was already a hell of a lot better to me and it seemed endless !",
+    "triplets": [
+      {
+        "aspect_term": "battery",
+        "opinion_term": "did",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "n't",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "get",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "battery",
+        "opinion_term": "great",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "life",
+        "opinion_term": "did",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "life",
+        "opinion_term": "n't",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "life",
+        "opinion_term": "get",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "life",
+        "opinion_term": "great",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Video taking has also improved , where I was able to take the baby lions at the MGM Grand in Las Vegas with remarkable clarity , despite through the glass with glare ; something digital cameras usually are not famous for .",
+    "triplets": [
+      {
+        "aspect_term": "Video",
+        "opinion_term": "improved",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "taking",
+        "opinion_term": "improved",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Specs The SD800 retains nearly the same dimensions as the SD700 at 3.52 x 2.28 x 0.99 in .",
+    "triplets": [
+      {
+        "aspect_term": "dimensions",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "XTi is able to achieve the same functions with fewer buttons , that are intuitive .",
+    "triplets": [
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "fewer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "This gives the digital cameras equipped with it an extra boost .",
+    "triplets": [
+      {
+        "aspect_term": "boost",
+        "opinion_term": "extra",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "boost",
+        "opinion_term": "boost",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "This one is of course more feature rich , but it is very difficult to use effectively .",
+    "triplets": [
+      {
+        "aspect_term": "feature",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "feature",
+        "opinion_term": "feature",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "feature",
+        "opinion_term": "rich",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Hence , performance is very similar in normal daylight ( good ) , indoors ( excellent ) and direct sunlight ( poor ) .",
+    "triplets": [
+      {
+        "aspect_term": "performance",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "18-135 is the worst , followed by 18-200 then the 18-70 and the 18-55 , which is the best in terms of distortion .",
+    "triplets": [
+      {
+        "aspect_term": "distortion",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Firmware upgrades exactly as D70s , yet big deal 2 '' LCD , instead of 1.8 !",
+    "triplets": [
+      {
+        "aspect_term": "Firmware",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "upgrades",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The D200 does this at about one third the price of the D2X too .",
+    "triplets": [
+      {
+        "aspect_term": "price",
+        "opinion_term": "one",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "price",
+        "opinion_term": "third",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Well grip a little smaller but even then I have n't find any difficulty handling it .",
+    "triplets": [
+      {
+        "aspect_term": "grip",
+        "opinion_term": "little",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "grip",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I would only recommend not getting it if you plan on getting a higher quality wide-angle lens ( many users on forums who buy a nicer lens end up selling it on ebay or leaving it on their shelf ) .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "higher",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "D80 has more buttons and dials than Xti and yet most adjustments need two button operation .",
+    "triplets": [
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Just worth mentioning since it 's a pretty significant difference in the menu .",
+    "triplets": [
+      {
+        "aspect_term": "menu",
+        "opinion_term": "significant",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "menu",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Stolen features from Canon 30D : It has the same 9-point autofocus system as the 30D and can take almost the same amount of continuous burst JPEG shots ... coming in at 27 next to 30D 's 30 .",
+    "triplets": [
+      {
+        "aspect_term": "burst",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "JPEG",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "shots",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Canon 's on-board flashes have never had the same metering as the add-on external flashes , whereas with the D80 , the built-in flash gave absolutely perfect exposures .",
+    "triplets": [
+      {
+        "aspect_term": "metering",
+        "opinion_term": "have",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "never",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "had",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "metering",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I would even say that the SD700 had less blurring taking such photos compared to my S70 ( 7.1 MP camera utilizing the DIGIC 1 processor ) .",
+    "triplets": [
+      {
+        "aspect_term": "blurring",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Also , diffraction-limited softness kicks-in sooner ( about 1 stop or so ) than with the 6MP models .",
+    "triplets": [
+      {
+        "aspect_term": "softness",
+        "opinion_term": "sooner",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "In general everything is laid out in a very traditional way just like the D70 but there have been a few tweaks on the outside that stand out .",
+    "triplets": [
+      {
+        "aspect_term": "outside",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The front dial was lacking in the D50 and I 'm glad it 's on the D80 .",
+    "triplets": [
+      {
+        "aspect_term": "front",
+        "opinion_term": "lacking",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "dial",
+        "opinion_term": "lacking",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "What I do n't like is the layout of the controls - which I am getting used to but , I much prefer the layout of controls on the 1Ds compared to the 20D - the 5D seems to have more of the 20D 's design .",
+    "triplets": [
+      {
+        "aspect_term": "layout",
+        "opinion_term": "prefer",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "of",
+        "opinion_term": "prefer",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "controls",
+        "opinion_term": "prefer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The `` warm '' color setting produces results I like much better , and looks closer to what other camera brands like Canon produce by default .",
+    "triplets": [
+      {
+        "aspect_term": "results",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Some compression artifacts are visible , but they are not as bad as many other digicams .",
+    "triplets": [
+      {
+        "aspect_term": "compression",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "compression",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "compression",
+        "opinion_term": "bad",
+        "aspect_sentiment_label": "negative"
+      },
+      {
+        "aspect_term": "artifacts",
+        "opinion_term": "not",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "artifacts",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "artifacts",
+        "opinion_term": "bad",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "This is important in daylight fill-flash use where the 6MP models give significantly more latitude to use flash as fill light and still maintain high shutter speed to freeze motion .",
+    "triplets": [
+      {
+        "aspect_term": "flash",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "flash",
+        "opinion_term": "latitude",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The XT 's big brother , the 20D , is a fantastic camera but at a $ 600 premium I found I could do with a slower burst speed and fewer Auto Focus points .",
+    "triplets": [
+      {
+        "aspect_term": "Auto",
+        "opinion_term": "fewer",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Focus",
+        "opinion_term": "fewer",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "points",
+        "opinion_term": "fewer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "D80 gave the option of adjusting ISO sensitivity in small increments as opposed to only doubling on XTi and I think that is a nice feature on D80 .",
+    "triplets": [
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "gave",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "option",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "of",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "adjusting",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "ISO",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "sensitivity",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "in",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "small",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "increments",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "gave",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "option",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "of",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "adjusting",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "ISO",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "sensitivity",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "in",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "small",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensitivity",
+        "opinion_term": "increments",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The D200 autofocus seems to perform similarly to the D80 , with some users reporting a stronger autofocus motor on the D200 , which is important if using `` screwdriven '' lenses without AF-S ( I have conclusion one way or another as I did not get a chance to compare too much for this ) .",
+    "triplets": [
+      {
+        "aspect_term": "autofocus",
+        "opinion_term": "stronger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "motor",
+        "opinion_term": "stronger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Full Review The Canon PowerShot SD630 is basically the exact same camera as the PowerShot SD600 , minus an optical viewfinder and plus a half-inch diagonally of LCD real-estate .",
+    "triplets": [
+      {
+        "aspect_term": "camera",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "For another reason the noise at high ISO settings of this camera is less than the Canon 400D .",
+    "triplets": [
+      {
+        "aspect_term": "noise",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "at",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "high",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "ISO",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "settings",
+        "opinion_term": "less",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "If I were to do it all over again , I would have also considered the Olympus Stylus 600 , which is perhaps a better value than the SD600 .",
+    "triplets": [
+      {
+        "aspect_term": "value",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "I know the functionality of the 20 is better , especially being able to navigate through the settings better than the Rebel XT , but everything else the Rebel XT was able to compete nicely with it 's bigger , older brother .",
+    "triplets": [
+      {
+        "aspect_term": "functionality",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "Write to card and shot to shot times ( 1.6 seconds ) are about the same as the G6 , conspicuously faster than average .",
+    "triplets": [
+      {
+        "aspect_term": "times",
+        "opinion_term": "faster",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The way in which it does match the higher end cameras though is in potential image quality .",
+    "triplets": [
+      {
+        "aspect_term": "image",
+        "opinion_term": "match",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "match",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Although it still is having slightly lower resolution than the 5D , i felt that the smaller chipsize has a very big advantage : most lenses show noticeable chromatic aberration when used with the 5D , this camera picks up the center of the image circle of the lenses , which is mainly free from this aberration .",
+    "triplets": [
+      {
+        "aspect_term": "resolution",
+        "opinion_term": "lower",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "Who in his or her right mind would expect a full frame sensor to shoot as fast as a 20D which , admittedly , would be `` nice '' ?",
+    "triplets": [
+      {
+        "aspect_term": "shoot",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "shoot",
+        "opinion_term": "fast",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "If you are using the G-type lenses with no aperture ring , the camera lets you adjust the aperture value of the lens by rotating the thumb wheel - the sam e system used on the film Nikon N55 camera .",
+    "triplets": [
+      {
+        "aspect_term": "system",
+        "opinion_term": "sam",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "system",
+        "opinion_term": "e",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The D80 is an incredible camera with one of the easiest Digital menus in an SLR today .",
+    "triplets": [
+      {
+        "aspect_term": "Digital",
+        "opinion_term": "easiest",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "menus",
+        "opinion_term": "easiest",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "BUILD The 5D chassis is based on a magnesium alloy and stainless steel and is similar to the EOS 20D although it is a lot heavier and feels more solid in my hand .",
+    "triplets": [
+      {
+        "aspect_term": "chassis",
+        "opinion_term": "similar",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I have also found the quality of the Carl Zeiss lens to be unequal in different models .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "of",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Carl",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Zeiss",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "lens",
+        "opinion_term": "unequal",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Processor and sensor : The Rebel XT uses the second generation DIGIC II processor and has a 8 megapixel CMOS sensor ( vs. 6 megapixel of Rebel 300D . )",
+    "triplets": [
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "has",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "a",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "8",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "megapixel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "CMOS",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "sensor",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "(",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "vs.",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "6",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "megapixel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "of",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "Rebel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": "300D",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": ".",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "CMOS",
+        "opinion_term": ")",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "has",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "a",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "8",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "megapixel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "CMOS",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "sensor",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "(",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "vs.",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "6",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "megapixel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "of",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "Rebel",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": "300D",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": ".",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sensor",
+        "opinion_term": ")",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The MB-D200 is no exception ; besides doubling the battery power and therefore the number of shots between charges , the MB-D200 also greatly improves the overall handling characteristics of the D200 .",
+    "triplets": [
+      {
+        "aspect_term": "overall",
+        "opinion_term": "improves",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "handling",
+        "opinion_term": "improves",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "characteristics",
+        "opinion_term": "improves",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I really like the layout of the controls over other cameras I have tested .",
+    "triplets": [
+      {
+        "aspect_term": "layout",
+        "opinion_term": "over",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "of",
+        "opinion_term": "over",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "the",
+        "opinion_term": "over",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "controls",
+        "opinion_term": "over",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The EOS 5D body is approximate in dimensions and weight to the EOS 20D while having a larger 2.5 '' LCD view screen .",
+    "triplets": [
+      {
+        "aspect_term": "weight",
+        "opinion_term": "approximate",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Even though there is a significant price difference , just because of the larger screen , I seem to think it is well worth it .",
+    "triplets": [
+      {
+        "aspect_term": "price",
+        "opinion_term": "significant",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "price",
+        "opinion_term": "price",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "price",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "- Focus speed : all three focus silently and quick .",
+    "triplets": [
+      {
+        "aspect_term": "focus",
+        "opinion_term": "silently",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "focus",
+        "opinion_term": "and",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "focus",
+        "opinion_term": "quick",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": ", a larger LCD so I can actually read the menu items without my glasses , and finally - it fits in my purse .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The LCD is 1.8 inches and the view finder is about 10 % smaller than the 20D .",
+    "triplets": [
+      {
+        "aspect_term": "view",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "finder",
+        "opinion_term": "smaller",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "A definite step-up from the D50/D70/D70s which did not have an RGB histogram .",
+    "triplets": [
+      {
+        "aspect_term": "RGB",
+        "opinion_term": "step-up",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "histogram",
+        "opinion_term": "step-up",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The quality is better than those we had with less pixels .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "It 's one of my best purchases ever .",
+    "triplets": [
+      {
+        "aspect_term": "purchases",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "However , the 5D ( like the 20D ) has a very bright color LCD display ( by default ) which can give the user a false impression of how well the image is exposed .",
+    "triplets": [
+      {
+        "aspect_term": "color",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "display",
+        "opinion_term": "like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The LCD is nicer and more importantly offers 100 % zoom ( in fact more than that , but then things get pixellated ) .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "nicer",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The only difference is that canon adds a higher resolution sensor and a wider lens .",
+    "triplets": [
+      {
+        "aspect_term": "lens",
+        "opinion_term": "wider",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "After researching between the Nikon D50 , D70S , and Canon Rebel XT cameras I decided on the D50 because of its size , weight , and features .",
+    "triplets": [
+      {
+        "aspect_term": "size",
+        "opinion_term": "decided",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "on",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "the",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "size",
+        "opinion_term": "D50",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Unfortunately , all of these digital cameras have a finite life span or this could be a classic .",
+    "triplets": [
+      {
+        "aspect_term": "life",
+        "opinion_term": "finite",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "span",
+        "opinion_term": "finite",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I wanted a camera that would perform as well as the sd700 but with a 28 mm wide angle lens which i have been waiting for ...",
+    "triplets": [
+      {
+        "aspect_term": "perform",
+        "opinion_term": "as",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "perform",
+        "opinion_term": "well",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "But the Nikon D40 has a much shorter zoom , and I 'd miss the telephoto ability I 've gotten used to ( it is 18-55 , equal to 27-82 in standard measurements , and compared to the A630 's 35-140 ) .",
+    "triplets": [
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "shorter",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "It even has some advantages over the 1Ds ( size , weight , batteries ) .",
+    "triplets": [
+      {
+        "aspect_term": "size",
+        "opinion_term": "advantages",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The E-TTL metering works pefectly , even better than my 350D .",
+    "triplets": [
+      {
+        "aspect_term": "E-TTL",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      },
+      {
+        "aspect_term": "metering",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "The LCD screen is a bit sharper , the 3-way mode selector switch feels more solid , and of course , it has an extra megapixel for improved image clarity .",
+    "triplets": [
+      {
+        "aspect_term": "megapixel",
+        "opinion_term": "extra",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The buttons around the preview screen are flat and nice contrary to the D-80 where they are small and round .",
+    "triplets": [
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "small",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "and",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "round",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Stick with your D70 , it is much better value .",
+    "triplets": [
+      {
+        "aspect_term": "value",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "I quickly started using the more advanced modes .",
+    "triplets": [
+      {
+        "aspect_term": "advanced",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "modes",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Compact Flash : There 's nothing about it that makes the images worse quality than an SD or the likes , it 's just bigger and more expensive , which is never good .",
+    "triplets": [
+      {
+        "aspect_term": "images",
+        "opinion_term": "nothing",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "images",
+        "opinion_term": "worse",
+        "aspect_sentiment_label": "negative"
+      }
+    ]
+  },
+  {
+    "sentence": "The controls are situated differently including a switch located on top near the shutter button .",
+    "triplets": [
+      {
+        "aspect_term": "situated",
+        "opinion_term": "differently",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "IT HAS A 2.5 '' LCD rewiew area , a 92 % increase over the 20D .",
+    "triplets": [
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "92",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "%",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "LCD",
+        "opinion_term": "increase",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "rewiew",
+        "opinion_term": "92",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "rewiew",
+        "opinion_term": "%",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "rewiew",
+        "opinion_term": "increase",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "area",
+        "opinion_term": "92",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "area",
+        "opinion_term": "%",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "area",
+        "opinion_term": "increase",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The Bottom Line I 'm getting the best pics in my many years of taking many thousands of pics .",
+    "triplets": [
+      {
+        "aspect_term": "pics",
+        "opinion_term": "best",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "I find this camera to be of the highest quality .",
+    "triplets": [
+      {
+        "aspect_term": "quality",
+        "opinion_term": "highest",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  },
+  {
+    "sentence": "It 's not as bulky as a SLR and it has a few more functions and nicer image quality you would expect from a small compact camera .",
+    "triplets": [
+      {
+        "aspect_term": "functions",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I do n't recall if I mentioned this earlier but the menu buttons on the D200 are much larger than on the D1X .",
+    "triplets": [
+      {
+        "aspect_term": "menu",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "buttons",
+        "opinion_term": "larger",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Like the rest of the SD series cameras , there is no RAW format option .",
+    "triplets": [
+      {
+        "aspect_term": "RAW",
+        "opinion_term": "Like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "format",
+        "opinion_term": "Like",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "option",
+        "opinion_term": "Like",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Image quality difference between the Rebel XT and the 20D is non-existent in my amateur eyes .",
+    "triplets": [
+      {
+        "aspect_term": "Image",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "Image",
+        "opinion_term": "non-existent",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "difference",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "quality",
+        "opinion_term": "non-existent",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "But I think it 's increased durability and weather sealing makes me comfortable about going for the shot .",
+    "triplets": [
+      {
+        "aspect_term": "weather",
+        "opinion_term": "increased",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "sealing",
+        "opinion_term": "increased",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The zoom is a bit noisier than the other three cameras I tested .",
+    "triplets": [
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "a",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "bit",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "zoom",
+        "opinion_term": "noisier",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "For professionals , this camera makes a great backup D-SLR , and is easier to take around than the 20D , and still has the same image quality .",
+    "triplets": [
+      {
+        "aspect_term": "take",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "around",
+        "opinion_term": "easier",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Canon keeps putting the same old controls on every camera they make .",
+    "triplets": [
+      {
+        "aspect_term": "controls",
+        "opinion_term": "same",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Another tidbit is that the D80 does n't have that slightly soft focus the D200 and previous models share .",
+    "triplets": [
+      {
+        "aspect_term": "soft",
+        "opinion_term": "share",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "focus",
+        "opinion_term": "share",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Naturally , that improves setting speed greatly and allows to focus more on the picture .",
+    "triplets": [
+      {
+        "aspect_term": "picture",
+        "opinion_term": "focus",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "picture",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "Previously owning a D50 and using a D200 for a month ( my Dad 's ) the D80 is closer to the D200 as far as functionality and overall picture quality , even though it 's almost $ 400 less than the D200 .",
+    "triplets": [
+      {
+        "aspect_term": "functionality",
+        "opinion_term": "closer",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The viewfinder of the D200 may be the single most improved area at this price point .",
+    "triplets": [
+      {
+        "aspect_term": "viewfinder",
+        "opinion_term": "most",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "viewfinder",
+        "opinion_term": "improved",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "The hot shoe in the G7 is useful for a more powerful flash and a better position to reduce red eye .",
+    "triplets": [
+      {
+        "aspect_term": "flash",
+        "opinion_term": "more",
+        "aspect_sentiment_label": "neutral"
+      },
+      {
+        "aspect_term": "flash",
+        "opinion_term": "powerful",
+        "aspect_sentiment_label": "neutral"
+      }
+    ]
+  },
+  {
+    "sentence": "I get better results off my much older Sony Cybershot DSP-70 .",
+    "triplets": [
+      {
+        "aspect_term": "results",
+        "opinion_term": "better",
+        "aspect_sentiment_label": "positive"
+      }
+    ]
+  }
+]
