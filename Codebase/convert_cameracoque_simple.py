@@ -1,11 +1,20 @@
 """
-Convert cameraCOQE ASTE to training format (simplified - no NLTK dependency)
+Convert cameraCOQE ASTE to training format with spaCy dependency parsing
 Format: entities (type, start, end) and sentiments (type, head, tail)
 """
 
 import json
 import os
 import re
+import spacy
+
+# Load spaCy English model
+try:
+    nlp = spacy.load("en_core_web_sm")
+except:
+    print("Warning: en_core_web_sm not found. Installing...")
+    os.system("python -m spacy download en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 
 def simple_tokenize(sentence):
@@ -13,6 +22,39 @@ def simple_tokenize(sentence):
     # Split by whitespace and keep punctuation
     tokens = sentence.split()
     return tokens
+
+
+def extract_dependency_from_spacy(sentence, tokens):
+    """
+    Extract dependency relations from spaCy
+    Returns list of [relation_type, head_idx, dependent_idx]
+    """
+    doc = nlp(sentence)
+    
+    # Build token mapping (spaCy tokens may differ from our simple tokenization)
+    # Use spaCy's tokenization for dependency
+    dependencies = []
+    
+    for token in doc:
+        if token.head == token:
+            # Root
+            dep_rel = "ROOT"
+        else:
+            dep_rel = token.dep_
+        
+        # Try to find corresponding indices in our token list
+        try:
+            # Get head token index
+            head_idx = token.head.i
+            token_idx = token.i
+            
+            # Only add if both indices are valid
+            if head_idx < len(tokens) and token_idx < len(tokens):
+                dependencies.append([dep_rel, head_idx, token_idx])
+        except:
+            pass
+    
+    return dependencies
 
 
 def find_token_indices(tokens, target_text):
@@ -42,6 +84,9 @@ def convert_cameracoque_to_training_format(cameracoque_aste_samples):
         
         # Tokenize
         tokens = simple_tokenize(sentence)
+        
+        # Extract dependency using spaCy
+        dependency = extract_dependency_from_spacy(sentence, tokens)
         
         # Build entities
         entities = []
@@ -124,11 +169,7 @@ def convert_cameracoque_to_training_format(cameracoque_aste_samples):
         # Create simple POS tags (all NN for simplicity)
         pos = [[token, 'NN'] for token in tokens]
         
-        # Create simple dependency structure (chain with self-loops)
-        # Format: [["ROOT", 0, 1], ["dep", head_idx, dep_idx], ...]
-        dependency = [["ROOT", 0, 1]]  # First token as root
-        for i in range(1, len(tokens)):
-            dependency.append(["dep", i, i+1])  # Chain dependency
+        # dependency is already extracted from spaCy above
         
         output = {
             "entities": entities,
