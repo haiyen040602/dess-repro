@@ -124,10 +124,18 @@ def convert_cameracoque_to_training_format(cameracoque_aste_samples):
         # Create simple POS tags (all NN for simplicity)
         pos = [[token, 'NN'] for token in tokens]
         
+        # Create simple dependency structure (chain with self-loops)
+        # Format: [["ROOT", 0, 1], ["dep", head_idx, dep_idx], ...]
+        dependency = [["ROOT", 0, 1]]  # First token as root
+        for i in range(1, len(tokens)):
+            dependency.append(["dep", i, i+1])  # Chain dependency
+        
         output = {
             "entities": entities,
             "sentiments": sentiments,
+            "tokens": tokens,
             "pos": pos,
+            "dependency": dependency,
             "orig_id": f"cameracoque:{sample_idx}"
         }
         
