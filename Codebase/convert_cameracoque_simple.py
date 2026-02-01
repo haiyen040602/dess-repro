@@ -135,9 +135,18 @@ def convert_cameracoque_to_training_format(cameracoque_aste_samples):
             opinion = triplet['opinion_term']
             sentiment_label = triplet['aspect_sentiment_label'].upper()
             
-            # Map to POSITIVE/NEGATIVE/NEUTRAL if needed
-            if sentiment_label not in ['POSITIVE', 'NEGATIVE', 'NEUTRAL']:
-                sentiment_label = 'NEUTRAL'
+            # Map to valid sentiment labels (BETTER/EQUAL/WORSE/DIFFERENT)
+            # Backward compat: map old labels to new ones
+            label_map = {
+                'POSITIVE': 'BETTER',
+                'NEGATIVE': 'WORSE',
+                'NEUTRAL': 'EQUAL',
+                'BETTER': 'BETTER',
+                'EQUAL': 'EQUAL',
+                'WORSE': 'WORSE',
+                'DIFFERENT': 'DIFFERENT'
+            }
+            sentiment_label = label_map.get(sentiment_label, 'EQUAL')
             
             # Find entity indices
             aspect_indices = find_token_indices(tokens, aspect)

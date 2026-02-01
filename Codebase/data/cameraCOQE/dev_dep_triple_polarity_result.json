@@ -14,7 +14,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -212,7 +212,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -340,7 +340,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -588,7 +588,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -986,7 +986,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -1219,12 +1219,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 2
       }
@@ -1527,12 +1527,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -1830,7 +1830,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -2278,7 +2278,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -2396,7 +2396,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -2684,7 +2684,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -2957,17 +2957,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 4
       }
@@ -3165,7 +3165,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -3363,7 +3363,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -3481,7 +3481,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -3689,7 +3689,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -3957,7 +3957,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -4110,12 +4110,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 2,
         "tail": 1
       }
@@ -4608,7 +4608,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -4861,7 +4861,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -5114,12 +5114,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 2,
         "tail": 1
       }
@@ -5297,7 +5297,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -5490,12 +5490,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -5733,17 +5733,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 2
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 3
       }
@@ -6051,7 +6051,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -6489,7 +6489,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -6637,7 +6637,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -7105,7 +7105,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -7358,7 +7358,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -7576,7 +7576,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -7884,7 +7884,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -8132,7 +8132,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -8430,7 +8430,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -8798,7 +8798,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -8896,7 +8896,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -9124,22 +9124,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 4,
         "tail": 5
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 6,
         "tail": 7
       }
@@ -9947,7 +9947,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -10045,7 +10045,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -10193,7 +10193,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -10311,7 +10311,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -10459,12 +10459,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -10762,7 +10762,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -10985,12 +10985,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -11183,22 +11183,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 4
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 5,
         "tail": 6
       }
@@ -11476,7 +11476,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -11619,12 +11619,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 2,
         "tail": 1
       }
@@ -12052,22 +12052,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -12295,7 +12295,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -12528,12 +12528,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -12721,7 +12721,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -12819,7 +12819,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -13197,7 +13197,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -13465,7 +13465,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -13633,7 +13633,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -13926,27 +13926,27 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 4
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 5,
         "tail": 6
       }
@@ -14804,7 +14804,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -14932,7 +14932,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -15130,12 +15130,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -15518,12 +15518,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 2,
         "tail": 1
       }
@@ -15696,12 +15696,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -16114,12 +16114,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 2
       }
@@ -16372,12 +16372,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -16645,7 +16645,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -16903,7 +16903,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -17231,7 +17231,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -17389,7 +17389,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -18017,7 +18017,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -18405,12 +18405,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -18753,12 +18753,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 2
       }
@@ -18906,7 +18906,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -19114,7 +19114,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -19427,7 +19427,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -19725,7 +19725,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -19898,12 +19898,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 2
       }
@@ -20156,12 +20156,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -20399,12 +20399,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -20542,7 +20542,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -20790,7 +20790,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -20973,12 +20973,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -21306,7 +21306,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -21594,7 +21594,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -21762,12 +21762,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -22105,7 +22105,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -22473,7 +22473,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -22641,7 +22641,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -22869,7 +22869,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -23017,7 +23017,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -23215,7 +23215,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -23363,7 +23363,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -23666,7 +23666,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -23894,22 +23894,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -24317,12 +24317,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -24430,7 +24430,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -24648,7 +24648,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -24856,7 +24856,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -25274,7 +25274,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -25552,7 +25552,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -25840,7 +25840,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -26268,12 +26268,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -26841,7 +26841,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -27039,7 +27039,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -27217,7 +27217,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -27465,7 +27465,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -27623,17 +27623,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -27831,7 +27831,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -28049,7 +28049,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -28377,7 +28377,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -28620,12 +28620,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 2
       }
@@ -29178,17 +29178,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 4
       }
@@ -29446,7 +29446,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -29734,7 +29734,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -29902,7 +29902,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -30045,7 +30045,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -30473,7 +30473,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -30636,17 +30636,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 4,
         "tail": 1
       }
@@ -30904,12 +30904,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 2,
         "tail": 3
       }
@@ -31232,7 +31232,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -31410,7 +31410,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -31648,7 +31648,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -31926,7 +31926,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -32064,7 +32064,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -32282,12 +32282,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 2,
         "tail": 3
       }
@@ -32610,7 +32610,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -32983,12 +32983,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -33296,12 +33296,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -33829,7 +33829,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -34247,7 +34247,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -34465,7 +34465,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -34773,7 +34773,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -35016,12 +35016,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -35224,12 +35224,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -35487,12 +35487,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -35700,7 +35700,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -35978,12 +35978,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -36481,7 +36481,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -36769,7 +36769,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -37017,7 +37017,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -37325,22 +37325,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -37628,7 +37628,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -38316,7 +38316,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -38524,7 +38524,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -38667,17 +38667,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -38965,7 +38965,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -39213,7 +39213,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -39346,12 +39346,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 2,
         "tail": 1
       }
@@ -39644,7 +39644,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -39802,7 +39802,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -40040,7 +40040,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -40178,7 +40178,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -40466,7 +40466,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -40664,7 +40664,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -40842,7 +40842,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -40990,17 +40990,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 3,
         "tail": 1
       }
@@ -41198,12 +41198,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -41391,7 +41391,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -41559,7 +41559,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -41847,7 +41847,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -42295,7 +42295,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -42503,7 +42503,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -43001,22 +43001,22 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -43204,7 +43204,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -43372,7 +43372,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -43540,7 +43540,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -43803,7 +43803,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -43961,7 +43961,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -44159,7 +44159,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -44587,7 +44587,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -44965,7 +44965,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -45173,7 +45173,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -45296,7 +45296,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -45564,7 +45564,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -45892,7 +45892,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -46240,7 +46240,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -46458,12 +46458,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -46666,7 +46666,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -46879,7 +46879,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -47057,12 +47057,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "DIFFERENT",
         "head": 2,
         "tail": 3
       }
@@ -47620,7 +47620,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -47758,7 +47758,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -48106,7 +48106,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -48284,7 +48284,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -48607,17 +48607,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 3,
         "tail": 4
       }
@@ -48795,7 +48795,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -49033,7 +49033,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -49236,12 +49236,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 2
       }
@@ -49619,7 +49619,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -49872,12 +49872,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -50035,7 +50035,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -50268,12 +50268,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -50511,7 +50511,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -50749,17 +50749,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 4,
         "tail": 5
       }
@@ -51097,12 +51097,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -51385,12 +51385,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -51578,7 +51578,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -51871,7 +51871,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -52134,7 +52134,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -52337,7 +52337,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -52525,7 +52525,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -52683,7 +52683,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -53021,7 +53021,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -53169,17 +53169,17 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 2,
         "tail": 3
       }
@@ -53457,22 +53457,22 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -53770,7 +53770,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -53928,7 +53928,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -54166,7 +54166,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -54284,7 +54284,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -54582,7 +54582,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -54860,12 +54860,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -55113,7 +55113,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -55271,7 +55271,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -55479,7 +55479,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -55837,12 +55837,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 2,
         "tail": 3
       }
@@ -56250,7 +56250,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -56508,12 +56508,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -56831,7 +56831,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -57029,12 +57029,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -57417,7 +57417,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -57585,7 +57585,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -57733,7 +57733,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -57876,17 +57876,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 4,
         "tail": 3
       }
@@ -58184,17 +58184,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 3,
         "tail": 1
       }
@@ -58582,7 +58582,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -58850,7 +58850,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -59123,12 +59123,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 1
       }
@@ -59346,7 +59346,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       }
@@ -59474,7 +59474,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -59712,7 +59712,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -60170,7 +60170,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -60308,7 +60308,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -60786,7 +60786,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -61764,7 +61764,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -62322,12 +62322,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -62605,7 +62605,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -62883,12 +62883,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -63386,22 +63386,22 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 4,
         "tail": 5
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 6,
         "tail": 7
       }
@@ -63899,12 +63899,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -64082,7 +64082,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -64290,12 +64290,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -64508,12 +64508,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -64761,7 +64761,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -65099,7 +65099,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -65467,17 +65467,17 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -65630,7 +65630,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -65928,7 +65928,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -66046,7 +66046,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -66204,7 +66204,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -66527,12 +66527,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 2
       }
@@ -66720,7 +66720,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -66953,7 +66953,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -67181,7 +67181,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -67349,7 +67349,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -67607,7 +67607,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -67895,7 +67895,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -68043,7 +68043,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -68421,7 +68421,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -68564,12 +68564,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "EQUAL",
         "head": 2,
         "tail": 1
       }
@@ -68767,7 +68767,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -68915,12 +68915,12 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -69218,7 +69218,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -69336,7 +69336,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 0,
         "tail": 1
       }
@@ -69554,7 +69554,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -69872,12 +69872,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "NEUTRAL",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }
@@ -70305,7 +70305,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEGATIVE",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -70413,7 +70413,7 @@
     ],
     "sentiments": [
       {
-        "type": "POSITIVE",
+        "type": "WORSE",
         "head": 0,
         "tail": 1
       }
@@ -70561,7 +70561,7 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "EQUAL",
         "head": 0,
         "tail": 1
       }
@@ -70759,12 +70759,12 @@
     ],
     "sentiments": [
       {
-        "type": "NEUTRAL",
+        "type": "DIFFERENT",
         "head": 0,
         "tail": 1
       },
       {
-        "type": "POSITIVE",
+        "type": "BETTER",
         "head": 2,
         "tail": 3
       }

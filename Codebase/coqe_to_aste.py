@@ -125,44 +125,35 @@ def convert_coqe_to_aste(coqe_text, subjects, objects, predicates, sentiments):
     return triplets
 
 
-def determine_sentiment(sentiment_text, context=""):
+def determine_sentiment(sentiment_text, context="", comparator=None):
     """
-    Determine sentiment label from text using VADER sentiment analyzer
-    For COQE, need to infer if comparative is positive/negative
+    Determine sentiment label from comparator (ground truth) or text (fallback)
+    Comparator values:
+      1: better/superior → BETTER
+      0: equal/same → EQUAL
+     -1: worse/inferior → WORSE
+      2: different → DIFFERENT
     """
-    # Combine sentiment text with context for better analysis
-    full_text = f"{context} {sentiment_text}" if context else sentiment_text
+    if comparator is not None:
+        comp_map = {
+            1: 'BETTER',
+            0: 'EQUAL',
+            -1: 'WORSE',
+            2: 'DIFFERENT'
+        }
+        return comp_map.get(comparator, 'EQUAL')
     
-    # Use VADER to get sentiment scores
+    # Fallback: VADER-based (nếu comparator không có)
+    full_text = f"{context} {sentiment_text}" if context else sentiment_text
     scores = vader_analyzer.polarity_scores(full_text)
     compound = scores['compound']
     
-    # VADER compound score interpretation:
-    # compound >= 0.05: positive
-    # compound <= -0.05: negative  
-    # -0.05 < compound < 0.05: neutral
-    
-    # For comparative opinions, use more sensitive thresholds
-    if compound >= 0.1:  # More conservative threshold for positive
-        return 'positive'
-    elif compound <= -0.1:  # More conservative threshold for negative
-        return 'negative'
+    if compound >= 0.1:
+        return 'BETTER'
+    elif compound <= -0.1:
+        return 'WORSE'
     else:
-        # Fallback to keyword-based for borderline cases
-        sentiment_text_lower = sentiment_text.lower()
-        positive_words = {'good', 'great', 'excellent', 'best', 'better', 'nice', 'high', 
-                          'faster', 'higher', 'sharper', 'brighter', 'clearer', 'superior', 
-                          'improved', 'stronger', 'longer', 'easier', 'smoother'}
-        negative_words = {'bad', 'poor', 'worse', 'worst', 'slow', 'slower', 'lower', 
-                          'blurry', 'dull', 'dark', 'cheaper', 'weak', 'inferior', 
-                          'harder', 'difficult', 'complicated', 'shorter'}
-        
-        if any(word in sentiment_text_lower for word in positive_words):
-            return 'positive'
-        elif any(word in sentiment_text_lower for word in negative_words):
-            return 'negative'
-        else:
-            return 'neutral'
+        return 'EQUAL'
 
 
 def parse_coqe_file(filepath):
@@ -258,6 +249,7 @@ def create_aste_format(coqe_samples_list):
         sent_spans = extract_spans(coqe_sample['sentiments'])
         subj_spans = extract_spans(coqe_sample['subjects'])
         obj_spans = extract_spans(coqe_sample['objects'])
+        comp_spans = extract_spans(coqe_sample['comparators'])
         
         # Fallback: if no pred/sent, try subject/object
         if not pred_spans and subj_spans:
@@ -272,7 +264,16 @@ def create_aste_format(coqe_samples_list):
             pred_text = ' '.join([word for idx, word in sorted(pred_spans)])
             sent_text = ' '.join([word for idx, word in sorted(sent_spans)])
             
-            sentiment_label = determine_sentiment(sent_text, context=pred_text)
+            # Extract comparator value (comparators field is just [value], not indexed)
+            comparator = None
+            if coqe_sample['comparators']:
+                try:
+                    # comparators is list like ['0'] or ['1'], not indexed like ['9&&battery']
+                    comparator = int(coqe_sample['comparators'][0])
+                except:
+                    comparator = None
+            
+            sentiment_label = determine_sentiment(sent_text, context=pred_text, comparator=comparator)
             
             triplet = {
                 "aspect_term": pred_text,

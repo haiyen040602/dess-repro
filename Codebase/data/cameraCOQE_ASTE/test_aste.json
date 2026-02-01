@@ -5,7 +5,7 @@
       {
         "aspect_term": "Fuji film camera",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -17,12 +17,12 @@
       {
         "aspect_term": "LCD monitor",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "view finder",
         "opinion_term": "does n't have",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -34,7 +34,7 @@
       {
         "aspect_term": "digital DSRL",
         "opinion_term": "Better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -46,7 +46,7 @@
       {
         "aspect_term": "manual controls",
         "opinion_term": "Like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -58,27 +58,27 @@
       {
         "aspect_term": "AF",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "images",
         "opinion_term": "sharper",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "buffer",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "white balance adjustments",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "ISO noise",
         "opinion_term": "lower",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -90,7 +90,7 @@
       {
         "aspect_term": "build quality",
         "opinion_term": "different",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -102,7 +102,7 @@
       {
         "aspect_term": "focus accuracy",
         "opinion_term": "not as impressive",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -114,12 +114,12 @@
       {
         "aspect_term": "Size",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Weight",
         "opinion_term": "lighter",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -131,7 +131,7 @@
       {
         "aspect_term": "Canon 5D",
         "opinion_term": "considered",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -143,7 +143,7 @@
       {
         "aspect_term": "start-up",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -155,17 +155,17 @@
       {
         "aspect_term": "focus",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "evaluate scenes",
         "opinion_term": "quicker",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "adapt its settings",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -177,17 +177,17 @@
       {
         "aspect_term": "controls",
         "opinion_term": "more accessible",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "build",
         "opinion_term": "more solid",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "image quality",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -199,22 +199,22 @@
       {
         "aspect_term": "price",
         "opinion_term": "half",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "price",
         "opinion_term": "half",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "price",
         "opinion_term": "half",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "price",
         "opinion_term": "half",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -226,7 +226,7 @@
       {
         "aspect_term": "capability",
         "opinion_term": "did not have this capability",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -238,12 +238,12 @@
       {
         "aspect_term": "unit",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "unit",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -255,12 +255,12 @@
       {
         "aspect_term": "costs",
         "opinion_term": "half",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "they",
         "opinion_term": "not as good",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -272,7 +272,7 @@
       {
         "aspect_term": "iSAPS technology",
         "opinion_term": "improved",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -284,7 +284,7 @@
       {
         "aspect_term": "products",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -296,7 +296,7 @@
       {
         "aspect_term": "latter",
         "opinion_term": "may not be the best",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -308,7 +308,7 @@
       {
         "aspect_term": "top",
         "opinion_term": "different",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -320,7 +320,7 @@
       {
         "aspect_term": "true night pic",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -332,7 +332,7 @@
       {
         "aspect_term": "viewfinder",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -344,7 +344,7 @@
       {
         "aspect_term": "photos",
         "opinion_term": "no difference",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -356,7 +356,7 @@
       {
         "aspect_term": "NB-5L battery",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -368,7 +368,7 @@
       {
         "aspect_term": "Rebel XT",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -380,7 +380,7 @@
       {
         "aspect_term": "in-camera effects and editing functions",
         "opinion_term": "greater creative freedom",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -392,7 +392,7 @@
       {
         "aspect_term": "performance",
         "opinion_term": "less apparent difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -404,7 +404,7 @@
       {
         "aspect_term": "EOS 400",
         "opinion_term": "competition",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -416,7 +416,7 @@
       {
         "aspect_term": "custom white balance",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -428,17 +428,17 @@
       {
         "aspect_term": "prices",
         "opinion_term": "more or less the same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "prices",
         "opinion_term": "more or less the same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "prices",
         "opinion_term": "more or less the same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -450,12 +450,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "lighter",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "It",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -467,12 +467,12 @@
       {
         "aspect_term": "optical sensor",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "LCD",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -484,7 +484,7 @@
       {
         "aspect_term": "movie record mode",
         "opinion_term": "potentially better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -496,7 +496,7 @@
       {
         "aspect_term": "higher 16 megapixel canon",
         "opinion_term": "worse",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -508,7 +508,7 @@
       {
         "aspect_term": "Canon Rebel XT",
         "opinion_term": "chose",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -520,7 +520,7 @@
       {
         "aspect_term": "pixels",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -532,7 +532,7 @@
       {
         "aspect_term": "It",
         "opinion_term": "not as heavy",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -544,7 +544,7 @@
       {
         "aspect_term": "layout",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -556,7 +556,7 @@
       {
         "aspect_term": "5D",
         "opinion_term": "cost over $ 1000 more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -568,7 +568,7 @@
       {
         "aspect_term": "ISO 800 shots",
         "opinion_term": "more consistent",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -580,12 +580,12 @@
       {
         "aspect_term": "optical viewfinder",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "optical viewfinder",
         "opinion_term": "better placed",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -597,17 +597,17 @@
       {
         "aspect_term": "performance",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "price",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "package",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -619,7 +619,7 @@
       {
         "aspect_term": "G7 's pictures",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -631,7 +631,7 @@
       {
         "aspect_term": "ISO 1600 noise",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -643,7 +643,7 @@
       {
         "aspect_term": "20D",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -655,12 +655,12 @@
       {
         "aspect_term": "A630",
         "opinion_term": "has 4 AA 's , not 2 like",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "A630",
         "opinion_term": "has 4 AA 's , not 2 like",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -672,7 +672,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -684,7 +684,7 @@
       {
         "aspect_term": "ISO 800 images",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -696,7 +696,7 @@
       {
         "aspect_term": "part",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -708,7 +708,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "can not keep up with",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -720,12 +720,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "easier to turn",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "It",
         "opinion_term": "not feel as delicate",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -737,7 +737,7 @@
       {
         "aspect_term": "red-eye problem",
         "opinion_term": "slightly worse",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -749,7 +749,7 @@
       {
         "aspect_term": "they",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -761,7 +761,7 @@
       {
         "aspect_term": "LCD",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -773,12 +773,12 @@
       {
         "aspect_term": "300D",
         "opinion_term": "more comfortable",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "D70",
         "opinion_term": "most comfortable",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -790,7 +790,7 @@
       {
         "aspect_term": "image quality",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -802,7 +802,7 @@
       {
         "aspect_term": "value for the money",
         "opinion_term": "compare",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -814,7 +814,7 @@
       {
         "aspect_term": "light to the sensors",
         "opinion_term": "less light",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -826,7 +826,7 @@
       {
         "aspect_term": "SD800",
         "opinion_term": "some obvious improvements",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -838,7 +838,7 @@
       {
         "aspect_term": "sharpness",
         "opinion_term": "below 100 mm",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -850,7 +850,7 @@
       {
         "aspect_term": "grip",
         "opinion_term": "more comfortable",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -862,7 +862,7 @@
       {
         "aspect_term": "appearance",
         "opinion_term": "takes away from",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -874,7 +874,7 @@
       {
         "aspect_term": "zoom",
         "opinion_term": "much more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -886,22 +886,22 @@
       {
         "aspect_term": "screen size",
         "opinion_term": "different",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "megapixels",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "features",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "functions",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -913,17 +913,17 @@
       {
         "aspect_term": "Canon SD4xx/5xx/6xx",
         "opinion_term": "considered a number of cameras",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "Sony 's T series",
         "opinion_term": "considered a number of cameras",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "Casio 's Z series",
         "opinion_term": "considered a number of cameras",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -935,7 +935,7 @@
       {
         "aspect_term": "camera",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -947,7 +947,7 @@
       {
         "aspect_term": "full-frame sensor",
         "opinion_term": "upgrading",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -959,17 +959,17 @@
       {
         "aspect_term": "S45",
         "opinion_term": "thicker",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "it",
         "opinion_term": "more compact",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "S45",
         "opinion_term": "shorter",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -981,7 +981,7 @@
       {
         "aspect_term": "product",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -993,7 +993,7 @@
       {
         "aspect_term": "screen",
         "opinion_term": "advantage",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1005,7 +1005,7 @@
       {
         "aspect_term": "other cameras",
         "opinion_term": "unlike",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -1017,7 +1017,7 @@
       {
         "aspect_term": "fantastic FZ30",
         "opinion_term": "step up",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1029,7 +1029,7 @@
       {
         "aspect_term": "LCD",
         "opinion_term": "unlike",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1041,7 +1041,7 @@
       {
         "aspect_term": "camera from another brand",
         "opinion_term": "more reliable",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1053,7 +1053,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "more impressive",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1065,7 +1065,7 @@
       {
         "aspect_term": "color processing",
         "opinion_term": "much better deal",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1077,7 +1077,7 @@
       {
         "aspect_term": "Rebel XT",
         "opinion_term": "rather",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1089,7 +1089,7 @@
       {
         "aspect_term": "high-speed card",
         "opinion_term": "noticeable difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1101,12 +1101,12 @@
       {
         "aspect_term": "performs",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "It",
         "opinion_term": "feels like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1118,7 +1118,7 @@
       {
         "aspect_term": "costs",
         "opinion_term": "less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1130,7 +1130,7 @@
       {
         "aspect_term": "sensor size",
         "opinion_term": "difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -1142,12 +1142,12 @@
       {
         "aspect_term": "screen",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "viewfinder",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1159,7 +1159,7 @@
       {
         "aspect_term": "30D",
         "opinion_term": "improvements",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1171,12 +1171,12 @@
       {
         "aspect_term": "menu operation",
         "opinion_term": "easier",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "size",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1188,17 +1188,17 @@
       {
         "aspect_term": "size of Megapixels",
         "opinion_term": "vary",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "zoom features",
         "opinion_term": "vary",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "features",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1210,7 +1210,7 @@
       {
         "aspect_term": "a model",
         "opinion_term": "slightly more expensive",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1222,12 +1222,12 @@
       {
         "aspect_term": "IR mode",
         "opinion_term": "HUGE improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "IR mode",
         "opinion_term": "HUGE improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1239,12 +1239,12 @@
       {
         "aspect_term": "name",
         "opinion_term": "dependable",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "lens",
         "opinion_term": "exchangeable",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1256,7 +1256,7 @@
       {
         "aspect_term": "complexities",
         "opinion_term": "not nearly",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1268,12 +1268,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "not like",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "It",
         "opinion_term": "prefer the lightness",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1285,7 +1285,7 @@
       {
         "aspect_term": "par",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1297,7 +1297,7 @@
       {
         "aspect_term": "Picture quality",
         "opinion_term": "superior",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1309,22 +1309,22 @@
       {
         "aspect_term": "come out",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "performance",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "specs",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "it",
         "opinion_term": "more comfortable",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1336,12 +1336,12 @@
       {
         "aspect_term": "batteries",
         "opinion_term": "Unlike",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "batteries",
         "opinion_term": "buy AA batteries virtually anywhere",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1353,7 +1353,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1365,7 +1365,7 @@
       {
         "aspect_term": "focal length",
         "opinion_term": "match",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1377,7 +1377,7 @@
       {
         "aspect_term": "results",
         "opinion_term": "closer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1389,12 +1389,12 @@
       {
         "aspect_term": "quality photos",
         "opinion_term": "not produce better",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "quality photos",
         "opinion_term": "equal",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1406,12 +1406,12 @@
       {
         "aspect_term": "meter",
         "opinion_term": "more accurate",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "meter",
         "opinion_term": "more accurate",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1423,7 +1423,7 @@
       {
         "aspect_term": "LCD",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1435,12 +1435,12 @@
       {
         "aspect_term": "dynamic range",
         "opinion_term": "identical",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "dynamic range",
         "opinion_term": "poor",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1452,7 +1452,7 @@
       {
         "aspect_term": "screen",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1464,12 +1464,12 @@
       {
         "aspect_term": "suffer in the higher ISO ranges",
         "opinion_term": "like",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "suffer in the higher ISO ranges",
         "opinion_term": "all",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1481,7 +1481,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "best gift",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1493,12 +1493,12 @@
       {
         "aspect_term": "quality",
         "opinion_term": "superior",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "pictures",
         "opinion_term": "not nearly as yellowish",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1510,7 +1510,7 @@
       {
         "aspect_term": "pictures",
         "opinion_term": "not tell the difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1522,12 +1522,12 @@
       {
         "aspect_term": "ultracompact digital camera",
         "opinion_term": "above",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "ultracompact digital camera",
         "opinion_term": "slightly better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1539,7 +1539,7 @@
       {
         "aspect_term": "purple fringing/chromatic aberration",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1551,7 +1551,7 @@
       {
         "aspect_term": "dynamic range",
         "opinion_term": "lower",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1563,12 +1563,12 @@
       {
         "aspect_term": "this",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "it",
         "opinion_term": "prefer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1580,7 +1580,7 @@
       {
         "aspect_term": "made",
         "opinion_term": "300D and XT are still cheaply made",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1592,12 +1592,12 @@
       {
         "aspect_term": "sensors",
         "opinion_term": "not sensitive",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "them",
         "opinion_term": "fewer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1609,7 +1609,7 @@
       {
         "aspect_term": "This",
         "opinion_term": "matches up",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1621,12 +1621,12 @@
       {
         "aspect_term": "predecessor",
         "opinion_term": "more compact",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Rebel XT",
         "opinion_term": "lighter",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1638,12 +1638,12 @@
       {
         "aspect_term": "purple fringing levels",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "sharpness",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1655,7 +1655,7 @@
       {
         "aspect_term": "12.5 mega of larger pixels",
         "opinion_term": "big difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -1667,7 +1667,7 @@
       {
         "aspect_term": "feels",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1679,7 +1679,7 @@
       {
         "aspect_term": "SDHC cards",
         "opinion_term": "take",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -1691,12 +1691,12 @@
       {
         "aspect_term": "performance",
         "opinion_term": "nowhere near",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "camera",
         "opinion_term": "thinner",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1708,12 +1708,12 @@
       {
         "aspect_term": "settings",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "it",
         "opinion_term": "not upgrade",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1725,7 +1725,7 @@
       {
         "aspect_term": "Build quality of the body",
         "opinion_term": "close",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1737,7 +1737,7 @@
       {
         "aspect_term": "problems",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1749,12 +1749,12 @@
       {
         "aspect_term": "two A630s",
         "opinion_term": "equally flat",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "two A630s",
         "opinion_term": "identical",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1766,17 +1766,17 @@
       {
         "aspect_term": "sensor",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "options",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "resolution option",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1788,7 +1788,7 @@
       {
         "aspect_term": "size body",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1800,12 +1800,12 @@
       {
         "aspect_term": "corners",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "18-200 VR",
         "opinion_term": "as sharp",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1817,7 +1817,7 @@
       {
         "aspect_term": "they",
         "opinion_term": "no match",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1829,7 +1829,7 @@
       {
         "aspect_term": "This camera",
         "opinion_term": "GOLDEN experience",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1841,7 +1841,7 @@
       {
         "aspect_term": "screen",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1853,7 +1853,7 @@
       {
         "aspect_term": "This",
         "opinion_term": "finest",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1865,7 +1865,7 @@
       {
         "aspect_term": "detail",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1877,7 +1877,7 @@
       {
         "aspect_term": "this",
         "opinion_term": "choice",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1889,7 +1889,7 @@
       {
         "aspect_term": "6x zoom lens",
         "opinion_term": "not the longest",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -1901,7 +1901,7 @@
       {
         "aspect_term": "Image quality",
         "opinion_term": "excellent",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -1913,7 +1913,7 @@
       {
         "aspect_term": "video feature",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1925,7 +1925,7 @@
       {
         "aspect_term": "weighs",
         "opinion_term": "significant 140 g less",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1937,7 +1937,7 @@
       {
         "aspect_term": "G7",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1949,7 +1949,7 @@
       {
         "aspect_term": "layout",
         "opinion_term": "prefer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1961,12 +1961,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "weighs",
         "opinion_term": "less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1978,12 +1978,12 @@
       {
         "aspect_term": "4x optical zoom",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "4x optical zoom",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -1995,12 +1995,12 @@
       {
         "aspect_term": "D200",
         "opinion_term": "single improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "D80",
         "opinion_term": "single improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2012,7 +2012,7 @@
       {
         "aspect_term": "flash",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2024,7 +2024,7 @@
       {
         "aspect_term": "look",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2036,7 +2036,7 @@
       {
         "aspect_term": "D200",
         "opinion_term": "put to shame",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2048,12 +2048,12 @@
       {
         "aspect_term": "display",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "display",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2065,7 +2065,7 @@
       {
         "aspect_term": "all areas",
         "opinion_term": "huge improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2077,7 +2077,7 @@
       {
         "aspect_term": "fz50",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2089,7 +2089,7 @@
       {
         "aspect_term": "these",
         "opinion_term": "more comfortable",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2101,7 +2101,7 @@
       {
         "aspect_term": "Battery life",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2113,7 +2113,7 @@
       {
         "aspect_term": "body",
         "opinion_term": "thicker",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2125,7 +2125,7 @@
       {
         "aspect_term": "see",
         "opinion_term": "difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -2137,7 +2137,7 @@
       {
         "aspect_term": "IS on a camera like this",
         "opinion_term": "not nearly as effective",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2149,7 +2149,7 @@
       {
         "aspect_term": "LCD Monitor",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2161,12 +2161,12 @@
       {
         "aspect_term": "two models",
         "opinion_term": "identical",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "SD600",
         "opinion_term": "improvements",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2178,7 +2178,7 @@
       {
         "aspect_term": "D200",
         "opinion_term": "more detail and sense of realism",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2190,7 +2190,7 @@
       {
         "aspect_term": "vertical grip",
         "opinion_term": "more plasticy",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2202,12 +2202,12 @@
       {
         "aspect_term": "sensor size",
         "opinion_term": "unlike",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "sensor size",
         "opinion_term": "sensors of every different size from a 1.3 conversion ratio to 1.6",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2219,12 +2219,12 @@
       {
         "aspect_term": "D80",
         "opinion_term": "$ 400 more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "D80",
         "opinion_term": "$ 700 less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2236,7 +2236,7 @@
       {
         "aspect_term": "Performance",
         "opinion_term": "identical",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2248,12 +2248,12 @@
       {
         "aspect_term": "battery grip",
         "opinion_term": "does not have",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "battery grip",
         "opinion_term": "do",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2265,7 +2265,7 @@
       {
         "aspect_term": "5D",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2277,7 +2277,7 @@
       {
         "aspect_term": "digital SLR",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2289,12 +2289,12 @@
       {
         "aspect_term": "control",
         "opinion_term": "everything without taking the hand off the grip",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "control",
         "opinion_term": "thrown at which ever random location",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2306,7 +2306,7 @@
       {
         "aspect_term": "size",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2318,7 +2318,7 @@
       {
         "aspect_term": "camera",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2330,7 +2330,7 @@
       {
         "aspect_term": "new Rebel XT",
         "opinion_term": "improvements",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2342,7 +2342,7 @@
       {
         "aspect_term": "Panasonic Lumix FZ-50",
         "opinion_term": "best-of-breed",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2354,7 +2354,7 @@
       {
         "aspect_term": "design",
         "opinion_term": "winner",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2366,12 +2366,12 @@
       {
         "aspect_term": "Continuous speed",
         "opinion_term": "slow",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "syne speed",
         "opinion_term": "slow",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2383,12 +2383,12 @@
       {
         "aspect_term": "quality",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "`` kit '' lens",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2400,7 +2400,7 @@
       {
         "aspect_term": "A640",
         "opinion_term": "hundred bucks more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2412,7 +2412,7 @@
       {
         "aspect_term": "firing",
         "opinion_term": "quickest",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2424,7 +2424,7 @@
       {
         "aspect_term": "digital display",
         "opinion_term": "biggest",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2436,7 +2436,7 @@
       {
         "aspect_term": "5D remote",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2448,12 +2448,12 @@
       {
         "aspect_term": "features",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "picture quality",
         "opinion_term": "poorer",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2465,7 +2465,7 @@
       {
         "aspect_term": "VGA movies",
         "opinion_term": "longer",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2477,12 +2477,12 @@
       {
         "aspect_term": "it",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "macro",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2494,7 +2494,7 @@
       {
         "aspect_term": "scenes",
         "opinion_term": "easier",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2506,27 +2506,27 @@
       {
         "aspect_term": "photos",
         "opinion_term": "little short",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "photos",
         "opinion_term": "little short",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "resolution",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "resolution",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "resolution",
         "opinion_term": "slightly higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2538,7 +2538,7 @@
       {
         "aspect_term": "software",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2550,7 +2550,7 @@
       {
         "aspect_term": "Nikon",
         "opinion_term": "costs twice",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2562,7 +2562,7 @@
       {
         "aspect_term": "battery",
         "opinion_term": "uses up lots more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2574,7 +2574,7 @@
       {
         "aspect_term": "Canon 30D",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2586,12 +2586,12 @@
       {
         "aspect_term": "flash synch",
         "opinion_term": "1/200th",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "flash synch",
         "opinion_term": "1/500th",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -2603,7 +2603,7 @@
       {
         "aspect_term": "action shots",
         "opinion_term": "less convenient",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2615,12 +2615,12 @@
       {
         "aspect_term": "foot print",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "foot print",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2632,7 +2632,7 @@
       {
         "aspect_term": "This",
         "opinion_term": "not be the best",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2644,7 +2644,7 @@
       {
         "aspect_term": "image quality",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2656,7 +2656,7 @@
       {
         "aspect_term": "It",
         "opinion_term": "solid",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2668,7 +2668,7 @@
       {
         "aspect_term": "image quality",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2680,7 +2680,7 @@
       {
         "aspect_term": "LCD monitor",
         "opinion_term": "more easily seen",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2692,7 +2692,7 @@
       {
         "aspect_term": "superzoom",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2704,22 +2704,22 @@
       {
         "aspect_term": "Size",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Size",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Weight",
         "opinion_term": "lighter",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Weight",
         "opinion_term": "lighter",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2731,12 +2731,12 @@
       {
         "aspect_term": "respect",
         "opinion_term": "similarly good",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "D80",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2748,7 +2748,7 @@
       {
         "aspect_term": "range for color saturation",
         "opinion_term": "wide",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2760,7 +2760,7 @@
       {
         "aspect_term": "price",
         "opinion_term": "compatible",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2772,7 +2772,7 @@
       {
         "aspect_term": "this camera",
         "opinion_term": "more access to backgrounds",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2784,17 +2784,17 @@
       {
         "aspect_term": "focus",
         "opinion_term": "easier",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "focus",
         "opinion_term": "more precise",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "pictures",
         "opinion_term": "more precise",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2806,7 +2806,7 @@
       {
         "aspect_term": "battery life",
         "opinion_term": "did n't get great",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2818,7 +2818,7 @@
       {
         "aspect_term": "Video taking",
         "opinion_term": "improved",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2830,7 +2830,7 @@
       {
         "aspect_term": "dimensions",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2842,12 +2842,12 @@
       {
         "aspect_term": "buttons",
         "opinion_term": "fewer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "functions",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2859,7 +2859,7 @@
       {
         "aspect_term": "D200 image",
         "opinion_term": "improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2871,7 +2871,7 @@
       {
         "aspect_term": "Canon 5D",
         "opinion_term": "cost you over $ 1200 - $ 1500 more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2883,7 +2883,7 @@
       {
         "aspect_term": "boost",
         "opinion_term": "extra boost",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2895,7 +2895,7 @@
       {
         "aspect_term": "feature",
         "opinion_term": "more feature rich",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2907,7 +2907,7 @@
       {
         "aspect_term": "performance",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2919,12 +2919,12 @@
       {
         "aspect_term": "distortion",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "18-135",
         "opinion_term": "worst",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2936,7 +2936,7 @@
       {
         "aspect_term": "Firmware upgrades",
         "opinion_term": "as",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2948,7 +2948,7 @@
       {
         "aspect_term": "D50",
         "opinion_term": "look like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -2960,7 +2960,7 @@
       {
         "aspect_term": "black and silver coloration of the SD700",
         "opinion_term": "look more appealing",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2972,7 +2972,7 @@
       {
         "aspect_term": "price",
         "opinion_term": "one third",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -2984,7 +2984,7 @@
       {
         "aspect_term": "grip",
         "opinion_term": "little smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -2996,7 +2996,7 @@
       {
         "aspect_term": "quality",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3008,12 +3008,12 @@
       {
         "aspect_term": "buttons",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "dials",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3025,7 +3025,7 @@
       {
         "aspect_term": "menu",
         "opinion_term": "significant difference",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3037,12 +3037,12 @@
       {
         "aspect_term": "burst JPEG shots",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "autofocus",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3054,7 +3054,7 @@
       {
         "aspect_term": "metering",
         "opinion_term": "have never had the same metering",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3066,7 +3066,7 @@
       {
         "aspect_term": "blurring",
         "opinion_term": "less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3078,7 +3078,7 @@
       {
         "aspect_term": "Panasonic Lumix DMC-TZ1",
         "opinion_term": "cheapest",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3090,7 +3090,7 @@
       {
         "aspect_term": "softness",
         "opinion_term": "sooner",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3102,7 +3102,7 @@
       {
         "aspect_term": "Panasonic DMC-TZ1S",
         "opinion_term": "chose",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3114,7 +3114,7 @@
       {
         "aspect_term": "outside",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3126,7 +3126,7 @@
       {
         "aspect_term": "L-Glass",
         "opinion_term": "huge difference",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3138,7 +3138,7 @@
       {
         "aspect_term": "Canon PowerShot SD600",
         "opinion_term": "instead",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3150,12 +3150,12 @@
       {
         "aspect_term": "front dial",
         "opinion_term": "lacking",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "front dial",
         "opinion_term": "on the D80",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3167,7 +3167,7 @@
       {
         "aspect_term": "layout of controls",
         "opinion_term": "prefer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3179,12 +3179,12 @@
       {
         "aspect_term": "results",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "`` warm '' color setting",
         "opinion_term": "looks closer",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3196,12 +3196,12 @@
       {
         "aspect_term": "A630",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "A630",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3213,7 +3213,7 @@
       {
         "aspect_term": "compression artifacts",
         "opinion_term": "not as bad",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3225,7 +3225,7 @@
       {
         "aspect_term": "flash",
         "opinion_term": "more latitude",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3237,7 +3237,7 @@
       {
         "aspect_term": "SD600",
         "opinion_term": "noticeable improvement",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3249,7 +3249,7 @@
       {
         "aspect_term": "F100",
         "opinion_term": "embarrassed",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3261,12 +3261,12 @@
       {
         "aspect_term": "Auto Focus points",
         "opinion_term": "fewer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "burst speed",
         "opinion_term": "slower",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3278,12 +3278,12 @@
       {
         "aspect_term": "30D",
         "opinion_term": "choose the 30D over the 20D",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "price",
         "opinion_term": "same price with the fall Canon double rebates",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3295,7 +3295,7 @@
       {
         "aspect_term": "a 1Ds",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3307,7 +3307,7 @@
       {
         "aspect_term": "A630",
         "opinion_term": "twice as fast",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3319,7 +3319,7 @@
       {
         "aspect_term": "battery life",
         "opinion_term": "longer",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3331,7 +3331,7 @@
       {
         "aspect_term": "ISO sensitivity",
         "opinion_term": "gave the option of adjusting ISO sensitivity in small increments",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3343,12 +3343,12 @@
       {
         "aspect_term": "Canon SD800 IS",
         "opinion_term": "paying significantly more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "Canon SD800 IS",
         "opinion_term": "paying significantly more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3360,7 +3360,7 @@
       {
         "aspect_term": "optical element shift",
         "opinion_term": "not really any better",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3372,7 +3372,7 @@
       {
         "aspect_term": "D200",
         "opinion_term": "more solid",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3384,7 +3384,7 @@
       {
         "aspect_term": "professional",
         "opinion_term": "address the issue of professional vs. amateur cameras",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3396,7 +3396,7 @@
       {
         "aspect_term": "choice",
         "opinion_term": "as pleased",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3408,12 +3408,12 @@
       {
         "aspect_term": "autofocus motor",
         "opinion_term": "stronger",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "autofocus",
         "opinion_term": "similarly",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3425,17 +3425,17 @@
       {
         "aspect_term": "camera",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "an optical viewfinder",
         "opinion_term": "minus",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "a half-inch diagonally of LCD",
         "opinion_term": "plus",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3447,7 +3447,7 @@
       {
         "aspect_term": "noise at high ISO settings",
         "opinion_term": "less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3459,7 +3459,7 @@
       {
         "aspect_term": "value",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3471,12 +3471,12 @@
       {
         "aspect_term": "functionality",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "navigate through the settings",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3488,22 +3488,22 @@
       {
         "aspect_term": "times",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "times",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "times",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "times",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3515,7 +3515,7 @@
       {
         "aspect_term": "image quality",
         "opinion_term": "match",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3527,17 +3527,17 @@
       {
         "aspect_term": "camera",
         "opinion_term": "newer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "costs",
         "opinion_term": "twice",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "shutter lag",
         "opinion_term": "more",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3549,12 +3549,12 @@
       {
         "aspect_term": "resolution",
         "opinion_term": "lower",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "chipsize",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3566,7 +3566,7 @@
       {
         "aspect_term": "It",
         "opinion_term": "does n't go quite a long",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3578,12 +3578,12 @@
       {
         "aspect_term": "High ISOs",
         "opinion_term": "faster",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "image quality",
         "opinion_term": "declines",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3595,7 +3595,7 @@
       {
         "aspect_term": "AF lag",
         "opinion_term": "shorter",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3607,7 +3607,7 @@
       {
         "aspect_term": "shoot",
         "opinion_term": "as fast",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3619,7 +3619,7 @@
       {
         "aspect_term": "Leica lenses on Panasonic cameras",
         "opinion_term": "difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3631,7 +3631,7 @@
       {
         "aspect_term": "system",
         "opinion_term": "sam e",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3643,7 +3643,7 @@
       {
         "aspect_term": "Digital menus",
         "opinion_term": "easiest",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3655,17 +3655,17 @@
       {
         "aspect_term": "chassis",
         "opinion_term": "similar",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "feels",
         "opinion_term": "more solid",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "it",
         "opinion_term": "heavier",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3677,7 +3677,7 @@
       {
         "aspect_term": "Both the Canons",
         "opinion_term": "plasticy",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3689,7 +3689,7 @@
       {
         "aspect_term": "quality of the Carl Zeiss lens",
         "opinion_term": "unequal",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3701,7 +3701,7 @@
       {
         "aspect_term": "CMOS sensor",
         "opinion_term": "has a 8 megapixel CMOS sensor ( vs. 6 megapixel of Rebel 300D . )",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3713,12 +3713,12 @@
       {
         "aspect_term": "overall handling characteristics",
         "opinion_term": "improves",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "battery power",
         "opinion_term": "doubling",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3730,7 +3730,7 @@
       {
         "aspect_term": "layout of the controls",
         "opinion_term": "over",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3742,17 +3742,17 @@
       {
         "aspect_term": "weight",
         "opinion_term": "approximate",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "dimensions",
         "opinion_term": "approximate",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "LCD view screen",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3764,12 +3764,12 @@
       {
         "aspect_term": "price",
         "opinion_term": "significant price difference",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "screen",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3781,7 +3781,7 @@
       {
         "aspect_term": "4 batteries",
         "opinion_term": "difference",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3793,7 +3793,7 @@
       {
         "aspect_term": "focus",
         "opinion_term": "silently and quick",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3805,12 +3805,12 @@
       {
         "aspect_term": "xti",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "D80",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3822,7 +3822,7 @@
       {
         "aspect_term": "LCD",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -3834,12 +3834,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "provide you with results that can be enlarged significantly",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "It",
         "opinion_term": "provide you with results that can be enlarged significantly",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3851,7 +3851,7 @@
       {
         "aspect_term": "view finder",
         "opinion_term": "smaller",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -3863,7 +3863,7 @@
       {
         "aspect_term": "RGB histogram",
         "opinion_term": "step-up",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3875,7 +3875,7 @@
       {
         "aspect_term": "quality",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3887,7 +3887,7 @@
       {
         "aspect_term": "It",
         "opinion_term": "smaller to carry around",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3899,7 +3899,7 @@
       {
         "aspect_term": "purchases",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3911,7 +3911,7 @@
       {
         "aspect_term": "RAW image",
         "opinion_term": "much more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3923,7 +3923,7 @@
       {
         "aspect_term": "color LCD display",
         "opinion_term": "like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3935,7 +3935,7 @@
       {
         "aspect_term": "LCD",
         "opinion_term": "nicer",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3947,7 +3947,7 @@
       {
         "aspect_term": "nothing",
         "opinion_term": "close",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -3959,12 +3959,12 @@
       {
         "aspect_term": "lens",
         "opinion_term": "wider",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "sensor",
         "opinion_term": "higher",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -3976,47 +3976,47 @@
       {
         "aspect_term": "size",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "size",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "size",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "weight",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "weight",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "weight",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "features",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "features",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "features",
         "opinion_term": "decided on the D50",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4028,7 +4028,7 @@
       {
         "aspect_term": "life span",
         "opinion_term": "finite",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4040,7 +4040,7 @@
       {
         "aspect_term": "perform",
         "opinion_term": "as well",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4052,7 +4052,7 @@
       {
         "aspect_term": "it",
         "opinion_term": "less expensive",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4064,7 +4064,7 @@
       {
         "aspect_term": "zoom",
         "opinion_term": "shorter",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -4076,17 +4076,17 @@
       {
         "aspect_term": "size",
         "opinion_term": "advantages",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "weight",
         "opinion_term": "advantages",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "batteries",
         "opinion_term": "advantages",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4098,7 +4098,7 @@
       {
         "aspect_term": "E-TTL metering",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4110,7 +4110,7 @@
       {
         "aspect_term": "It",
         "opinion_term": "more softness in the corners",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4122,22 +4122,22 @@
       {
         "aspect_term": "megapixel",
         "opinion_term": "extra",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "solid",
         "opinion_term": "more",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "LCD screen",
         "opinion_term": "sharper",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "image clarity",
         "opinion_term": "improved",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4149,7 +4149,7 @@
       {
         "aspect_term": "Sony Alpha",
         "opinion_term": "as well",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4161,7 +4161,7 @@
       {
         "aspect_term": "buttons",
         "opinion_term": "small and round",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -4173,7 +4173,7 @@
       {
         "aspect_term": "Rebel XT and a good lens",
         "opinion_term": "rather",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4185,7 +4185,7 @@
       {
         "aspect_term": "value",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4197,7 +4197,7 @@
       {
         "aspect_term": "this",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4209,7 +4209,7 @@
       {
         "aspect_term": "a ultracompact digital camera",
         "opinion_term": "low light and dark conditions were above",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4221,7 +4221,7 @@
       {
         "aspect_term": "advanced modes",
         "opinion_term": "more",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4233,22 +4233,22 @@
       {
         "aspect_term": "images",
         "opinion_term": "nothing worse",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "images",
         "opinion_term": "nothing worse",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "it",
         "opinion_term": "more expensive",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "it",
         "opinion_term": "bigger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -4260,7 +4260,7 @@
       {
         "aspect_term": "situated",
         "opinion_term": "differently",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -4272,7 +4272,7 @@
       {
         "aspect_term": "LCD rewiew area",
         "opinion_term": "92 % increase",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4284,12 +4284,12 @@
       {
         "aspect_term": "EOS 30D",
         "opinion_term": "improves",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "Canon",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4301,7 +4301,7 @@
       {
         "aspect_term": "slide switch",
         "opinion_term": "easier",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4313,7 +4313,7 @@
       {
         "aspect_term": "camera",
         "opinion_term": "control it as a slave",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -4325,7 +4325,7 @@
       {
         "aspect_term": "pics",
         "opinion_term": "best",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4337,7 +4337,7 @@
       {
         "aspect_term": "quality",
         "opinion_term": "highest",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4349,17 +4349,17 @@
       {
         "aspect_term": "functions",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "image quality",
         "opinion_term": "nicer",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "It",
         "opinion_term": "not as bulky",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4371,7 +4371,7 @@
       {
         "aspect_term": "menu buttons",
         "opinion_term": "larger",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4383,7 +4383,7 @@
       {
         "aspect_term": "RAW format option",
         "opinion_term": "Like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4395,7 +4395,7 @@
       {
         "aspect_term": "Focus ring",
         "opinion_term": "more precise",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4407,7 +4407,7 @@
       {
         "aspect_term": "Image quality",
         "opinion_term": "difference non-existent",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4419,12 +4419,12 @@
       {
         "aspect_term": "weather sealing",
         "opinion_term": "increased",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "durability",
         "opinion_term": "increased",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4436,7 +4436,7 @@
       {
         "aspect_term": "zoom",
         "opinion_term": "a bit noisier",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -4448,12 +4448,12 @@
       {
         "aspect_term": "camera",
         "opinion_term": "bigger and bulky",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       },
       {
         "aspect_term": "quality pictures",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4465,7 +4465,7 @@
       {
         "aspect_term": "Kodak",
         "opinion_term": "more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4477,12 +4477,12 @@
       {
         "aspect_term": "take around",
         "opinion_term": "easier",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "image quality",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4494,17 +4494,17 @@
       {
         "aspect_term": "it",
         "opinion_term": "nor is it too small like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "it",
         "opinion_term": "nor is it too small like",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "DIFFERENT"
       },
       {
         "aspect_term": "It",
         "opinion_term": "not too big like",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "DIFFERENT"
       }
     ],
     "source": "cameraCOQE",
@@ -4516,7 +4516,7 @@
       {
         "aspect_term": "This camera",
         "opinion_term": "easier to use",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4528,7 +4528,7 @@
       {
         "aspect_term": "this camera",
         "opinion_term": "more quality and professional",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4540,7 +4540,7 @@
       {
         "aspect_term": "USB 2.0",
         "opinion_term": "57 times FASTER",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4552,7 +4552,7 @@
       {
         "aspect_term": "controls",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4564,12 +4564,12 @@
       {
         "aspect_term": "USB",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "charging cables",
         "opinion_term": "same",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4581,7 +4581,7 @@
       {
         "aspect_term": "Canon EOS 350D",
         "opinion_term": "nothing outstanding",
-        "aspect_sentiment_label": "negative"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4593,7 +4593,7 @@
       {
         "aspect_term": "soft focus",
         "opinion_term": "share",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "EQUAL"
       }
     ],
     "source": "cameraCOQE",
@@ -4605,22 +4605,22 @@
       {
         "aspect_term": "D200",
         "opinion_term": "light",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "D200",
         "opinion_term": "compact",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "D200",
         "opinion_term": "light",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "D200",
         "opinion_term": "compact",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4632,7 +4632,7 @@
       {
         "aspect_term": "picture",
         "opinion_term": "focus more",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4644,17 +4644,17 @@
       {
         "aspect_term": "functionality",
         "opinion_term": "closer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "picture quality",
         "opinion_term": "closer",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "EQUAL"
       },
       {
         "aspect_term": "it",
         "opinion_term": "$ 400 less",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4666,7 +4666,7 @@
       {
         "aspect_term": "SD700",
         "opinion_term": "not replace",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
@@ -4678,12 +4678,12 @@
       {
         "aspect_term": "It",
         "opinion_term": "less heavy",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "It",
         "opinion_term": "less bulky",
-        "aspect_sentiment_label": "neutral"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4695,7 +4695,7 @@
       {
         "aspect_term": "viewfinder",
         "opinion_term": "most improved",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4707,12 +4707,12 @@
       {
         "aspect_term": "flash",
         "opinion_term": "more powerful",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       },
       {
         "aspect_term": "position",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "BETTER"
       }
     ],
     "source": "cameraCOQE",
@@ -4724,7 +4724,7 @@
       {
         "aspect_term": "results",
         "opinion_term": "better",
-        "aspect_sentiment_label": "positive"
+        "aspect_sentiment_label": "WORSE"
       }
     ],
     "source": "cameraCOQE",
