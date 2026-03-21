@@ -37,15 +37,8 @@ def neg_entity_sample(sen, pos_entity_spans,neg_entity_count, max_span_size, tok
                 neg_entity_spans.append(span)
                 neg_entity_sizes.append(size)
 
-    # Randomly select one part to be a negative sample
-
-    if len(neg_entity_spans) < neg_entity_count:
-        neg_entity_count = len(neg_entity_spans) * 10
-    else:
-        neg_entity_count = len(neg_entity_spans)
-
-    neg_entity_samples = random.sample(list(zip(neg_entity_spans, neg_entity_sizes)),
-                                       min(len(neg_entity_spans), int(neg_entity_count)))
+    sample_count = min(len(neg_entity_spans), max(int(neg_entity_count), 0))
+    neg_entity_samples = random.sample(list(zip(neg_entity_spans, neg_entity_sizes)), sample_count)
     neg_entity_spans, neg_entity_sizes = zip(*neg_entity_samples) if neg_entity_samples else ([], [])
 
     neg_entity_masks = [create_entity_mask(*span, context_size) for span in neg_entity_spans]
@@ -96,26 +89,47 @@ def pos_senti_sample(sen, all_entity_spans, context_size):
     return pos_senti_keys, pos_senti_types, pos_rels, pos_senti_masks
 
 
-def neg_senti_sample(all_entity_spans, pos_senti_keys, pos_senti_types):
-    """Generate negative 4-tuple quintuple candidates.
+def neg_senti_sample(all_entity_spans, pos_senti_keys, neg_senti_count):
+    """Randomly sample negative 4-tuple candidates without enumerating O(N^4).
     all_entity_spans[0] == NULL_SPAN (index 0 = null).
-    Returns a list of (s_idx, o_idx, a_idx, p_idx) index tuples that are
-    NOT in pos_senti_keys and have at least one non-null entity.
+    Returns up to neg_senti_count tuples that are not positive examples and are
+    not the all-null tuple.
     """
-    neg_quads = []
     n = len(all_entity_spans)
+    if n == 0 or neg_senti_count <= 0:
+        return []
+
     pos_set = set(pos_senti_keys)
-    for i1 in range(n):
-        for i2 in range(n):
-            for i3 in range(n):
-                for i4 in range(n):
-                    # At least one slot must be a real entity (not all null)
-                    if i1 == 0 and i2 == 0 and i3 == 0 and i4 == 0:
-                        continue
-                    quad = (i1, i2, i3, i4)
-                    if quad not in pos_set:
-                        neg_quads.append(quad)
-    return neg_quads
+    max_candidates = max((n ** 4) - 1 - len(pos_set), 0)
+    target_count = min(int(neg_senti_count), max_candidates)
+
+    if target_count <= 0:
+        return []
+
+    neg_quads = set()
+    max_attempts = max(target_count * 20, 100)
+    attempts = 0
+
+    while len(neg_quads) < target_count and attempts < max_attempts:
+        quad = tuple(random.randrange(n) for _ in range(4))
+        attempts += 1
+        if quad == (0, 0, 0, 0) or quad in pos_set:
+            continue
+        neg_quads.add(quad)
+
+    if len(neg_quads) < target_count:
+        for i1 in range(n):
+            for i2 in range(n):
+                for i3 in range(n):
+                    for i4 in range(n):
+                        quad = (i1, i2, i3, i4)
+                        if quad == (0, 0, 0, 0) or quad in pos_set or quad in neg_quads:
+                            continue
+                        neg_quads.add(quad)
+                        if len(neg_quads) >= target_count:
+                            return list(neg_quads)
+
+    return list(neg_quads)
 
 def create_entity_sample_mask(entity_masks, entity_types, entity_start_masks, entity_end_masks, entity_sizes, context_size):
     if entity_masks:
@@ -173,9 +187,7 @@ def train_create_sample(sen, neg_entity_count: int, neg_senti_count: int, max_sp
         pos_senti_sample(sen, all_entity_spans, context_size)
 
     # Negative quintuple samples
-    neg_quads = neg_senti_sample(all_entity_spans, pos_senti_keys, pos_senti_types)
-    neg_senti_count = min(len(neg_quads), max(len(neg_entity_spans), 1))
-    neg_quads = random.sample(neg_quads, min(len(neg_quads), neg_senti_count))
+    neg_quads = neg_senti_sample(all_entity_spans, pos_senti_keys, neg_senti_count)
 
     neg_rels = neg_quads
     neg_senti_masks = [
