@@ -162,7 +162,7 @@ def train_argparser():
     parser.add_argument(
         "--sampling_processes",
         type=int,
-        default=4,
+        default=0,
         help="The number of sampling processes",
     )
     parser.add_argument(
