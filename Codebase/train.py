@@ -41,6 +41,15 @@ class D2E2S_Trainer(BaseTrainer):
             self._log_path_result, "result{}.txt".format(self.args.max_span_size)
         )
 
+    def _print_device_info(self, model: torch.nn.Module, stage: str):
+        model_device = next(model.parameters()).device
+        print(f"[{stage}] args.device: {self.args.device}")
+        print(f"[{stage}] model device: {model_device}")
+        print(f"[{stage}] CUDA available: {torch.cuda.is_available()}")
+        if torch.cuda.is_available():
+            print(f"[{stage}] CUDA device count: {torch.cuda.device_count()}")
+            print(f"[{stage}] GPU name: {torch.cuda.get_device_name(model_device)}")
+
     def _preprocess(self, args, input_reader_cls, types_path, train_path, dev_path, test_path):
 
         train_label, dev_label, test_label = "train", "dev", "test"
@@ -96,6 +105,7 @@ class D2E2S_Trainer(BaseTrainer):
             args=args,
         )
         model.to(args.device)
+        self._print_device_info(model, "train")
         # create optimizer
         optimizer_params = self._get_optimizer_params(model)
         optimizer = AdamW(
@@ -166,6 +176,7 @@ class D2E2S_Trainer(BaseTrainer):
                 args=args,
             )
             model.to(args.device)
+            self._print_device_info(model, "eval-best")
             print("\n" + "="*80)
             print("FINAL TEST RESULTS (Best Model from Dev Set)")
             print("="*80)
