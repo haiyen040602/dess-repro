@@ -15,8 +15,6 @@ from models.Channel_Fusion import Orthographic_projection_fusion, TextCentredSP
 from transformers import PreTrainedModel
 from transformers import AutoConfig, AutoModel
 
-USE_CUDA = torch.cuda.is_available()
-
 
 def get_token(h: torch.tensor, x: torch.tensor, token: int):
     """Get specific token embedding (e.g. [CLS])"""
@@ -56,7 +54,6 @@ class D2E2SModel(PreTrainedModel):
         self._emb_dim = self.args.emb_dim
         self.output_size = self._emb_dim
         self.batch_size = self.args.batch_size
-        self.USE_CUDA = USE_CUDA
         self.max_pairs = 100
         self.deberta_feature_dim = self.args.deberta_feature_dim
         self.gcn_dim = self.args.gcn_dim
@@ -106,32 +103,8 @@ class D2E2SModel(PreTrainedModel):
         else:
             self.fc = nn.Linear(int(self._hidden_dim), self.output_size)
 
-        # 5、init_hidden
-        weight = next(self.parameters()).data
         if self._is_bidirectional:
             self.number = 2
-
-        if self.USE_CUDA:
-            self.hidden = (
-                weight.new(self.layers * self.number, self.batch_size, self._hidden_dim)
-                .zero_()
-                .float()
-                .cuda(),
-                # self.hidden = 384
-                weight.new(self.layers * self.number, self.batch_size, self._hidden_dim)
-                .zero_()
-                .float()
-                .cuda(),
-            )
-        else:
-            self.hidden = (
-                weight.new(self.layers * self.number, self.batch_size, self._hidden_dim)
-                .zero_()
-                .float(),
-                weight.new(self.layers * self.number, self.batch_size, self._hidden_dim)
-                .zero_()
-                .float(),
-            )
 
         # 6、weight initialization
         self.init_weights()
@@ -173,7 +146,7 @@ class D2E2SModel(PreTrainedModel):
         # encoder layer
         # h = self.BertAdapterModel(input_ids=encodings, attention_mask=self.context_masks)[0]
         h = self.deberta(input_ids=encodings, attention_mask=self.context_masks)[0]
-        self.output, _ = self.lstm(h, self.hidden)
+        self.output, _ = self.lstm(h)
         self.deberta_lstm_output = self.lstm_dropout(self.output)
         self.deberta_lstm_att_feature = self.deberta_lstm_output
 
@@ -241,7 +214,7 @@ class D2E2SModel(PreTrainedModel):
         # encoder layer
         # h = self.BertAdapterModel(input_ids=encodings, attention_mask=self.context_masks)[0]
         h = self.deberta(input_ids=encodings, attention_mask=self.context_masks)[0]
-        self.output, _ = self.lstm(h, self.hidden)
+        self.output, _ = self.lstm(h)
         self.deberta_lstm_output = self.lstm_dropout(self.output)
         self.deberta_lstm_att_feature = self.deberta_lstm_output
 

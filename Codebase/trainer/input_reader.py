@@ -3,11 +3,11 @@ from tqdm import tqdm
 from trainer import util
 from collections import OrderedDict
 from typing import List
-from transformers import BertTokenizer
+from transformers import PreTrainedTokenizerBase
 from trainer.entities import Dataset,Entity,EntityType,Sentiment,sentimentType
 import numpy as np
 class JsonInputReader():
-    def __init__(self,types_path: str,tokenizer: BertTokenizer, neg_entity_count: int = None, neg_senti_count: int = None, max_span_size: int = None):
+    def __init__(self,types_path: str,tokenizer: PreTrainedTokenizerBase, neg_entity_count: int = None, neg_senti_count: int = None, max_span_size: int = None):
 
         types = json.load(open(types_path), object_pairs_hook=OrderedDict)  # entity + sentiments types
         self._entity_types = OrderedDict()

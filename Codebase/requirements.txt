@@ -1,9 +1,9 @@
-Jinja2==3.1.2
-numpy==1.24.3
-tensorboardX==2.6
-tqdm==4.65.0
-transformers==4.28.1
-scikit-learn==1.2.2
-spacy>=3.7.2,<3.8.0
-matplotlib==3.7.1
+Jinja2>=3.1.2
+numpy>=1.24.3
+tensorboardX>=2.6
+tqdm>=4.65.0
+transformers>=4.28.1
+scikit-learn>=1.2.2
+spacy>=3.7.2,<4.0.0
+matplotlib>=3.7.1
 pydantic>=2.7.0

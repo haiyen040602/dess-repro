@@ -98,9 +98,11 @@ class GatedGCN(torch.nn.Module):
         input2_ = input2.view(-1)
         features = torch.stack([input1_, input2_], dim=0)
         data = Data(x=features)
-        data.cuda()
+        data = data.to(input1.device)
         data.x = data.x.view(-1, self.input_dim)
-        data.edge_index, _ = dense_to_sparse(torch.ones((input1.size(1), input1.size(1))).cuda())
+        data.edge_index, _ = dense_to_sparse(
+            torch.ones((input1.size(1), input1.size(1)), device=input1.device)
+        )
         data.edge_attr = compute_cosine_similarity(data.x, data.edge_index)
         x, edge_index, edge_attr = data.x, data.edge_index, data.edge_attr
 

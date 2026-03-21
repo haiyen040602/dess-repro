@@ -5,12 +5,10 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
 import torch
-import transformers
-from torch.optim import optimizer
+from torch.optim import AdamW, Optimizer
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from transformers import AdamW
-from transformers import AutoTokenizer, AutoConfig
+from transformers import AutoTokenizer, AutoConfig, get_linear_schedule_with_warmup
 
 from Parameter import train_argparser
 from models.D2E2S_Model import D2E2SModel
@@ -107,7 +105,7 @@ class D2E2S_Trainer(BaseTrainer):
             correct_bias=False,
         )
         # create scheduler
-        scheduler = transformers.get_linear_schedule_with_warmup(
+        scheduler = get_linear_schedule_with_warmup(
             optimizer,
             num_warmup_steps=args.lr_warmup * updates_total,
             num_training_steps=updates_total,
@@ -181,7 +179,7 @@ class D2E2S_Trainer(BaseTrainer):
         self,
         model: torch.nn.Module,
         compute_loss: D2E2SLoss,
-        optimizer: optimizer,
+        optimizer: Optimizer,
         dataset: Dataset,
         updates_epoch: int,
         epoch: int,
@@ -204,7 +202,7 @@ class D2E2S_Trainer(BaseTrainer):
         total = dataset.sentence_count // self.args.batch_size
         for batch in tqdm(data_loader, total=total, desc="Train epoch %s" % epoch):
             model.train()
-            batch = util.to_device(batch, arg_parser.device)
+            batch = util.to_device(batch, self.args.device)
 
             # forward step
             entity_logits, senti_logits, batch_loss = model(
@@ -246,7 +244,7 @@ class D2E2S_Trainer(BaseTrainer):
 
     def _log_train(
         self,
-        optimizer: optimizer,
+        optimizer: Optimizer,
         loss: float,
         epoch: int,
         iteration: int,

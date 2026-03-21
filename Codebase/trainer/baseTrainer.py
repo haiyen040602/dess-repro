@@ -5,7 +5,7 @@ from typing import List, Dict, Tuple
 
 import torch
 from torch.nn import DataParallel
-from torch.optim import optimizer
+from torch.optim import Optimizer
 from transformers import PreTrainedModel
 from transformers import PreTrainedTokenizer
 
@@ -35,7 +35,7 @@ class BaseTrainer:
             # tensorboard summary
             self._summary_writer = tensorboardX.SummaryWriter(self._log_path) if tensorboardX is not None else None
 
-    def _save_best(self, model: PreTrainedModel, tokenizer: PreTrainedTokenizer, optimizer: optimizer,
+    def _save_best(self, model: PreTrainedModel, tokenizer: PreTrainedTokenizer, optimizer: Optimizer,
                    accuracy: float, iteration: int, label: str, extra=None):
         if accuracy > self._best_results[label]:
             self._save_model(self._save_path, model, tokenizer, iteration,
@@ -57,7 +57,7 @@ class BaseTrainer:
             self._best_results[label] = 0
 
     def _save_model(self, save_path: str, model: PreTrainedModel, tokenizer: PreTrainedTokenizer,
-                    iteration: int, optimizer: optimizer = None, save_as_best: bool = False,
+                    iteration: int, optimizer: Optimizer = None, save_as_best: bool = False,
                     extra: dict = None, include_iteration: int = True, name: str = 'model'):
         extra_state = dict(iteration=iteration)
 
