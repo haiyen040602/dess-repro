@@ -271,7 +271,10 @@ class Evaluator:
                         for j in range(4)
                     ] + [t[4]]
             else:
-                c = list(t[:5])  # 4 entities + senti_type  (or 3 fields for entity)
+                if type(t[0]) == int:  # entity: (start, end, type[, score])
+                    c = list(t[:3])
+                else:  # quintuple: (s, o, a, p, senti_type[, score])
+                    c = list(t[:5])
 
             if include_score and len(t) > len(c):
                 c.append(t[-1])
