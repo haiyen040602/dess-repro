@@ -102,7 +102,6 @@ class D2E2S_Trainer(BaseTrainer):
             optimizer_params,
             lr=args.lr,
             weight_decay=args.weight_decay,
-            correct_bias=False,
         )
         # create scheduler
         scheduler = get_linear_schedule_with_warmup(
