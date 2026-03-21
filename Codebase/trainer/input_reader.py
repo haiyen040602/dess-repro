@@ -164,20 +164,23 @@ class JsonInputReader():
         for jsentiment in jsentiments:
             sentiment_type = self._sentiment_types[jsentiment['type']]
 
-            head_idx = jsentiment['head']
-            tail_idx = jsentiment['tail']
+            s_idx = jsentiment.get('s')
+            o_idx = jsentiment.get('o')
+            a_idx = jsentiment.get('a')
+            p_idx = jsentiment.get('p')
 
-            head = entities[head_idx]
-            tail = entities[tail_idx]
-            try:
-                reverse = int(tail.tokens[0].index) < int(head.tokens[0].index)
-            except:
-                print(sen_id,jsentiment,head,">>>>",tail)
+            s_entity = entities[s_idx] if s_idx is not None else None
+            o_entity = entities[o_idx] if o_idx is not None else None
+            a_entity = entities[a_idx] if a_idx is not None else None
+            p_entity = entities[p_idx] if p_idx is not None else None
 
-            if sentiment_type.symmetric and reverse:
-                head, tail = util.swap(head, tail)
-
-            sentiment = dataset.create_sentiment(sentiment_type, head_entity=head, tail_entity=tail, reverse=reverse)
+            sentiment = dataset.create_sentiment(
+                sentiment_type,
+                s_entity=s_entity,
+                o_entity=o_entity,
+                a_entity=a_entity,
+                p_entity=p_entity,
+            )
             sentiments.append(sentiment)
 
         return sentiments

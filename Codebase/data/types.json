@@ -1,2 +1,2 @@
-{"entities": {"target": {"short": "t", "verbose": "target"}, "opinion": {"short": "o", "verbose": "opinion"}},
+{"entities": {"subject": {"short": "s", "verbose": "Subject"}, "object": {"short": "o", "verbose": "Object"}, "aspect": {"short": "a", "verbose": "Aspect"}, "predicate": {"short": "p", "verbose": "Predicate"}},
 "sentiment": {"BETTER": {"short": "BET","verbose": "BETTER","symmetric": false},"EQUAL": {"short": "EQU","verbose": "EQUAL","symmetric": false},"WORSE": {"short": "WOR", "verbose": "WORSE","symmetric": false},"DIFFERENT": {"short": "DIF", "verbose": "DIFFERENT","symmetric": false}}}

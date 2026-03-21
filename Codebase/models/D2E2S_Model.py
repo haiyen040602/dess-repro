@@ -71,7 +71,7 @@ class D2E2SModel(PreTrainedModel):
         self.Syn_gcn = GCN(self._emb_dim)
         self.Sem_gcn = SemGCN(self.args, self._emb_dim)
         self.senti_classifier = nn.Linear(
-            config.hidden_size * 3 + self._size_embedding * 2, sentiment_types
+            config.hidden_size * 5 + self._size_embedding * 4, sentiment_types
         )
         self.entity_classifier = nn.Linear(
             config.hidden_size * 2 + self._size_embedding, entity_types
@@ -354,31 +354,27 @@ class D2E2SModel(PreTrainedModel):
             senti_masks = senti_masks[:, chunk_start : chunk_start + self._max_pairs]
             h = h[:, : sentiments.shape[1], :]
 
-        # get pairs of entity candidate representations
-        entity_pairs = util.batch_index(entity_spans, sentiments)
-        entity_pairs = entity_pairs.view(batch_size, entity_pairs.shape[1], -1)
+        # get quadruples of entity candidate representations  [batch, n_quints, 4, hidden]
+        entity_quads = util.batch_index(entity_spans, sentiments)
+        entity_quads = entity_quads.view(batch_size, entity_quads.shape[1], -1)  # [batch, n_quints, 4*hidden]
 
-        # get corresponding size embeddings
-        size_pair_embeddings = util.batch_index(size_embeddings, sentiments)
-        size_pair_embeddings = size_pair_embeddings.view(
-            batch_size, size_pair_embeddings.shape[1], -1
-        )
+        # get corresponding size embeddings  [batch, n_quints, 4, size_emb]
+        size_quad_embeddings = util.batch_index(size_embeddings, sentiments)
+        size_quad_embeddings = size_quad_embeddings.view(
+            batch_size, size_quad_embeddings.shape[1], -1
+        )  # [batch, n_quints, 4*size_emb]
 
-        # sentiment context (context between entity candidate pair)
-        # mask non entity candidate tokens
+        # sentiment context (context spanning all entity spans in the quintuple)
         m = ((senti_masks == 0).float() * (-1e30)).unsqueeze(-1)
         senti_ctx = m + h
-        # max pooling
         senti_ctx = senti_ctx.max(dim=2)[0]
-        # set the context vector of neighboring or adjacent entity candidates to zero
         senti_ctx[senti_masks.to(torch.uint8).any(-1) == 0] = 0
 
-        # create sentiment candidate representations including context, max pooled entity candidate pairs
-        # and corresponding size embeddings
-        senti_repr = torch.cat([senti_ctx, entity_pairs, size_pair_embeddings], dim=2)
+        # create sentiment candidate representations:
+        #   context  [hidden]  +  4 entities [4*hidden]  +  4 size embs [4*size_emb]
+        senti_repr = torch.cat([senti_ctx, entity_quads, size_quad_embeddings], dim=2)
         senti_repr = self.dropout(senti_repr)
 
-        # classify sentiment candidates
         chunk_senti_logits = self.senti_classifier(senti_repr)
         return chunk_senti_logits
 
@@ -395,6 +391,10 @@ class D2E2SModel(PreTrainedModel):
         f.close()
 
     def _filter_spans(self, entity_clf, entity_spans, entity_sample_masks, ctx_size):
+        """Generate candidate quintuples (s, o, a, p) from predicted entity spans.
+        Index 0 in entity_spans is always the NULL entity (CLS span).
+        """
+        from itertools import product as iproduct
         batch_size = entity_clf.shape[0]
         entity_logits_max = (
             entity_clf.argmax(dim=-1) * entity_sample_masks.long()
@@ -408,36 +408,55 @@ class D2E2SModel(PreTrainedModel):
             senti_masks = []
             sample_masks = []
 
-            # get spans classified as entities
             self.log_sample_total(entity_logits_max[i])
-            non_zero_indices = (entity_logits_max[i] != 0).nonzero().view(-1)
-            non_zero_spans = entity_spans[i][non_zero_indices].tolist()
-            non_zero_indices = non_zero_indices.tolist()
 
-            # create sentiments and masks
-            for i1, s1 in zip(non_zero_indices, non_zero_spans):
-                for i2, s2 in zip(non_zero_indices, non_zero_spans):
-                    if i1 != i2:
-                        rels.append((i1, i2))
-                        senti_masks.append(sampling.create_senti_mask(s1, s2, ctx_size))
-                        sample_masks.append(1)
+            # Non-zero (non-None) entity indices (excluding index 0 = null)
+            non_zero_indices = (entity_logits_max[i] != 0).nonzero().view(-1).tolist()
+            non_zero_spans = [entity_spans[i][idx].tolist() for idx in non_zero_indices]
+
+            # All candidate indices include null (0) and real entities
+            all_indices = [0] + non_zero_indices
+
+            # Enumerate all 4-tuples; limit to _max_pairs to control memory
+            for i1, i2, i3, i4 in iproduct(all_indices, all_indices,
+                                             all_indices, all_indices):
+                # At least one slot must be a real (non-null) entity
+                if i1 == 0 and i2 == 0 and i3 == 0 and i4 == 0:
+                    continue
+                rels.append((i1, i2, i3, i4))
+
+                # Context mask: span region covering all non-null entities
+                real_span_list = [
+                    entity_spans[i][idx].tolist()
+                    for idx in (i1, i2, i3, i4) if idx != 0
+                ]
+                if len(real_span_list) >= 2:
+                    sorted_s = sorted(real_span_list, key=lambda s: s[0])
+                    cs, ce = sorted_s[0][1], sorted_s[-1][0]
+                    mask = torch.zeros(ctx_size, dtype=torch.bool)
+                    if cs < ce:
+                        mask[cs:ce] = 1
+                else:
+                    mask = torch.zeros(ctx_size, dtype=torch.bool)
+                senti_masks.append(mask)
+                sample_masks.append(1)
+
+                if len(rels) >= self._max_pairs:
+                    break
 
             if not rels:
-                # case: no more than two spans classified as entities
-                batch_sentiments.append(torch.tensor([[0, 0]], dtype=torch.long))
+                batch_sentiments.append(torch.tensor([[0, 0, 0, 0]], dtype=torch.long))
                 batch_senti_masks.append(
                     torch.tensor([[0] * ctx_size], dtype=torch.bool)
                 )
                 batch_senti_sample_masks.append(torch.tensor([0], dtype=torch.bool))
             else:
-                # case: more than two spans classified as entities
                 batch_sentiments.append(torch.tensor(rels, dtype=torch.long))
                 batch_senti_masks.append(torch.stack(senti_masks))
                 batch_senti_sample_masks.append(
                     torch.tensor(sample_masks, dtype=torch.bool)
                 )
 
-        # stack
         device = self.senti_classifier.weight.device
         batch_sentiments = util.padded_stack(batch_sentiments).to(device)
         batch_senti_masks = util.padded_stack(batch_senti_masks).to(device)

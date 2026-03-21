@@ -150,41 +150,62 @@ class sentimentType:
     @property
     def verbose_name(self):
         return self._verbose_name
+_NULL_ENTITY_TYPE = EntityType('None', 0, 'None', 'No Entity')
+
+# Null span in encoding space: position 0 = [CLS] token
+NULL_SPAN = (0, 1)
+
+
+def _entity_as_span_tuple(entity):
+    """Return (span_start, span_end, entity_type); uses NULL_SPAN for absent entities."""
+    if entity is None:
+        return (NULL_SPAN[0], NULL_SPAN[1], _NULL_ENTITY_TYPE)
+    return (entity.span_start, entity.span_end, entity.entity_type)
+
+
 class Sentiment:
-    def __init__(self, rid: int, sentiment_type: sentimentType, head_entity: Entity,
-                 tail_entity: Entity, reverse: bool = False):
+    """Represents a COQE comparative quintuple: (subject, object, aspect, predicate, label)."""
+
+    def __init__(self, rid: int, sentiment_type: sentimentType,
+                 s_entity,   # Subject   – may be None
+                 o_entity,   # Object    – may be None
+                 a_entity,   # Aspect    – may be None
+                 p_entity):  # Predicate – may be None
         self._rid = rid
         self._sentiment_type = sentiment_type
-
-        self._head_entity = head_entity
-        self._tail_entity = tail_entity
-
-        self._reverse = reverse
-
-        self._first_entity = head_entity if not reverse else tail_entity
-        self._second_entity = tail_entity if not reverse else head_entity
+        self._s_entity = s_entity
+        self._o_entity = o_entity
+        self._a_entity = a_entity
+        self._p_entity = p_entity
 
     def as_tuple(self):
-        head = self._head_entity
-        tail = self._tail_entity
-        head_start, head_end = (head.span_start, head.span_end)
-        tail_start, tail_end = (tail.span_start, tail.span_end)
-
-        t = ((head_start, head_end, head.entity_type),
-             (tail_start, tail_end, tail.entity_type), self._sentiment_type)
-        return t
+        return (
+            _entity_as_span_tuple(self._s_entity),
+            _entity_as_span_tuple(self._o_entity),
+            _entity_as_span_tuple(self._a_entity),
+            _entity_as_span_tuple(self._p_entity),
+            self._sentiment_type,
+        )
 
     @property
     def sentiment_type(self):
         return self._sentiment_type
 
     @property
-    def head_entity(self):
-        return self._head_entity
+    def s_entity(self):
+        return self._s_entity
 
     @property
-    def tail_entity(self):
-        return self._tail_entity
+    def o_entity(self):
+        return self._o_entity
+
+    @property
+    def a_entity(self):
+        return self._a_entity
+
+    @property
+    def p_entity(self):
+        return self._p_entity
 
 class Sentence:
     def __init__(self, sen_id: int, tokens: List[Token], entities: List[Entity], sentiments: List[Sentiment],
@@ -257,8 +278,8 @@ class Dataset(TorchDataset):
         self._eid += 1
         return mention
 
-    def create_sentiment(self, sentiment_type, head_entity, tail_entity, reverse=False) -> Sentiment:
-        sentiment = Sentiment(self._rid, sentiment_type, head_entity, tail_entity, reverse)
+    def create_sentiment(self, sentiment_type, s_entity, o_entity, a_entity, p_entity) -> Sentiment:
+        sentiment = Sentiment(self._rid, sentiment_type, s_entity, o_entity, a_entity, p_entity)
         self._sentiments[self._rid] = sentiment
         self._rid += 1
         return sentiment

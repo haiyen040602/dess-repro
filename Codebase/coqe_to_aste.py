@@ -251,11 +251,10 @@ def create_aste_format(coqe_samples_list):
         obj_spans = extract_spans(coqe_sample['objects'])
         comp_spans = extract_spans(coqe_sample['comparators'])
         
-        # Fallback: if no pred/sent, try subject/object
+        # Simple fallback: only use subjects if predicates missing
+        # This keeps extraction clean and avoids noisy triplets
         if not pred_spans and subj_spans:
             pred_spans = subj_spans
-        if not sent_spans and obj_spans:
-            sent_spans = obj_spans
         
         # Each quintuple has ONE aspect + ONE opinion
         if pred_spans and sent_spans:

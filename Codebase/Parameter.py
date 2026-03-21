@@ -35,6 +35,12 @@ def train_argparser():
             "test": "./data/cameraCOQE/test_dep_triple_polarity_result.json",
             "types_path": "./data/types.json",
         },
+        "cameraCOQE_quintuple": {
+            "train": "./data/cameraCOQE_quintuple/train_quintuple.json",
+            "dev": "./data/cameraCOQE_quintuple/dev_quintuple.json",
+            "test": "./data/cameraCOQE_quintuple/test_quintuple.json",
+            "types_path": "./data/types.json",
+        },
     }
 
     # model argument
