@@ -257,9 +257,8 @@ def train_argparser():
     opt.label = opt.dataset
 
     opt.dataset_file = dataset_files[opt.dataset]
-    opt.device = (
-        torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        if opt.device is None
-        else torch.device(opt.device)
-    )
+    if opt.cpu:
+        opt.device = torch.device("cpu")
+    else:
+        opt.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     return opt
