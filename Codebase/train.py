@@ -351,7 +351,7 @@ class D2E2S_Trainer(BaseTrainer):
                 evaluator.eval_batch(entity_clf, senti_clf, rels, batch)
             global_iteration = epoch * updates_epoch + iteration
             print_examples = 5 if label_to_log == "test_final" else 0
-            print_extra_metrics = log_label == "dev"
+            print_extra_metrics = label_to_log in {"dev", "test_final"}
             ner_eval, senti_eval, senti_nec_eval, extra_eval = evaluator.compute_scores(
                 print_examples=print_examples,
                 print_extra_metrics=print_extra_metrics,
@@ -404,9 +404,9 @@ class D2E2S_Trainer(BaseTrainer):
                         if 'label' in extra_eval:
                             f.write("\n label_only: \n")
                             f.write(str(metric_dict(extra_eval['label'])))
-                        if 't4' in extra_eval:
-                            f.write("\n quadruple_t4: \n")
-                            f.write(str(metric_dict(extra_eval['t4'])))
+                        if 'exact_quadruple' in extra_eval:
+                            f.write("\n exact_quadruple: \n")
+                            f.write(str(metric_dict(extra_eval['exact_quadruple'])))
                     f.write("\n")
         elif label_to_log == "test_final":
             ner_dic = metric_dict(ner_eval)
@@ -421,6 +421,13 @@ class D2E2S_Trainer(BaseTrainer):
                 f.write(str(senti_dic))
                 f.write("\n quintuple_typed: \n")
                 f.write(str(senti_nec_dic))
+                if extra_eval:
+                    if 'label' in extra_eval:
+                        f.write("\n label_only: \n")
+                        f.write(str(metric_dict(extra_eval['label'])))
+                    if 'exact_quadruple' in extra_eval:
+                        f.write("\n exact_quadruple: \n")
+                        f.write(str(metric_dict(extra_eval['exact_quadruple'])))
                 f.write("\n")
             if self.args.store_predictions:
                 evaluator.store_predictions()

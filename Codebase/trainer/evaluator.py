@@ -37,7 +37,7 @@ class Evaluator:
         self._pred_entities = []  # prediction
 
         self._pseudo_entity_type = EntityType('Entity', 1, 'Entity', 'Entity')  # for span only evaluation
-        self._pseudo_quad_type = sentimentType('T4', 1, 'T4', 'Quadruple-T4')
+        self._pseudo_quad_type = sentimentType('EXACT_QUAD', 1, 'EQ4', 'Exact-Quadruple')
 
         self._convert_gt(self._dataset.sentences)
 
@@ -195,11 +195,11 @@ class Evaluator:
             extra_eval['label'] = self._score(label_gt, label_pred, print_results=True)
 
             print("")
-            print("--- Comparative Quadruple T4 Extraction (span-only) ---")
+            print("--- Exact Quadruple Extraction (span-only) ---")
             print("")
             t4_gt = self._convert_t4_only(self._gt_sentiments)
             t4_pred = self._convert_t4_only(self._pred_sentiments)
-            extra_eval['t4'] = self._score(t4_gt, t4_pred, print_results=True)
+            extra_eval['exact_quadruple'] = self._score(t4_gt, t4_pred, print_results=True)
 
         # Optionally print examples (text + TP/FP/FN) to console
         if print_examples and print_examples > 0:
