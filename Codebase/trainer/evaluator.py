@@ -548,7 +548,9 @@ class Evaluator:
         fp = []
 
         for s in union:
-            type_verbose = s[2].verbose_name
+            # entity tuple: (start, end, entity_type)
+            # quintuple tuple: (s, o, a, p, senti_type)
+            type_verbose = s[2].verbose_name if type(s[0]) == int else s[4].verbose_name
 
             if s in gt:
                 if s in pred:
