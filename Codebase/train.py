@@ -37,6 +37,8 @@ class D2E2S_Trainer(BaseTrainer):
         os.makedirs(self._log_path_result)
         os.makedirs(self._log_path_predict)
         self.max_pair_f1 = 40
+        self.best_dev_epoch = 0
+        self.best_dev_metric = 0.0
         self.result_path = os.path.join(
             self._log_path_result, "result{}.txt".format(self.args.max_span_size)
         )
@@ -143,10 +145,11 @@ class D2E2S_Trainer(BaseTrainer):
             )
 
             # eval on dev set and save best model
-            dev_ner_eval, dev_senti_eval, dev_senti_nec_eval = self._eval(
+            dev_ner_eval, dev_senti_eval, dev_senti_nec_eval, dev_extra_eval = self._eval(
                 model, dev_dataset, input_reader, epoch + 1, updates_epoch, label_to_log="dev"
             )
-            dev_f1 = float(dev_senti_eval[2])
+            dev_f1 = float(dev_senti_nec_eval[2]) if float(dev_senti_nec_eval[2]) > 0 else float(dev_senti_eval[2])
+            is_best = dev_f1 > self._best_results.get("dev", 0)
             
             # Save best model based on dev F1 score
             self._save_best(
@@ -158,10 +161,10 @@ class D2E2S_Trainer(BaseTrainer):
                 label="dev",
                 extra=None
             )
-
-            # eval on test set after each epoch
-            if not args.final_eval or (epoch == args.epochs - 1):
-                self._eval(model, test_dataset, input_reader, epoch + 1, updates_epoch, label_to_log="test")
+            if is_best:
+                self.best_dev_epoch = epoch + 1
+                self.best_dev_metric = dev_f1
+                print(f"New best dev checkpoint at epoch {self.best_dev_epoch} (metric={self.best_dev_metric:.2f})")
         
         # Load best model and evaluate on test set
         print(f"\nLoading best model with dev set")
@@ -178,9 +181,9 @@ class D2E2S_Trainer(BaseTrainer):
             model.to(args.device)
             self._print_device_info(model, "eval-best")
             print("\n" + "="*80)
-            print("FINAL TEST RESULTS (Best Model from Dev Set)")
+            print(f"FINAL TEST RESULTS (Best Model from Dev Set, epoch={self.best_dev_epoch}, metric={self.best_dev_metric:.2f})")
             print("="*80)
-            self._eval(model, test_dataset, input_reader, 0, updates_epoch, label_to_log="test_final")
+            self._eval(model, test_dataset, input_reader, self.best_dev_epoch, updates_epoch, label_to_log="test_final")
             print("="*80)
         else:
             print(f"Best model path not found: {best_model_path}")
@@ -347,9 +350,14 @@ class D2E2S_Trainer(BaseTrainer):
                 # evaluate batch, entity:tensor(16, 188, 3), senti_clf:tensor(16, 2, 4), rels:tensor(16, 2, 2)
                 evaluator.eval_batch(entity_clf, senti_clf, rels, batch)
             global_iteration = epoch * updates_epoch + iteration
-            ner_eval, senti_eval, senti_nec_eval = evaluator.compute_scores(print_examples=5)
+            print_examples = 5 if label_to_log == "test_final" else 0
+            print_extra_metrics = log_label == "dev"
+            ner_eval, senti_eval, senti_nec_eval, extra_eval = evaluator.compute_scores(
+                print_examples=print_examples,
+                print_extra_metrics=print_extra_metrics,
+            )
             # print(self.result_path)
-            self._log_filter_file(ner_eval, senti_eval, evaluator, epoch, log_label)
+            self._log_filter_file(ner_eval, senti_eval, senti_nec_eval, extra_eval, evaluator, epoch, label_to_log)
         self._log_eval(
             *ner_eval,
             *senti_eval,
@@ -359,69 +367,61 @@ class D2E2S_Trainer(BaseTrainer):
             global_iteration,
             log_label
         )
-        return ner_eval, senti_eval, senti_nec_eval
+        return ner_eval, senti_eval, senti_nec_eval, extra_eval
 
-    def _log_filter_file(self, ner_eval, senti_eval, evaluator, epoch, label_to_log="test"):
+    def _log_filter_file(self, ner_eval, senti_eval, senti_nec_eval, extra_eval, evaluator, epoch, label_to_log="test"):
         f1 = float(senti_eval[2])
+        columns = [
+            "mic_precision",
+            "mic_recall",
+            "mic_f1_score",
+            "mac_precision",
+            "mac_recall",
+            "mac_f1_score",
+        ]
+
+        def metric_dict(values):
+            return {columns[idx]: values[idx] for idx in range(len(columns))}
+
         # Track and store results for dev and test sets
         if label_to_log == "dev":
             # Only update best when dev improves
             if self.max_pair_f1 < f1:
-                columns = [
-                    "mic_precision",
-                    "mic_recall",
-                    "mic_f1_score",
-                    "mac_precision",
-                    "mac_recall",
-                    "mac_f1_score",
-                ]
-                ner_dic = {k: 0.0 for k in columns}
-                senti_dic = {k: 0.0 for k in columns}
-                for inx, val in enumerate(senti_eval):
-                    senti_dic[columns[inx]] = val
+                ner_dic = metric_dict(ner_eval)
+                senti_dic = metric_dict(senti_eval)
+                senti_nec_dic = metric_dict(senti_nec_eval)
                 self.max_pair_f1 = f1
                 with open(self.result_path, mode="a", encoding="utf-8") as f:
                     w_str = "No. {} ： (dev) ....\n".format(epoch)
                     f.write(w_str)
                     f.write("ner_entity: \n")
                     f.write(str(ner_dic))
-                    f.write("\n rec: \n")
+                    f.write("\n quintuple_span: \n")
                     f.write(str(senti_dic))
+                    f.write("\n quintuple_typed: \n")
+                    f.write(str(senti_nec_dic))
+                    if extra_eval:
+                        if 'label' in extra_eval:
+                            f.write("\n label_only: \n")
+                            f.write(str(metric_dict(extra_eval['label'])))
+                        if 't4' in extra_eval:
+                            f.write("\n quadruple_t4: \n")
+                            f.write(str(metric_dict(extra_eval['t4'])))
                     f.write("\n")
-                try:
-                    fileNames = os.listdir(self._log_path_predict)
-                    for i in fileNames:
-                        os.remove(os.path.join(self._log_path_predict, i))
-                except BaseException:
-                    print(BaseException)
-                if self.args.store_predictions:
-                    evaluator.store_predictions()
-                if self.args.store_examples:
-                    evaluator.store_examples()
-        elif label_to_log == "test" or label_to_log == "test_final":
-            # For test (both during training and final eval), always store predictions/examples and log results
-            # (final_eval flag only controls whether eval happens each epoch or just at end)
-            columns = [
-                "mic_precision",
-                "mic_recall",
-                "mic_f1_score",
-                "mac_precision",
-                "mac_recall",
-                "mac_f1_score",
-            ]
-            ner_dic = {k: 0.0 for k in columns}
-            senti_dic = {k: 0.0 for k in columns}
-            for inx, val in enumerate(senti_eval):
-                senti_dic[columns[inx]] = val
+        elif label_to_log == "test_final":
+            ner_dic = metric_dict(ner_eval)
+            senti_dic = metric_dict(senti_eval)
+            senti_nec_dic = metric_dict(senti_nec_eval)
             with open(self.result_path, mode="a", encoding="utf-8") as f:
-                w_str = "No. {} ： (test) ....\n".format(epoch)
+                w_str = "No. {} ： (test_final) ....\n".format(epoch)
                 f.write(w_str)
                 f.write("ner_entity: \n")
                 f.write(str(ner_dic))
-                f.write("\n rec: \n")
+                f.write("\n quintuple_span: \n")
                 f.write(str(senti_dic))
+                f.write("\n quintuple_typed: \n")
+                f.write(str(senti_nec_dic))
                 f.write("\n")
-            # do not remove existing prediction files; just store new ones
             if self.args.store_predictions:
                 evaluator.store_predictions()
             if self.args.store_examples:

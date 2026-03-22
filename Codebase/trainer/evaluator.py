@@ -1,4 +1,4 @@
-from trainer.entities import Sentence, Dataset, EntityType
+from trainer.entities import Sentence, Dataset, EntityType, sentimentType
 from transformers import PreTrainedTokenizerBase
 from trainer.input_reader import JsonInputReader
 from typing import List, Tuple, Dict
@@ -37,6 +37,7 @@ class Evaluator:
         self._pred_entities = []  # prediction
 
         self._pseudo_entity_type = EntityType('Entity', 1, 'Entity', 'Entity')  # for span only evaluation
+        self._pseudo_quad_type = sentimentType('T4', 1, 'T4', 'Quadruple-T4')
 
         self._convert_gt(self._dataset.sentences)
 
@@ -118,9 +119,9 @@ class Evaluator:
     def _convert_pred_sentiments(self, pred_senti_types: torch.tensor, pred_entity_spans: torch.tensor,
                                 pred_entity_types: torch.tensor, pred_scores: torch.tensor):
         """Convert predicted quintuples (s, o, a, p, label) for evaluation."""
-        converted_rels = []
-        check = set()
+        converted_rels = {}
         NULL_SPAN = (0, 1)  # encoding position of CLS = null entity
+        expected_roles = ['subject', 'object', 'aspect', 'predicate']
 
         for i in range(pred_senti_types.shape[0]):
             label_idx = pred_senti_types[i].item()
@@ -128,19 +129,28 @@ class Evaluator:
             score = pred_scores[i].item()
 
             entity_tuples = []
+            valid_tuple = True
             for j in range(4):  # s, o, a, p
                 type_idx = pred_entity_types[i][j].item()
                 entity_type = self._input_reader.get_entity_type(type_idx)
                 start, end = pred_entity_spans[i][j].tolist()
+                if (start, end) != NULL_SPAN and entity_type.identifier != expected_roles[j]:
+                    valid_tuple = False
+                    break
                 entity_tuples.append((start, end, entity_type))
 
+            if not valid_tuple:
+                continue
+            if (entity_tuples[3][0], entity_tuples[3][1]) == NULL_SPAN:
+                continue
+
             converted_rel = tuple(entity_tuples + [pred_senti_type])
+            converted_with_score = tuple(list(converted_rel) + [score])
 
-            if converted_rel not in check:
-                check.add(converted_rel)
-                converted_rels.append(tuple(list(converted_rel) + [score]))
+            if converted_rel not in converted_rels or score > converted_rels[converted_rel][-1]:
+                converted_rels[converted_rel] = converted_with_score
 
-        return converted_rels
+        return sorted(converted_rels.values(), key=lambda item: item[-1], reverse=True)
 
     def _convert_gt(self, sens: List[Sentence]):
         for sen in sens:
@@ -154,7 +164,7 @@ class Evaluator:
             self._gt_entities.append(sample_gt_entities)
             self._gt_sentiments.append(sample_gt_sentiments)
 
-    def compute_scores(self, print_examples: int = 0):
+    def compute_scores(self, print_examples: int = 0, print_extra_metrics: bool = False):
         print("Evaluation")
 
         print("")
@@ -174,6 +184,22 @@ class Evaluator:
         print("")
         gt, pred = self._convert_by_setting(self._gt_sentiments, self._pred_sentiments, include_entity_types=True)
         senti_nec_eval = self._score(gt, pred, print_results=True)
+
+        extra_eval = {}
+        if print_extra_metrics:
+            print("")
+            print("--- Comparative Label Prediction (label-only) ---")
+            print("")
+            label_gt = self._convert_label_only(self._gt_sentiments)
+            label_pred = self._convert_label_only(self._pred_sentiments)
+            extra_eval['label'] = self._score(label_gt, label_pred, print_results=True)
+
+            print("")
+            print("--- Comparative Quadruple T4 Extraction (span-only) ---")
+            print("")
+            t4_gt = self._convert_t4_only(self._gt_sentiments)
+            t4_pred = self._convert_t4_only(self._pred_sentiments)
+            extra_eval['t4'] = self._score(t4_gt, t4_pred, print_results=True)
 
         # Optionally print examples (text + TP/FP/FN) to console
         if print_examples and print_examples > 0:
@@ -218,7 +244,23 @@ class Evaluator:
 
             print('\n' + '-' * 40)
 
-        return ner_eval, senti_eval, senti_nec_eval
+        return ner_eval, senti_eval, senti_nec_eval, extra_eval
+
+    def _convert_label_only(self, sentiments: List[List[Tuple]]):
+        converted = []
+        for sample in sentiments:
+            converted.append([(sentiment[4],) for sentiment in sample])
+        return converted
+
+    def _convert_t4_only(self, sentiments: List[List[Tuple]]):
+        converted = []
+        for sample in sentiments:
+            converted_sample = []
+            for sentiment in sample:
+                quad = tuple((sentiment[j][0], sentiment[j][1]) for j in range(4))
+                converted_sample.append(tuple(list(quad) + [self._pseudo_quad_type]))
+            converted.append(converted_sample)
+        return converted
 
     def _remove_overlapping(self, entities, sentiments):
         non_overlapping_entities = []

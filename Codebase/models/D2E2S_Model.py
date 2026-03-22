@@ -385,14 +385,22 @@ class D2E2SModel(PreTrainedModel):
 
             # Non-zero (non-None) entity indices (excluding index 0 = null)
             non_zero_indices = (entity_logits_max[i] != 0).nonzero().view(-1).tolist()
-            non_zero_spans = [entity_spans[i][idx].tolist() for idx in non_zero_indices]
+            entity_type_ids = entity_logits_max[i].tolist()
 
-            # All candidate indices include null (0) and real entities
-            all_indices = [0] + non_zero_indices
+            if getattr(self.args, "dataset", "") == "cameraCOQE_quintuple" and self._entity_types >= 5:
+                # Restrict each quintuple slot to the matching entity role.
+                subject_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 1]
+                object_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 2]
+                aspect_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 3]
+                predicate_indices = [idx for idx in non_zero_indices if entity_type_ids[idx] == 4]
+                role_products = iproduct(subject_indices, object_indices, aspect_indices, predicate_indices)
+            else:
+                # All candidate indices include null (0) and real entities.
+                all_indices = [0] + non_zero_indices
+                role_products = iproduct(all_indices, all_indices, all_indices, all_indices)
 
             # Enumerate all 4-tuples; limit to _max_pairs to control memory
-            for i1, i2, i3, i4 in iproduct(all_indices, all_indices,
-                                             all_indices, all_indices):
+            for i1, i2, i3, i4 in role_products:
                 # At least one slot must be a real (non-null) entity
                 if i1 == 0 and i2 == 0 and i3 == 0 and i4 == 0:
                     continue
