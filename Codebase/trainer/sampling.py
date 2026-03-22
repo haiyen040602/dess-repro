@@ -232,6 +232,7 @@ def train_create_sample(sen, neg_entity_count: int, neg_senti_count: int, max_sp
                 entity_sizes=entity_sizes, entity_types=entity_types,
                 rels=rels, senti_masks=senti_masks, senti_types=senti_types_onehot,
                 entity_sample_masks=entity_sample_masks, senti_sample_masks=senti_sample_masks,
+                sentence_types=torch.tensor(float(sen.is_comparative), dtype=torch.float32),
                 adj = adj)
 
 def create_test_sample(sen, max_span_size: int):
@@ -286,7 +287,8 @@ def create_test_sample(sen, max_span_size: int):
 
     return dict(encodings=encodings, context_masks=context_masks, entity_masks=entity_masks,
                 entity_start_masks=entity_start_masks, entity_end_masks=entity_end_masks,
-                entity_sizes=entity_sizes, entity_spans=entity_spans, entity_sample_masks=entity_sample_masks,adj = adj)
+                entity_sizes=entity_sizes, entity_spans=entity_spans, entity_sample_masks=entity_sample_masks,
+                sentence_types=torch.tensor(float(sen.is_comparative), dtype=torch.float32), adj = adj)
 
 def create_entity_index(start, end):
     index = []

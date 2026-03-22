@@ -125,13 +125,16 @@ class D2E2S_Trainer(BaseTrainer):
         # create loss function
         entity_criterion = torch.nn.CrossEntropyLoss(reduction="none")
         senti_criterion = torch.nn.BCEWithLogitsLoss(reduction="none")
+        sentence_criterion = torch.nn.BCEWithLogitsLoss(reduction="none")
         compute_loss = D2E2SLoss(
             senti_criterion,
             entity_criterion,
+            sentence_criterion,
             model,
             optimizer,
             scheduler,
             args.max_grad_norm,
+            args.sentence_loss_weight,
         )
         # eval validation set
         if args.init_eval:
@@ -218,7 +221,7 @@ class D2E2S_Trainer(BaseTrainer):
             batch = util.to_device(batch, self.args.device)
 
             # forward step
-            entity_logits, senti_logits, batch_loss = model(
+            entity_logits, senti_logits, sentence_logits, batch_loss = model(
                 encodings=batch["encodings"],
                 context_masks=batch["context_masks"],
                 entity_masks=batch["entity_masks"],
@@ -232,8 +235,10 @@ class D2E2S_Trainer(BaseTrainer):
             epoch_loss = compute_loss.compute(
                 entity_logits=entity_logits,
                 senti_logits=senti_logits,
+                sentence_logits=sentence_logits,
                 batch_loss=batch_loss,
                 senti_types=batch["senti_types"],
+                sentence_types=batch["sentence_types"],
                 entity_types=batch["entity_types"],
                 entity_sample_masks=batch["entity_sample_masks"],
                 senti_sample_masks=batch["senti_sample_masks"],
@@ -308,6 +313,7 @@ class D2E2S_Trainer(BaseTrainer):
             input_reader,
             self._tokenizer,
             self.args.sen_filter_threshold,
+            self.args.sentence_filter_threshold,
             self._predictions_path,
             self._examples_path,
             self.args.example_count,
@@ -346,9 +352,9 @@ class D2E2S_Trainer(BaseTrainer):
                     evaluate=True,
                     adj=batch["adj"],
                 )
-                entity_clf, senti_clf, rels = result
+                entity_clf, senti_clf, rels, sentence_clf = result
                 # evaluate batch, entity:tensor(16, 188, 3), senti_clf:tensor(16, 2, 4), rels:tensor(16, 2, 2)
-                evaluator.eval_batch(entity_clf, senti_clf, rels, batch)
+                evaluator.eval_batch(entity_clf, senti_clf, rels, batch, sentence_clf)
             global_iteration = epoch * updates_epoch + iteration
             print_examples = 5 if label_to_log == "test_final" else 0
             print_extra_metrics = label_to_log in {"dev", "test_final"}
@@ -400,6 +406,9 @@ class D2E2S_Trainer(BaseTrainer):
                     f.write("\n exact_quintuple: \n")
                     f.write(str(senti_nec_dic))
                     if extra_eval:
+                        if 'sentence' in extra_eval:
+                            f.write("\n sentence_comparative: \n")
+                            f.write(str(extra_eval['sentence']))
                         if 'label' in extra_eval:
                             f.write("\n label_only: \n")
                             f.write(str(metric_dict(extra_eval['label'])))
@@ -422,6 +431,9 @@ class D2E2S_Trainer(BaseTrainer):
                     if 'label' in extra_eval:
                         f.write("\n label_only: \n")
                         f.write(str(metric_dict(extra_eval['label'])))
+                    if 'sentence' in extra_eval:
+                        f.write("\n sentence_comparative: \n")
+                        f.write(str(extra_eval['sentence']))
                     if 'exact_quadruple' in extra_eval:
                         f.write("\n exact_quadruple: \n")
                         f.write(str(metric_dict(extra_eval['exact_quadruple'])))

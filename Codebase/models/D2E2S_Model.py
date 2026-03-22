@@ -54,7 +54,7 @@ class D2E2SModel(PreTrainedModel):
         self._emb_dim = self.args.emb_dim
         self.output_size = self._emb_dim
         self.batch_size = self.args.batch_size
-        self.max_pairs = 100
+        self.max_pairs = self.args.max_pairs
         self.deberta_feature_dim = self.args.deberta_feature_dim
         self.gcn_dim = self.args.gcn_dim
         self.gcn_dropout = self.args.gcn_dropout
@@ -70,6 +70,12 @@ class D2E2SModel(PreTrainedModel):
         self.senti_classifier = nn.Linear(
             config.hidden_size * 5 + self._size_embedding * 4, sentiment_types
         )
+        self.sentence_classifier = nn.Sequential(
+            nn.Linear(config.hidden_size * 3, config.hidden_size),
+            nn.GELU(),
+            nn.Dropout(self._prop_drop),
+            nn.Linear(config.hidden_size, 1),
+        )
         self.entity_classifier = nn.Linear(
             config.hidden_size * 2 + self._size_embedding, entity_types
         )
@@ -79,6 +85,7 @@ class D2E2SModel(PreTrainedModel):
         self._sentiment_types = sentiment_types
         self._entity_types = entity_types
         self._max_pairs = self.max_pairs
+        self._max_role_candidates = self.args.max_role_candidates
         self.neg_span_all = 0
         self.neg_span = 0
         self.number = 1
@@ -167,6 +174,7 @@ class D2E2SModel(PreTrainedModel):
             h, h_syn_ori, h_syn_gcn, h_sem_ori, h_sem_gcn, adj_sem_ori, adj_sem_gcn
         )
         h = self.attention_layer(h1, h1, self.context_masks[:, :seq_lens]) + h1
+        sentence_logits = self._classify_sentence(h, context_masks)
         # h_feature, h_syn_origin, h_syn_feature, h_sem_origin, h_sem_feature = self.TIN(h, h_syn_ori, h_syn_gcn, h_sem_ori, h_sem_gcn)
         # h = self.TextCentredSP(h_syn_feature, h_sem_feature)
 
@@ -194,7 +202,7 @@ class D2E2SModel(PreTrainedModel):
 
         batch_loss = compute_loss(adj_sem_ori, adj_sem_gcn, adj)
 
-        return entity_clf, senti_clf, batch_loss
+        return entity_clf, senti_clf, sentence_logits, batch_loss
 
     def _forward_eval(
         self,
@@ -236,6 +244,7 @@ class D2E2SModel(PreTrainedModel):
             h, h_syn_ori, h_syn_gcn, h_sem_ori, h_sem_gcn, adj_sem_ori, adj_sem_gcn
         )
         h = self.attention_layer(h1, h1, self.context_masks[:, :seq_lens]) + h1
+        sentence_logits = self._classify_sentence(h, context_masks)
         # h_feature, h_syn_origin, h_syn_feature, h_sem_origin, h_sem_feature = self.TIN(h, h_syn_ori, h_syn_gcn, h_sem_ori, h_sem_gcn)
         # h = self.TextCentredSP(h_syn_feature, h_sem_feature)
 
@@ -273,10 +282,22 @@ class D2E2SModel(PreTrainedModel):
 
         senti_clf = senti_clf * senti_sample_masks  # mask
 
+        sentence_scores = torch.sigmoid(sentence_logits).view(-1, 1, 1)
+        sentence_gate = (sentence_scores >= self.args.sentence_filter_threshold).float()
+        senti_clf = senti_clf * sentence_gate
+
         # apply softmax
         entity_clf = torch.softmax(entity_clf, dim=2)
 
-        return entity_clf, senti_clf, sentiments
+        return entity_clf, senti_clf, sentiments, sentence_logits
+
+    def _classify_sentence(self, h, context_masks):
+        token_mask = context_masks[:, : h.shape[1]].float()
+        cls_repr = h[:, 0]
+        mean_repr = (h * token_mask.unsqueeze(-1)).sum(dim=1) / token_mask.sum(dim=1, keepdim=True).clamp(min=1.0)
+        max_repr = h.masked_fill(token_mask.unsqueeze(-1) == 0, -1e30).max(dim=1).values
+        sentence_repr = torch.cat([cls_repr, mean_repr, max_repr], dim=-1)
+        return self.sentence_classifier(sentence_repr).squeeze(-1)
 
     def _classify_entities(self, encodings, h, entity_masks, size_embeddings, args):
         # entity_masks: tensor(4,132,24) 4:batch_size, 132: entities count, 24: one sentence token count and one entity need 24 mask
@@ -363,6 +384,20 @@ class D2E2SModel(PreTrainedModel):
             f.write("\n")
         f.close()
 
+    def _select_role_indices(self, entity_type_ids, role_scores, non_zero_indices, role_id, allow_null):
+        role_indices = [idx for idx in non_zero_indices if entity_type_ids[idx] == role_id]
+
+        if self._max_role_candidates > 0 and len(role_indices) > self._max_role_candidates:
+            role_indices = sorted(
+                role_indices,
+                key=lambda idx: role_scores[idx],
+                reverse=True,
+            )[: self._max_role_candidates]
+
+        if allow_null:
+            return [0] + role_indices
+        return role_indices
+
     def _filter_spans(self, entity_clf, entity_spans, entity_sample_masks, ctx_size):
         """Generate candidate quintuples (s, o, a, p) from predicted entity spans.
         Index 0 in entity_spans is always the NULL entity (CLS span).
@@ -388,11 +423,35 @@ class D2E2SModel(PreTrainedModel):
             entity_type_ids = entity_logits_max[i].tolist()
 
             if getattr(self.args, "dataset", "") == "cameraCOQE_quintuple" and self._entity_types >= 5:
-                # Restrict each quintuple slot to the matching entity role.
-                subject_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 1]
-                object_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 2]
-                aspect_indices = [0] + [idx for idx in non_zero_indices if entity_type_ids[idx] == 3]
-                predicate_indices = [idx for idx in non_zero_indices if entity_type_ids[idx] == 4]
+                role_probabilities = torch.softmax(entity_clf[i], dim=-1)
+                subject_indices = self._select_role_indices(
+                    entity_type_ids,
+                    role_probabilities[:, 1].tolist(),
+                    non_zero_indices,
+                    1,
+                    allow_null=True,
+                )
+                object_indices = self._select_role_indices(
+                    entity_type_ids,
+                    role_probabilities[:, 2].tolist(),
+                    non_zero_indices,
+                    2,
+                    allow_null=True,
+                )
+                aspect_indices = self._select_role_indices(
+                    entity_type_ids,
+                    role_probabilities[:, 3].tolist(),
+                    non_zero_indices,
+                    3,
+                    allow_null=True,
+                )
+                predicate_indices = self._select_role_indices(
+                    entity_type_ids,
+                    role_probabilities[:, 4].tolist(),
+                    non_zero_indices,
+                    4,
+                    allow_null=False,
+                )
                 role_products = iproduct(subject_indices, object_indices, aspect_indices, predicate_indices)
             else:
                 # All candidate indices include null (0) and real entities.

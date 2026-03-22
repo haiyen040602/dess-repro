@@ -63,9 +63,6 @@ class JsonInputReader():
 
     def _parse_dataset(self,dataset_path, dataset):
         sentences = json.load(open(dataset_path))
-        if len(sentences) % 16 != 0:
-            num_to_remove = len(sentences) % 16
-            sentences = sentences[:-num_to_remove]
         for sentence in tqdm(sentences,desc="Parse dataset '%s'"% dataset.label):
             # print(document)
             self._parse_sentence(sentence,dataset)
@@ -78,13 +75,14 @@ class JsonInputReader():
         jsentiments = sen['sentiments']
         jentities = sen['entities']
         sen_id = sen['orig_id']
+        is_comparative = sen.get('is_comparative', bool(jsentiments))
         sen_tokens, sen_encoding, adj = self._parse_tokens(jtokens,jdependency, dataset)
 
         entities = self._parse_entities(jentities, sen_tokens, dataset)
 
         sentiments = self._parse_sentiments(jsentiments, entities, dataset,sen_id)
 
-        sentence = dataset.create_sentence(sen_tokens, entities, sentiments, sen_encoding,adj)
+        sentence = dataset.create_sentence(sen_tokens, entities, sentiments, sen_encoding, adj, is_comparative)
         # print("sen_tokens:",sen_tokens)
         # return sentence
 

@@ -209,7 +209,7 @@ class Sentiment:
 
 class Sentence:
     def __init__(self, sen_id: int, tokens: List[Token], entities: List[Entity], sentiments: List[Sentiment],
-                 encoding: List[int],adj):
+                 encoding: List[int], adj, is_comparative: bool = None):
         self._sen_id = sen_id  # ID within the corresponding dataset
 
         self._tokens = tokens
@@ -219,6 +219,7 @@ class Sentence:
         # byte-pair document encoding including special tokens ([CLS] and [SEP])
         self._encoding = encoding
         self._adj = adj
+        self._is_comparative = bool(len(sentiments)) if is_comparative is None else bool(is_comparative)
 
     @property
     def tokens(self):
@@ -243,6 +244,10 @@ class Sentence:
     @property
     def adj(self):
         return self._adj
+
+    @property
+    def is_comparative(self):
+        return self._is_comparative
 
 
 class Dataset(TorchDataset):
@@ -284,8 +289,8 @@ class Dataset(TorchDataset):
         self._rid += 1
         return sentiment
 
-    def create_sentence(self, tokens, entity_mentions, sentiments, sen_encoding, adj) -> Sentence:
-        sentence = Sentence(self._sen_id, tokens, entity_mentions, sentiments, sen_encoding,adj)
+    def create_sentence(self, tokens, entity_mentions, sentiments, sen_encoding, adj, is_comparative=None) -> Sentence:
+        sentence = Sentence(self._sen_id, tokens, entity_mentions, sentiments, sen_encoding, adj, is_comparative)
         self._sentences[self._sen_id] = sentence
         self._sen_id += 1
         # print(self._sen_id,len(self._sentences))

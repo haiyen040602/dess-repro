@@ -1,0 +1,46 @@
+{
+  "total_samples": 3304,
+  "invalid_samples": 195,
+  "invalid_ratio": 0.059019370460048425,
+  "by_split": {
+    "train": {
+      "samples": 2114,
+      "invalid_samples": 140,
+      "invalid_ratio": 0.06622516556291391,
+      "top_reasons": [
+        [
+          "multiple_roots",
+          140
+        ]
+      ]
+    },
+    "dev": {
+      "samples": 529,
+      "invalid_samples": 27,
+      "invalid_ratio": 0.05103969754253308,
+      "top_reasons": [
+        [
+          "multiple_roots",
+          27
+        ]
+      ]
+    },
+    "test": {
+      "samples": 661,
+      "invalid_samples": 28,
+      "invalid_ratio": 0.04236006051437216,
+      "top_reasons": [
+        [
+          "multiple_roots",
+          28
+        ]
+      ]
+    }
+  },
+  "top_reasons_global": [
+    [
+      "multiple_roots",
+      195
+    ]
+  ]
+}

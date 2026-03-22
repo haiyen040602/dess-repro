@@ -117,6 +117,24 @@ def train_argparser():
         help="During training and evaluation, the maximum number of entity pairs will be processed",
     )
     parser.add_argument(
+        "--max_role_candidates",
+        type=int,
+        default=8,
+        help="Maximum number of predicted entity candidates kept per role before composing s/o/a/p tuples; set <= 0 to disable role-wise pruning",
+    )
+    parser.add_argument(
+        "--sentence_loss_weight",
+        type=float,
+        default=0.2,
+        help="Loss weight for comparative sentence classification",
+    )
+    parser.add_argument(
+        "--sentence_filter_threshold",
+        type=float,
+        default=0.5,
+        help="Threshold for deciding whether a sentence is comparative during evaluation/inference",
+    )
+    parser.add_argument(
         "--sen_filter_threshold",
         type=float,
         default=0.4,

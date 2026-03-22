@@ -1,15 +1,19 @@
 import torch
 
 class D2E2SLoss():
-    def __init__(self, senti_criterion, entity_criterion, model, optimizer, scheduler, max_grad_norm):
+    def __init__(self, senti_criterion, entity_criterion, sentence_criterion, model, optimizer, scheduler, max_grad_norm,
+                 sentence_loss_weight):
         self._senti_criterion = senti_criterion
         self._entity_criterion = entity_criterion
+        self._sentence_criterion = sentence_criterion
         self._model = model
         self._optimizer = optimizer
         self._scheduler = scheduler
         self._max_grad_norm = max_grad_norm
+        self._sentence_loss_weight = sentence_loss_weight
 
-    def compute(self, entity_logits, senti_logits, batch_loss, entity_types, senti_types, entity_sample_masks, senti_sample_masks):
+    def compute(self, entity_logits, senti_logits, sentence_logits, batch_loss, entity_types, senti_types, sentence_types,
+                entity_sample_masks, senti_sample_masks):
         # term loss
         entity_logits = entity_logits.view(-1, entity_logits.shape[-1])
         entity_types = entity_types.view(-1)
@@ -17,6 +21,10 @@ class D2E2SLoss():
 
         entity_loss = self._entity_criterion(entity_logits, entity_types)
         entity_loss = (entity_loss * entity_sample_masks).sum() / entity_sample_masks.sum()
+
+        sentence_types = sentence_types.view(-1)
+        sentence_loss = self._sentence_criterion(sentence_logits.view(-1), sentence_types)
+        sentence_loss = sentence_loss.mean()
 
         # sentiment loss
         senti_sample_masks = senti_sample_masks.view(-1).float()
@@ -30,9 +38,9 @@ class D2E2SLoss():
             senti_loss = senti_loss.sum(-1) / senti_loss.shape[-1]
             senti_loss = (senti_loss * senti_sample_masks).sum() / senti_count
 
-            train_loss = entity_loss + senti_loss + 10*batch_loss
+            train_loss = entity_loss + senti_loss + self._sentence_loss_weight * sentence_loss + 10*batch_loss
         else:
-            train_loss = entity_loss
+            train_loss = entity_loss + self._sentence_loss_weight * sentence_loss + 10*batch_loss
 
         train_loss.backward()
         torch.nn.utils.clip_grad_norm_(self._model.parameters(), self._max_grad_norm)

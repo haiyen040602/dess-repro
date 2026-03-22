@@ -13,12 +13,13 @@ import os
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 class Evaluator:
     def __init__(self, dataset: Dataset, input_reader: JsonInputReader, text_encoder: PreTrainedTokenizerBase,
-                 sen_filter_threshold: float,
+                 sen_filter_threshold: float, sentence_filter_threshold: float,
                  predictions_path: str, examples_path: str, example_count: int, epoch: int, dataset_label: str):
         self._text_encoder = text_encoder
         self._input_reader = input_reader
         self._dataset = dataset
         self._sen_filter_threshold = sen_filter_threshold
+        self._sentence_filter_threshold = sentence_filter_threshold
 
         self._epoch = epoch
         self._dataset_label = dataset_label
@@ -31,6 +32,8 @@ class Evaluator:
         # sentiments
         self._gt_sentiments = []  # ground truth
         self._pred_sentiments = []  # prediction
+        self._gt_sentence_types = []
+        self._pred_sentence_scores = []
 
         # entities
         self._gt_entities = []  # ground truth
@@ -43,7 +46,7 @@ class Evaluator:
 
 
     def eval_batch(self, batch_entity_clf: torch.tensor, batch_senti_clf: torch.tensor,
-                   batch_rels: torch.tensor, batch: dict):
+                   batch_rels: torch.tensor, batch: dict, batch_sentence_clf: torch.tensor = None):
         batch_size = batch_senti_clf.shape[0]
         senti_class_count = batch_senti_clf.shape[2]
 
@@ -61,6 +64,8 @@ class Evaluator:
         for i in range(batch_size):
             senti_clf = batch_senti_clf[i]
             entity_types = batch_entity_types[i]
+            if batch_sentence_clf is not None:
+                self._pred_sentence_scores.append(torch.sigmoid(batch_sentence_clf[i]).item())
 
             # get predicted sentiment labels and corresponding quintuples
             senti_nonzero = senti_clf.nonzero().view(-1)
@@ -163,6 +168,7 @@ class Evaluator:
 
             self._gt_entities.append(sample_gt_entities)
             self._gt_sentiments.append(sample_gt_sentiments)
+            self._gt_sentence_types.append(int(sen.is_comparative))
 
     def compute_scores(self, print_examples: int = 0, print_extra_metrics: bool = False):
         print("Evaluation")
@@ -185,6 +191,11 @@ class Evaluator:
 
         extra_eval = {}
         if print_extra_metrics:
+            print("")
+            print("--- Comparative Sentence Detection ---")
+            print("")
+            extra_eval['sentence'] = self._score_sentence_classification(print_results=True)
+
             print("")
             print("--- Comparative Label Prediction (label-only) ---")
             print("")
@@ -239,6 +250,28 @@ class Evaluator:
             print('\n' + '-' * 40)
 
         return ner_eval, senti_eval, senti_nec_eval, extra_eval
+
+    def _score_sentence_classification(self, print_results: bool = False):
+        pred_labels = [1 if score >= self._sentence_filter_threshold else 0 for score in self._pred_sentence_scores]
+        precision, recall, f1, _ = prfs(
+            self._gt_sentence_types,
+            pred_labels,
+            average='binary',
+            zero_division=0,
+        )
+        accuracy = sum(int(gt == pred) for gt, pred in zip(self._gt_sentence_types, pred_labels)) / max(len(pred_labels), 1)
+        result = {
+            'precision': float(precision),
+            'recall': float(recall),
+            'f1': float(f1),
+            'accuracy': float(accuracy),
+        }
+        if print_results:
+            print(f"precision: {result['precision'] * 100:.2f}")
+            print(f"recall: {result['recall'] * 100:.2f}")
+            print(f"f1-score: {result['f1'] * 100:.2f}")
+            print(f"accuracy: {result['accuracy'] * 100:.2f}")
+        return result
 
     def _convert_label_only(self, sentiments: List[List[Tuple]]):
         converted = []
