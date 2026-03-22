@@ -148,7 +148,7 @@ class D2E2S_Trainer(BaseTrainer):
             dev_ner_eval, dev_senti_eval, dev_senti_nec_eval, dev_extra_eval = self._eval(
                 model, dev_dataset, input_reader, epoch + 1, updates_epoch, label_to_log="dev"
             )
-            dev_f1 = float(dev_senti_nec_eval[2]) if float(dev_senti_nec_eval[2]) > 0 else float(dev_senti_eval[2])
+            dev_f1 = float(dev_senti_nec_eval[2])
             is_best = dev_f1 > self._best_results.get("dev", 0)
             
             # Save best model based on dev F1 score
@@ -370,7 +370,8 @@ class D2E2S_Trainer(BaseTrainer):
         return ner_eval, senti_eval, senti_nec_eval, extra_eval
 
     def _log_filter_file(self, ner_eval, senti_eval, senti_nec_eval, extra_eval, evaluator, epoch, label_to_log="test"):
-        f1 = float(senti_eval[2])
+        # quintuple metric = exact quintuple F1
+        f1 = float(senti_nec_eval[2])
         columns = [
             "mic_precision",
             "mic_recall",
@@ -396,9 +397,7 @@ class D2E2S_Trainer(BaseTrainer):
                     f.write(w_str)
                     f.write("ner_entity: \n")
                     f.write(str(ner_dic))
-                    f.write("\n quintuple_span: \n")
-                    f.write(str(senti_dic))
-                    f.write("\n quintuple_typed: \n")
+                    f.write("\n exact_quintuple: \n")
                     f.write(str(senti_nec_dic))
                     if extra_eval:
                         if 'label' in extra_eval:
@@ -417,9 +416,7 @@ class D2E2S_Trainer(BaseTrainer):
                 f.write(w_str)
                 f.write("ner_entity: \n")
                 f.write(str(ner_dic))
-                f.write("\n quintuple_span: \n")
-                f.write(str(senti_dic))
-                f.write("\n quintuple_typed: \n")
+                f.write("\n exact_quintuple: \n")
                 f.write(str(senti_nec_dic))
                 if extra_eval:
                     if 'label' in extra_eval:

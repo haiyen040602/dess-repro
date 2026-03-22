@@ -174,16 +174,14 @@ class Evaluator:
         ner_eval = self._score(gt, pred, print_results=True)
 
         print("")
-        print("--- Comparative Quintuple Extraction (span-only) ---")
-        print("")
-        gt, pred = self._convert_by_setting(self._gt_sentiments, self._pred_sentiments, include_entity_types=False)
-        senti_eval = self._score(gt, pred, print_results=True)
-
-        print("")
-        print("--- Comparative Quintuple Extraction (spans + entity types) ---")
+        print("--- Comparative Quintuple Extraction (exact) ---")
         print("")
         gt, pred = self._convert_by_setting(self._gt_sentiments, self._pred_sentiments, include_entity_types=True)
-        senti_nec_eval = self._score(gt, pred, print_results=True)
+        exact_quintuple_eval = self._score(gt, pred, print_results=True)
+
+        # Keep the return signature unchanged for downstream logging code.
+        senti_eval = exact_quintuple_eval
+        senti_nec_eval = exact_quintuple_eval
 
         extra_eval = {}
         if print_extra_metrics:
@@ -209,16 +207,13 @@ class Evaluator:
             print('-' * 40)
 
             entity_examples = []
-            senti_examples = []
-            senti_examples_nec = []
+            senti_examples_exact = []
 
             for i, doc in enumerate(self._dataset.sentences):
                 entity_examples.append(self._convert_example(doc, self._gt_entities[i], self._pred_entities[i],
                                                              include_entity_types=True, to_html=self._entity_to_html))
-                senti_examples.append(self._convert_example(doc, self._gt_sentiments[i], self._pred_sentiments[i],
-                                                            include_entity_types=False, to_html=self._senti_to_html))
-                senti_examples_nec.append(self._convert_example(doc, self._gt_sentiments[i], self._pred_sentiments[i],
-                                                                include_entity_types=True, to_html=self._senti_to_html))
+                senti_examples_exact.append(self._convert_example(doc, self._gt_sentiments[i], self._pred_sentiments[i],
+                                                                  include_entity_types=True, to_html=self._senti_to_html))
 
             def strip_html(s: str) -> str:
                 return re.sub('<[^<]+?>', '', s)
@@ -239,8 +234,7 @@ class Evaluator:
                         print(f"  - {strip_html(fp[0])} \t| type: {fp[1]} \t| score: {fp[2]:.4f}")
 
             print_examples_list(entity_examples, 'Entity Extraction Examples')
-            print_examples_list(senti_examples, 'Quintuple Extraction Examples (span-only)')
-            print_examples_list(senti_examples_nec, 'Quintuple Extraction Examples (with entity types)')
+            print_examples_list(senti_examples_exact, 'Quintuple Extraction Examples (exact)')
 
             print('\n' + '-' * 40)
 
