@@ -395,7 +395,9 @@ class D2E2SModel(PreTrainedModel):
             )[: self._max_role_candidates]
 
         if allow_null:
-            return [0] + role_indices
+            # Keep non-null candidates first so Cartesian product prioritizes
+            # full quadruples before partial tuples when _max_pairs truncates.
+            return role_indices + [0]
         return role_indices
 
     def _filter_spans(self, entity_clf, entity_spans, entity_sample_masks, ctx_size):
