@@ -581,6 +581,60 @@ class Evaluator:
         except Exception:
             pass
 
+    def _tuple_to_text(self, sentiment: Tuple, tokens: List):
+        NULL_SPAN = (0, 1)
+        role_names = ["S", "O", "A", "P"]
+        role_chunks = []
+        for idx, role in enumerate(role_names):
+            span = sentiment[idx]
+            if (span[0], span[1]) == NULL_SPAN:
+                role_chunks.append(f"{role}=None")
+                continue
+            span_tokens = util.get_span_tokens(tokens, span[:2])
+            if not span_tokens:
+                role_chunks.append(f"{role}=None")
+                continue
+            phrase = " ".join([t.phrase for t in span_tokens]).strip()
+            role_chunks.append(f"{role}={phrase if phrase else 'None'}")
+
+        label = sentiment[4].identifier if len(sentiment) >= 5 else "None"
+        return "(" + ", ".join(role_chunks) + f", L={label})"
+
+    def store_gold_pred_log(self):
+        """Store a readable test log with Sentence / Gold / Predict per sample."""
+        label, epoch = self._dataset_label, self._epoch
+        json_path = self._predictions_path % (label, epoch)
+        txt_path = json_path.replace("predicted_", "gold_pred_").replace(".json", ".txt")
+
+        lines = []
+        for i, doc in enumerate(self._dataset.sentences):
+            sentence_text = " ".join([t.phrase for t in doc.tokens]).strip()
+            gold_items = self._gt_sentiments[i]
+            pred_items = self._pred_sentiments[i]
+
+            if gold_items:
+                gold_text = " ; ".join([self._tuple_to_text(item, doc.tokens) for item in gold_items])
+            else:
+                gold_text = "None"
+
+            if pred_items:
+                pred_text = " ; ".join([self._tuple_to_text(item, doc.tokens) for item in pred_items])
+            else:
+                pred_text = "None"
+
+            lines.append(f"Sentence: {sentence_text}")
+            lines.append(f"Gold: {gold_text}")
+            lines.append(f"Predict: {pred_text}")
+            lines.append("")
+
+        with open(txt_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+
+        try:
+            print(f"Saved gold/predict log: {txt_path}")
+        except Exception:
+            pass
+
     def store_examples(self):
 
         entity_examples = []

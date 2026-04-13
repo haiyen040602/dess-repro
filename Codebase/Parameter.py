@@ -41,12 +41,24 @@ def train_argparser():
             "test": "./data/cameraCOQE_quintuple/test_quintuple.json",
             "types_path": "./data/types.json",
         },
+        "vcom_quintuple": {
+            "train": "./data/vcom_quintuple/train_quintuple.json",
+            "dev": "./data/vcom_quintuple/dev_quintuple.json",
+            "test": "./data/vcom_quintuple/test_quintuple.json",
+            "types_path": "./data/types.json",
+        },
+        "vcom_quintuple_8label": {
+            "train": "./data/vcom_quintuple_8label/train_quintuple.json",
+            "dev": "./data/vcom_quintuple_8label/dev_quintuple.json",
+            "test": "./data/vcom_quintuple_8label/test_quintuple.json",
+            "types_path": "./data/types_vcom_8label.json",
+        },
     }
 
     # model argument
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--dataset", default="14res", type=str, help="14res, 15res, 16res, 14lap, cameraCOQE"
+        "--dataset", default="14res", type=str, help="14res, 15res, 16res, 14lap, cameraCOQE, cameraCOQE_quintuple, vcom_quintuple, vcom_quintuple_8label"
     )
 
     parser.add_argument(

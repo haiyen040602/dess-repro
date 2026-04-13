@@ -101,7 +101,7 @@ class D2E2S_Trainer(BaseTrainer):
         model = D2E2SModel.from_pretrained(
             self.args.pretrained_deberta_name,
             config=config,
-            cls_token=self._tokenizer.convert_tokens_to_ids("[CLS]"),
+            cls_token=self._tokenizer.cls_token_id,
             sentiment_types=input_reader.sentiment_type_count - 1,
             entity_types=input_reader.entity_type_count,
             args=args,
@@ -176,7 +176,7 @@ class D2E2S_Trainer(BaseTrainer):
             model = D2E2SModel.from_pretrained(
                 best_model_path,
                 config=model.config,
-                cls_token=self._tokenizer.convert_tokens_to_ids("[CLS]"),
+                cls_token=self._tokenizer.cls_token_id,
                 sentiment_types=input_reader.sentiment_type_count - 1,
                 entity_types=input_reader.entity_type_count,
                 args=args,
@@ -453,6 +453,7 @@ class D2E2S_Trainer(BaseTrainer):
                 f.write("\n")
             if self.args.store_predictions:
                 evaluator.store_predictions()
+                evaluator.store_gold_pred_log()
             if self.args.store_examples:
                 evaluator.store_examples()
 

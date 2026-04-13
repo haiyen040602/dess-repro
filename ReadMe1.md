@@ -2,6 +2,12 @@
 
 ## Key Model Parameters
 
+[dev] sentences=1732 comparative=349 non_comparative=1383
+[dev] mapped_label_counts={'DIF': 33, 'COM+': 203, 'COM-': 51, 'EQL': 133, 'SUP+': 28, 'COM': 18, 'SUP-': 1, 'SUP': 4}
+[dev] underthesea_used=1605 fallback_linear=127
+[test] sentences=3269 comparative=660 non_comparative=2609
+[test] mapped_label_counts={'EQL': 244, 'COM+': 392, 'DIF': 53, 'SUP+': 71, 'COM': 19, 'COM-': 122, 'SUP': 2, 'SUP-': 5}
+
 ### 1. Pretrained Model
 
 ```python

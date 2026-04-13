@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "subject": {
+      "short": "s",
+      "verbose": "Subject"
+    },
+    "object": {
+      "short": "o",
+      "verbose": "Object"
+    },
+    "aspect": {
+      "short": "a",
+      "verbose": "Aspect"
+    },
+    "predicate": {
+      "short": "p",
+      "verbose": "Predicate"
+    }
+  },
+  "sentiment": {
+    "COM": {
+      "short": "COM",
+      "verbose": "COM",
+      "symmetric": false
+    },
+    "COM+": {
+      "short": "COM+",
+      "verbose": "COM+",
+      "symmetric": false
+    },
+    "COM-": {
+      "short": "COM-",
+      "verbose": "COM-",
+      "symmetric": false
+    },
+    "DIF": {
+      "short": "DIF",
+      "verbose": "DIF",
+      "symmetric": false
+    },
+    "EQL": {
+      "short": "EQL",
+      "verbose": "EQL",
+      "symmetric": false
+    },
+    "SUP": {
+      "short": "SUP",
+      "verbose": "SUP",
+      "symmetric": false
+    },
+    "SUP+": {
+      "short": "SUP+",
+      "verbose": "SUP+",
+      "symmetric": false
+    },
+    "SUP-": {
+      "short": "SUP-",
+      "verbose": "SUP-",
+      "symmetric": false
+    }
+  }
+}
