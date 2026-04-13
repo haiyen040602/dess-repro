@@ -314,6 +314,7 @@ class D2E2S_Trainer(BaseTrainer):
             self._tokenizer,
             self.args.sen_filter_threshold,
             self.args.sentence_filter_threshold,
+            self.args.eval_match_mode,
             self._predictions_path,
             self._examples_path,
             self.args.example_count,
@@ -406,6 +407,12 @@ class D2E2S_Trainer(BaseTrainer):
                     f.write("\n exact_quintuple: \n")
                     f.write(str(senti_nec_dic))
                     if extra_eval:
+                        if 'coqe_metrics_index' in extra_eval:
+                            f.write("\n coqe_metrics_full_index_match: \n")
+                            f.write(str(extra_eval['coqe_metrics_index']))
+                        if 'coqe_metrics_span' in extra_eval:
+                            f.write("\n coqe_metrics_full_span_match: \n")
+                            f.write(str(extra_eval['coqe_metrics_span']))
                         if 'sentence' in extra_eval:
                             f.write("\n sentence_comparative: \n")
                             f.write(str(extra_eval['sentence']))
@@ -428,6 +435,12 @@ class D2E2S_Trainer(BaseTrainer):
                 f.write("\n exact_quintuple: \n")
                 f.write(str(senti_nec_dic))
                 if extra_eval:
+                    if 'coqe_metrics_index' in extra_eval:
+                        f.write("\n coqe_metrics_full_index_match: \n")
+                        f.write(str(extra_eval['coqe_metrics_index']))
+                    if 'coqe_metrics_span' in extra_eval:
+                        f.write("\n coqe_metrics_full_span_match: \n")
+                        f.write(str(extra_eval['coqe_metrics_span']))
                     if 'label' in extra_eval:
                         f.write("\n label_only: \n")
                         f.write(str(metric_dict(extra_eval['label'])))

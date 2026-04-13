@@ -9,17 +9,19 @@ import re
 from sklearn.metrics import precision_recall_fscore_support as prfs
 import jinja2
 import os
+from metrics import compute_coqe_metrics, LEADERBOARD_KEYS, print_metrics_table
 
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 class Evaluator:
     def __init__(self, dataset: Dataset, input_reader: JsonInputReader, text_encoder: PreTrainedTokenizerBase,
-                 sen_filter_threshold: float, sentence_filter_threshold: float,
+                 sen_filter_threshold: float, sentence_filter_threshold: float, eval_match_mode: str,
                  predictions_path: str, examples_path: str, example_count: int, epoch: int, dataset_label: str):
         self._text_encoder = text_encoder
         self._input_reader = input_reader
         self._dataset = dataset
         self._sen_filter_threshold = sen_filter_threshold
         self._sentence_filter_threshold = sentence_filter_threshold
+        self._eval_match_mode = eval_match_mode
 
         self._epoch = epoch
         self._dataset_label = dataset_label
@@ -191,6 +193,10 @@ class Evaluator:
 
         extra_eval = {}
         if print_extra_metrics:
+            coqe_mode_results = self._score_coqe_metrics(print_results=True)
+            for mode_key, mode_metrics in coqe_mode_results.items():
+                extra_eval[f'coqe_metrics_{mode_key}'] = mode_metrics
+
             print("")
             print("--- Comparative Sentence Detection ---")
             print("")
@@ -250,6 +256,81 @@ class Evaluator:
             print('\n' + '-' * 40)
 
         return ner_eval, senti_eval, senti_nec_eval, extra_eval
+
+    def _slot_to_metric_text(self, slot, tokens):
+        """Convert one role span to metrics.py slot format: "idx&&token ...".
+        Null spans are represented as [UNK] so they are ignored in CEE/T4/T5.
+        """
+        NULL_SPAN = (0, 1)
+        start, end = slot[0], slot[1]
+        if (start, end) == NULL_SPAN:
+            return "[UNK]"
+
+        pieces = []
+        safe_start = max(int(start), 0)
+        safe_end = max(int(end), safe_start)
+        for idx in range(safe_start, min(safe_end, len(tokens))):
+            tok = str(tokens[idx].phrase).strip().replace(" ", "_")
+            if not tok:
+                tok = "tok"
+            pieces.append(f"{idx}&&{tok}")
+
+        if not pieces:
+            return "[UNK]"
+        return " ".join(pieces)
+
+    def _sample_to_metric_string(self, sample_sentiments, tokens):
+        """Serialize one sentence predictions/labels into metrics.py tuple text format."""
+        tuples = []
+        for sentiment in sample_sentiments:
+            s_text = self._slot_to_metric_text(sentiment[0], tokens)
+            o_text = self._slot_to_metric_text(sentiment[1], tokens)
+            a_text = self._slot_to_metric_text(sentiment[2], tokens)
+            p_text = self._slot_to_metric_text(sentiment[3], tokens)
+            label = str(sentiment[4].identifier).strip()
+            tuples.append(
+                f"([S] {s_text} [O] {o_text} [A] {a_text} [P] {p_text} [L] {label})"
+            )
+        return "; ".join(tuples)
+
+    def _score_coqe_metrics(self, print_results: bool = False):
+        predictions = []
+        gold_labels = []
+
+        for i, doc in enumerate(self._dataset.sentences):
+            tokens = doc.tokens
+            predictions.append(self._sample_to_metric_string(self._pred_sentiments[i], tokens))
+            gold_labels.append(self._sample_to_metric_string(self._gt_sentiments[i], tokens))
+
+        requested_modes = []
+        if self._eval_match_mode == "both":
+            requested_modes = ["index-match", "non-index-match"]
+        elif self._eval_match_mode == "span-match":
+            requested_modes = ["non-index-match"]
+        else:
+            requested_modes = ["index-match"]
+
+        results = {}
+        for mode in requested_modes:
+            mode_name = "index" if mode == "index-match" else "span"
+            metrics = compute_coqe_metrics(
+                predictions=predictions,
+                gold_labels=gold_labels,
+                match_mode=mode,
+            )
+            results[mode_name] = metrics
+
+            if print_results:
+                print("")
+                print(f"--- Full COQE Metrics ({mode_name}-match) ---")
+                print("")
+                print_metrics_table(
+                    metrics,
+                    keys=[k for k in LEADERBOARD_KEYS if k in metrics],
+                    title=f"COQE Leaderboard Metrics [{mode_name}]",
+                )
+
+        return results
 
     def _score_sentence_classification(self, print_results: bool = False):
         pred_labels = [1 if score >= self._sentence_filter_threshold else 0 for score in self._pred_sentence_scores]

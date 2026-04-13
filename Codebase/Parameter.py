@@ -135,6 +135,13 @@ def train_argparser():
         help="Threshold for deciding whether a sentence is comparative during evaluation/inference",
     )
     parser.add_argument(
+        "--eval_match_mode",
+        type=str,
+        default="both",
+        choices=["index-match", "span-match", "both"],
+        help="COQE evaluation matching mode: index-match, span-match (position-agnostic), or both",
+    )
+    parser.add_argument(
         "--sen_filter_threshold",
         type=float,
         default=0.4,
