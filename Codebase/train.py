@@ -36,7 +36,8 @@ class D2E2S_Trainer(BaseTrainer):
         )
         os.makedirs(self._log_path_result)
         os.makedirs(self._log_path_predict)
-        self.max_pair_f1 = 40
+        # Keep initial dev-best low so first dev eval is always logged.
+        self.max_pair_f1 = -1.0
         self.best_dev_epoch = 0
         self.best_dev_metric = 0.0
         self.result_path = os.path.join(
