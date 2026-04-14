@@ -1,0 +1,8 @@
+numpy>=2.0,<2.6
+tensorboardX>=2.6
+tqdm>=4.65.0
+transformers>=4.28.1
+scikit-learn>=1.2.2
+matplotlib>=3.7.1
+pydantic>=2.7.0
+optuna>=3.6.1

@@ -99,14 +99,19 @@ class D2E2S_Trainer(BaseTrainer):
         # load model
         config = AutoConfig.from_pretrained(args.pretrained_deberta_name)
 
-        model = D2E2SModel.from_pretrained(
-            self.args.pretrained_deberta_name,
+        model = D2E2SModel(
             config=config,
             cls_token=self._tokenizer.cls_token_id,
             sentiment_types=input_reader.sentiment_type_count - 1,
             entity_types=input_reader.entity_type_count,
             args=args,
         )
+        backbone = model.deberta.__class__.from_pretrained(
+            self.args.pretrained_deberta_name,
+            config=config,
+        )
+        model.deberta.load_state_dict(backbone.state_dict())
+        del backbone
         model.to(args.device)
         self._print_device_info(model, "train")
         # create optimizer

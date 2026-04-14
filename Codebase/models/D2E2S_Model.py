@@ -60,9 +60,9 @@ class D2E2SModel(PreTrainedModel):
         self.gcn_dropout = self.args.gcn_dropout
 
         # 2、DEBERT model
-        self.deberta = AutoModel.from_pretrained(
-            self.args.pretrained_deberta_name, config=config
-        )
+        # Build from config to avoid nested `from_pretrained` calls inside outer
+        # model loading contexts (can trigger meta-device errors in newer Transformers).
+        self.deberta = AutoModel.from_config(config)
 
         # self.BertAdapterModel = BertAdapterModel(config)
         self.Syn_gcn = GCN(self._emb_dim)
