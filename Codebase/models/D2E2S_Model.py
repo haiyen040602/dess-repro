@@ -320,8 +320,10 @@ class D2E2SModel(PreTrainedModel):
                     -2
                 )
 
-        # get cls token as candidate context representation
-        entity_ctx = get_token(h, encodings, self._cls_token)
+        # Use the first token representation as CLS context. Selecting by token-id
+        # can accidentally include padded positions for models where cls_token_id
+        # equals a common pad value (e.g. XLM-R with id=0).
+        entity_ctx = h[:, 0, :]
 
         # create candidate representations including context, max pooled span and size embedding
         entity_repr = torch.cat(
