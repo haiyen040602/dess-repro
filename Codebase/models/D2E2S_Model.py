@@ -32,7 +32,7 @@ def get_token(h: torch.tensor, x: torch.tensor, token: int):
 class D2E2SModel(PreTrainedModel):
     VERSION = "1.1"
     _tied_weights_keys = []
-    all_tied_weights_keys = []
+    all_tied_weights_keys = {}
 
     def __init__(
         self,
