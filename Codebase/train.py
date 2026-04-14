@@ -156,21 +156,26 @@ class D2E2S_Trainer(BaseTrainer):
             is_best = dev_f1 > self._best_results.get("dev", 0)
             
             # Save best model based on dev F1 score
-            self._save_best(
-                model, 
-                self._tokenizer, 
-                optimizer, 
-                dev_f1, 
-                epoch + 1,
-                label="dev",
-                extra=None
-            )
+            if not self.args.disable_best_model_saving:
+                self._save_best(
+                    model,
+                    self._tokenizer,
+                    optimizer,
+                    dev_f1,
+                    epoch + 1,
+                    label="dev",
+                    extra=None
+                )
             if is_best:
                 self.best_dev_epoch = epoch + 1
                 self.best_dev_metric = dev_f1
                 print(f"New best dev checkpoint at epoch {self.best_dev_epoch} (metric={self.best_dev_metric:.2f})")
         
         # Load best model and evaluate on test set
+        if self.args.disable_final_test_eval:
+            print("Skipping final test evaluation because --disable_final_test_eval is enabled.")
+            return
+
         print(f"\nLoading best model with dev set")
         best_model_path = os.path.join(self._save_path, 'model_dev_best')
         if os.path.exists(best_model_path):

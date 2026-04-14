@@ -288,6 +288,18 @@ def train_argparser():
         default=False,
         help="Save optimizer alongside model",
     )
+    parser.add_argument(
+        "--disable_best_model_saving",
+        action="store_true",
+        default=False,
+        help="Skip saving the best dev checkpoint to disk",
+    )
+    parser.add_argument(
+        "--disable_final_test_eval",
+        action="store_true",
+        default=False,
+        help="Skip loading the best checkpoint and running final test evaluation",
+    )
     parser.add_argument("--device", type=str, default="cuda", help="gpu or cpu")
 
     opt = parser.parse_args()

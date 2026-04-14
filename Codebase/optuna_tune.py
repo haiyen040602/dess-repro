@@ -44,6 +44,10 @@ def build_train_command(train_py: str, base_args: dict, sampled: dict, log_path:
 
     cmd = [sys.executable, train_py]
     for k, v in args.items():
+        if isinstance(v, bool):
+            if v:
+                cmd.append(f"--{k}")
+            continue
         cmd.extend([f"--{k}", str(v)])
     return cmd
 
@@ -139,6 +143,9 @@ def create_objective(args):
             raise ValueError("--fixed_params must be a JSON object")
         base_args.update(fixed)
 
+    base_args.setdefault("disable_best_model_saving", True)
+    base_args.setdefault("disable_final_test_eval", True)
+
     def objective(trial):
         sampled = {
             "max_role_candidates": trial.suggest_int("max_role_candidates", 3, 8),
@@ -173,6 +180,9 @@ def create_objective(args):
             # Penalize failed trials so the study can continue.
             print(f"[OPTUNA] Trial failed with code {exc.returncode}")
             return 0.0
+        finally:
+            if args.cleanup_after_trial:
+                shutil.rmtree(trial_save_root, ignore_errors=True)
 
         run_dir = find_latest_run_dir(trial_log_root, base_args["dataset"])
         if run_dir is None:
@@ -194,10 +204,6 @@ def create_objective(args):
         trial.set_user_attr("run_dir", run_dir)
         trial.set_user_attr("log_root", trial_log_root)
         trial.set_user_attr("save_root", trial_save_root)
-
-        # Optional cleanup for disk control
-        if args.cleanup_after_trial:
-            shutil.rmtree(trial_save_root, ignore_errors=True)
 
         print(f"[OPTUNA] Trial {trial.number} best dev {args.objective_metric} = {dev_f1:.4f}")
         return dev_f1
